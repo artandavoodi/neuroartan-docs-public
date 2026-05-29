@@ -1,0 +1,4604 @@
+{
+  "documentationSystem": {
+    "version": "0.2",
+    "sourceMode": "data-driven",
+    "publicFacing": true,
+    "rules": [
+      "All public documentation content must originate from JSON data files.",
+      "Static route files exist only as render destinations.",
+      "No article body, sidebar item, category label, route label, or search result content may be hardcoded in HTML.",
+      "Each documentation category owns its own sidebar groups and subcategories.",
+      "Sidebar groups must render as collapsible dropdown sections from JSON.",
+      "Developer-facing documentation must include traceable issue, error, CLI, integration, security, and troubleshooting article paths."
+    ]
+  },
+  "categories": [
+    {
+      "id": "start",
+      "label": "Start",
+      "route": "/get-started/",
+      "groups": [
+        {
+          "id": "start-foundation",
+          "label": "Foundation",
+          "items": [
+            "get-started",
+            "what-is-neuroartan",
+            "what-is-icos"
+          ]
+        },
+        {
+          "id": "start-expression",
+          "label": "Expression",
+          "items": [
+            "posts-and-thought-bank",
+            "public-documentation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "product",
+      "label": "Product",
+      "route": "/platform/",
+      "groups": [
+        {
+          "id": "product-platform",
+          "label": "Platform",
+          "items": [
+            "platform",
+            "product-capabilities",
+            "profile-system"
+          ]
+        },
+        {
+          "id": "product-continuity",
+          "label": "Continuity",
+          "items": [
+            "voice-training",
+            "memory-continuity",
+            "model-identity",
+            "one-profile-one-model"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plans",
+      "label": "Plans",
+      "route": "/plans/",
+      "groups": [
+        {
+          "id": "plans-tiers",
+          "label": "Tiers",
+          "items": [
+            "plans",
+            "free-plan",
+            "pro-plan",
+            "pro-max-plan"
+          ]
+        },
+        {
+          "id": "plans-policy",
+          "label": "Policy",
+          "items": [
+            "pricing-principles"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trust-safety",
+      "label": "Trust & Safety",
+      "route": "/safety/",
+      "groups": [
+        {
+          "id": "trust-verification",
+          "label": "Verification",
+          "items": [
+            "verification",
+            "verification-badge"
+          ]
+        },
+        {
+          "id": "trust-core",
+          "label": "Safety",
+          "items": [
+            "safety",
+            "anti-impersonation",
+            "abuse-prevention",
+            "appeals"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "privacy-legal",
+      "label": "Privacy & Legal",
+      "route": "/privacy/",
+      "groups": [
+        {
+          "id": "privacy-core",
+          "label": "Privacy",
+          "items": [
+            "privacy",
+            "privacy-policy",
+            "device-integrity",
+            "data-retention"
+          ]
+        },
+        {
+          "id": "legal-direction",
+          "label": "Legal direction",
+          "items": [
+            "terms-direction"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "developers",
+      "label": "Developers",
+      "route": "/developers/",
+      "groups": [
+        {
+          "id": "developers-platform",
+          "label": "Platform integration",
+          "items": [
+            "developers",
+            "oauth-connectors",
+            "api-integration",
+            "security-requirements"
+          ]
+        },
+        {
+          "id": "developers-operations",
+          "label": "Operations",
+          "items": [
+            "cli",
+            "troubleshooting",
+            "error-reference",
+            "release-notes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "company",
+      "label": "Company",
+      "route": "/company/investors/",
+      "groups": [
+        {
+          "id": "company-relations",
+          "label": "Relations",
+          "items": [
+            "investors",
+            "public-relations"
+          ]
+        },
+        {
+          "id": "company-growth",
+          "label": "Growth",
+          "items": [
+            "careers",
+            "research"
+          ]
+        }
+      ]
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Start",
+      "items": [
+        {
+          "id": "get-started",
+          "label": "Get started",
+          "href": "/get-started/"
+        },
+        {
+          "id": "what-is-neuroartan",
+          "label": "What is Neuroartan",
+          "href": "/get-started/what-is-neuroartan/"
+        },
+        {
+          "id": "what-is-icos",
+          "label": "What is ICOS",
+          "href": "/get-started/what-is-icos/"
+        },
+        {
+          "id": "posts-and-thought-bank",
+          "label": "Posts and Thought Bank",
+          "href": "/get-started/posts-and-thought-bank/"
+        },
+        {
+          "id": "public-documentation",
+          "label": "Public Documentation Policy",
+          "href": "/get-started/public-documentation/"
+        }
+      ]
+    },
+    {
+      "group": "Product",
+      "items": [
+        {
+          "id": "platform",
+          "label": "Platform",
+          "href": "/platform/"
+        },
+        {
+          "id": "product-capabilities",
+          "label": "Product Capabilities",
+          "href": "/platform/capabilities/"
+        },
+        {
+          "id": "voice-training",
+          "label": "Voice Training",
+          "href": "/platform/voice-training/"
+        },
+        {
+          "id": "memory-continuity",
+          "label": "Memory & Continuity",
+          "href": "/platform/memory-continuity/"
+        },
+        {
+          "id": "profile-system",
+          "label": "Profile System",
+          "href": "/platform/profile-system/"
+        },
+        {
+          "id": "model-identity",
+          "label": "Model Identity",
+          "href": "/model-identity/"
+        },
+        {
+          "id": "one-profile-one-model",
+          "label": "One Profile One Canonical Model",
+          "href": "/model-identity/one-profile-one-model/"
+        }
+      ]
+    },
+    {
+      "group": "Plans",
+      "items": [
+        {
+          "id": "plans",
+          "label": "Plans & Subscriptions",
+          "href": "/plans/"
+        },
+        {
+          "id": "free-plan",
+          "label": "Free",
+          "href": "/plans/free/"
+        },
+        {
+          "id": "pro-plan",
+          "label": "Pro",
+          "href": "/plans/pro/"
+        },
+        {
+          "id": "pro-max-plan",
+          "label": "Pro Max",
+          "href": "/plans/pro-max/"
+        },
+        {
+          "id": "pricing-principles",
+          "label": "Pricing Principles",
+          "href": "/plans/pricing-principles/"
+        }
+      ]
+    },
+    {
+      "group": "Trust & Safety",
+      "items": [
+        {
+          "id": "verification",
+          "label": "Verification",
+          "href": "/verification/"
+        },
+        {
+          "id": "verification-badge",
+          "label": "Verification Badge",
+          "href": "/verification/badge/"
+        },
+        {
+          "id": "safety",
+          "label": "Safety & Trust",
+          "href": "/safety/"
+        },
+        {
+          "id": "anti-impersonation",
+          "label": "Anti-Impersonation",
+          "href": "/safety/anti-impersonation/"
+        },
+        {
+          "id": "abuse-prevention",
+          "label": "Abuse Prevention",
+          "href": "/safety/abuse-prevention/"
+        },
+        {
+          "id": "appeals",
+          "label": "Appeals & Restrictions",
+          "href": "/appeals/"
+        }
+      ]
+    },
+    {
+      "group": "Privacy & Legal",
+      "items": [
+        {
+          "id": "privacy",
+          "label": "Privacy",
+          "href": "/privacy/"
+        },
+        {
+          "id": "privacy-policy",
+          "label": "Privacy Policy Direction",
+          "href": "/privacy/policy/"
+        },
+        {
+          "id": "device-integrity",
+          "label": "Device Integrity",
+          "href": "/privacy/device-integrity/"
+        },
+        {
+          "id": "data-retention",
+          "label": "Data Retention",
+          "href": "/privacy/data-retention/"
+        },
+        {
+          "id": "terms-direction",
+          "label": "Terms Direction",
+          "href": "/legal/terms-direction/"
+        }
+      ]
+    },
+    {
+      "group": "Developers",
+      "items": [
+        {
+          "id": "developers",
+          "label": "Developers",
+          "href": "/developers/"
+        },
+        {
+          "id": "oauth-connectors",
+          "label": "OAuth Connectors",
+          "href": "/developers/oauth-connectors/"
+        },
+        {
+          "id": "api-integration",
+          "label": "API Integration",
+          "href": "/developers/api-integration/"
+        },
+        {
+          "id": "security-requirements",
+          "label": "Security Requirements",
+          "href": "/developers/security-requirements/"
+        },
+        {
+          "id": "cli",
+          "label": "CLI",
+          "href": "/developers/cli/"
+        },
+        {
+          "id": "troubleshooting",
+          "label": "Troubleshooting",
+          "href": "/developers/troubleshooting/"
+        },
+        {
+          "id": "error-reference",
+          "label": "Error Reference",
+          "href": "/developers/errors/"
+        },
+        {
+          "id": "release-notes",
+          "label": "Release Notes",
+          "href": "/developers/release-notes/"
+        }
+      ]
+    },
+    {
+      "group": "Company",
+      "items": [
+        {
+          "id": "investors",
+          "label": "Investors",
+          "href": "/company/investors/"
+        },
+        {
+          "id": "careers",
+          "label": "Careers",
+          "href": "/company/careers/"
+        },
+        {
+          "id": "public-relations",
+          "label": "Public Relations",
+          "href": "/company/public-relations/"
+        },
+        {
+          "id": "research",
+          "label": "Knowledge & Research",
+          "href": "/company/research/"
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "id": "get-started",
+      "route": "/get-started/",
+      "category": "Start",
+      "type": "Overview",
+      "title": "Get started with Neuroartan documentation",
+      "eyebrow": "Start here",
+      "description": "Start with the public foundation for Neuroartan, ICOS, plans, verification, safety, privacy, model identity, developers, investors, and careers.",
+      "tabs": [
+        "Overview",
+        "Quickstart",
+        "Core concepts"
+      ],
+      "recommended": [
+        "what-is-neuroartan",
+        "what-is-icos",
+        "plans"
+      ],
+      "articles": [
+        "what-is-neuroartan",
+        "what-is-icos",
+        "platform",
+        "plans",
+        "verification",
+        "safety",
+        "privacy",
+        "developers",
+        "investors",
+        "careers"
+      ],
+      "sections": [
+        {
+          "title": "Start with the system",
+          "body": "Neuroartan documentation explains the public product, trust, privacy, platform, and company boundaries that support ICOS."
+        },
+        {
+          "title": "Recommended reading path",
+          "body": "Begin with Neuroartan, ICOS, platform capabilities, plans, verification, safety, privacy, model identity, developers, and company information."
+        },
+        {
+          "title": "Public release boundary",
+          "body": "Sensitive verification, safety, privacy, restriction, and implementation details remain review-gated before publication."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Get started with Neuroartan documentation",
+        "searchDescription": "Start with the public foundation for Neuroartan, ICOS, plans, verification, safety, privacy, model identity, developers, investors, and careers.",
+        "searchKeywords": [
+          "Get started with Neuroartan documentation",
+          "Start",
+          "Overview",
+          "Start here",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-GET_STARTED",
+          "route": "/get-started/",
+          "category": "Start",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Get started with Neuroartan documentation",
+            "body": "Start with the public foundation for Neuroartan, ICOS, plans, verification, safety, privacy, model identity, developers, investors, and careers."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the entry layer of Neuroartan documentation. It explains the foundation of the company, ICOS, public documentation, product boundaries, and first reading path."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "New users, early members, partners, reviewers, support teams, and public readers who need a clear starting point."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand where to begin, what Neuroartan is building, and which documentation path to follow next."
+          },
+          {
+            "type": "section",
+            "title": "Start with the system",
+            "body": "Neuroartan documentation explains the public product, trust, privacy, platform, and company boundaries that support ICOS."
+          },
+          {
+            "type": "section",
+            "title": "Recommended reading path",
+            "body": "Begin with Neuroartan, ICOS, platform capabilities, plans, verification, safety, privacy, model identity, developers, and company information."
+          },
+          {
+            "type": "section",
+            "title": "Public release boundary",
+            "body": "Sensitive verification, safety, privacy, restriction, and implementation details remain review-gated before publication."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "what-is-neuroartan",
+      "route": "/get-started/what-is-neuroartan/",
+      "category": "Start",
+      "type": "Concept",
+      "title": "What is Neuroartan",
+      "eyebrow": "Company",
+      "description": "Neuroartan builds governed cognitive infrastructure for continuity, memory, profile identity, and structured intelligence.",
+      "tabs": [
+        "Overview",
+        "Product",
+        "Trust"
+      ],
+      "recommended": [
+        "what-is-icos",
+        "platform",
+        "investors"
+      ],
+      "articles": [
+        "what-is-icos",
+        "platform",
+        "product-capabilities",
+        "model-identity",
+        "safety"
+      ],
+      "sections": [
+        {
+          "title": "Definition",
+          "body": "Neuroartan is a product and infrastructure company building ICOS as a governed cognitive operating system rather than a generic chatbot."
+        },
+        {
+          "title": "Public position",
+          "body": "The system is designed around continuity, structured memory, personal model identity, privacy boundaries, and safety governance."
+        },
+        {
+          "title": "Communication boundary",
+          "body": "Public language should be clear, commercially coherent, and grounded in product capability without making claims of consciousness, therapy, medical authority, or guaranteed outcomes."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "What is Neuroartan",
+        "searchDescription": "Neuroartan builds governed cognitive infrastructure for continuity, memory, profile identity, and structured intelligence.",
+        "searchKeywords": [
+          "What is Neuroartan",
+          "Start",
+          "Concept",
+          "Company",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-WHAT_IS_NEUROARTAN",
+          "route": "/get-started/what-is-neuroartan/",
+          "category": "Start",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "What is Neuroartan",
+            "body": "Neuroartan builds governed cognitive infrastructure for continuity, memory, profile identity, and structured intelligence."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the entry layer of Neuroartan documentation. It explains the foundation of the company, ICOS, public documentation, product boundaries, and first reading path."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "New users, early members, partners, reviewers, support teams, and public readers who need a clear starting point."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand where to begin, what Neuroartan is building, and which documentation path to follow next."
+          },
+          {
+            "type": "section",
+            "title": "Definition",
+            "body": "Neuroartan is a product and infrastructure company building ICOS as a governed cognitive operating system rather than a generic chatbot."
+          },
+          {
+            "type": "section",
+            "title": "Public position",
+            "body": "The system is designed around continuity, structured memory, personal model identity, privacy boundaries, and safety governance."
+          },
+          {
+            "type": "section",
+            "title": "Communication boundary",
+            "body": "Public language should be clear, commercially coherent, and grounded in product capability without making claims of consciousness, therapy, medical authority, or guaranteed outcomes."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "what-is-icos",
+      "route": "/get-started/what-is-icos/",
+      "category": "Start",
+      "type": "Product Definition",
+      "title": "What is ICOS",
+      "eyebrow": "ICOS",
+      "description": "ICOS is Neuroartan’s Intelligence Cognitive Operating System for profile continuity, memory, voice, reflection, and structured intelligence.",
+      "tabs": [
+        "Overview",
+        "Capabilities",
+        "Boundaries"
+      ],
+      "recommended": [
+        "platform",
+        "memory-continuity",
+        "voice-training"
+      ],
+      "articles": [
+        "platform",
+        "product-capabilities",
+        "memory-continuity",
+        "voice-training",
+        "profile-system",
+        "model-identity"
+      ],
+      "sections": [
+        {
+          "title": "Product definition",
+          "body": "ICOS is a cognitive operating system designed to help a user structure thought, memory, voice, continuity, reflection, and profile identity over time."
+        },
+        {
+          "title": "What ICOS does",
+          "body": "ICOS supports a profile, a canonical personal model, private thought capture, public expression through Posts, memory development, voice and style training, and governed public identity controls."
+        },
+        {
+          "title": "What ICOS is not",
+          "body": "ICOS is not positioned as a generic chatbot, a therapy product, a consciousness claim, a professional certification system, or an unlimited bot-creation platform."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "What is ICOS",
+        "searchDescription": "ICOS is Neuroartan’s Intelligence Cognitive Operating System for profile continuity, memory, voice, reflection, and structured intelligence.",
+        "searchKeywords": [
+          "What is ICOS",
+          "Start",
+          "Product Definition",
+          "ICOS",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-WHAT_IS_ICOS",
+          "route": "/get-started/what-is-icos/",
+          "category": "Start",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "What is ICOS",
+            "body": "ICOS is Neuroartan’s Intelligence Cognitive Operating System for profile continuity, memory, voice, reflection, and structured intelligence."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the entry layer of Neuroartan documentation. It explains the foundation of the company, ICOS, public documentation, product boundaries, and first reading path."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "New users, early members, partners, reviewers, support teams, and public readers who need a clear starting point."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand where to begin, what Neuroartan is building, and which documentation path to follow next."
+          },
+          {
+            "type": "section",
+            "title": "Product definition",
+            "body": "ICOS is a cognitive operating system designed to help a user structure thought, memory, voice, continuity, reflection, and profile identity over time."
+          },
+          {
+            "type": "section",
+            "title": "What ICOS does",
+            "body": "ICOS supports a profile, a canonical personal model, private thought capture, public expression through Posts, memory development, voice and style training, and governed public identity controls."
+          },
+          {
+            "type": "section",
+            "title": "What ICOS is not",
+            "body": "ICOS is not positioned as a generic chatbot, a therapy product, a consciousness claim, a professional certification system, or an unlimited bot-creation platform."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "platform",
+      "route": "/platform/",
+      "category": "Product",
+      "type": "Platform",
+      "title": "Platform",
+      "eyebrow": "Product",
+      "description": "Understand the Neuroartan platform as the public product layer for ICOS, profile identity, model continuity, and user-facing controls.",
+      "tabs": [
+        "Overview",
+        "Capabilities",
+        "Trust"
+      ],
+      "recommended": [
+        "product-capabilities",
+        "profile-system",
+        "plans"
+      ],
+      "articles": [
+        "product-capabilities",
+        "profile-system",
+        "memory-continuity",
+        "voice-training",
+        "model-identity",
+        "verification"
+      ],
+      "sections": [
+        {
+          "title": "Platform role",
+          "body": "The Neuroartan platform is the public interface layer for creating a profile, developing a canonical personal model, managing memory, publishing Posts, and controlling visibility."
+        },
+        {
+          "title": "Design direction",
+          "body": "The platform should feel unified, restrained, high-trust, and operationally clear across product, documentation, verification, privacy, and account surfaces."
+        },
+        {
+          "title": "Governed expansion",
+          "body": "Advanced capabilities such as economy, marketplace, payouts, hiring, and inter-model coordination remain blocked until governance, legal, privacy, security, and product review."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Platform",
+        "searchDescription": "Understand the Neuroartan platform as the public product layer for ICOS, profile identity, model continuity, and user-facing controls.",
+        "searchKeywords": [
+          "Platform",
+          "Product",
+          "Platform",
+          "Product",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-PLATFORM",
+          "route": "/platform/",
+          "category": "Product",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Platform",
+            "body": "Understand the Neuroartan platform as the public product layer for ICOS, profile identity, model continuity, and user-facing controls."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the product layer. It explains ICOS, platform capabilities, memory, voice, profile identity, model identity, and continuity."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users, product reviewers, developers, operators, investors, and partners evaluating what the platform does."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand the product capability, its boundary, and the next related product article."
+          },
+          {
+            "type": "section",
+            "title": "Platform role",
+            "body": "The Neuroartan platform is the public interface layer for creating a profile, developing a canonical personal model, managing memory, publishing Posts, and controlling visibility."
+          },
+          {
+            "type": "section",
+            "title": "Design direction",
+            "body": "The platform should feel unified, restrained, high-trust, and operationally clear across product, documentation, verification, privacy, and account surfaces."
+          },
+          {
+            "type": "section",
+            "title": "Governed expansion",
+            "body": "Advanced capabilities such as economy, marketplace, payouts, hiring, and inter-model coordination remain blocked until governance, legal, privacy, security, and product review."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "product-capabilities",
+      "route": "/platform/capabilities/",
+      "category": "Product",
+      "type": "Capabilities",
+      "title": "Product Capabilities",
+      "eyebrow": "Capabilities",
+      "description": "Explore the core capabilities of ICOS: profile, memory, voice, model identity, Posts, verification, safety, and continuity.",
+      "tabs": [
+        "Overview",
+        "Capabilities"
+      ],
+      "recommended": [
+        "voice-training",
+        "memory-continuity",
+        "profile-system"
+      ],
+      "articles": [
+        "voice-training",
+        "memory-continuity",
+        "profile-system",
+        "model-identity",
+        "posts-and-thought-bank",
+        "verification"
+      ],
+      "sections": [
+        {
+          "title": "Profile and identity",
+          "body": "A profile is the user’s canonical public or private identity surface. It connects the user, their Posts, their model identity, and their continuity controls."
+        },
+        {
+          "title": "Memory and reflection",
+          "body": "ICOS is designed to support long-term memory, thought structure, reflection, pattern recognition, and continuity over time."
+        },
+        {
+          "title": "Voice and style",
+          "body": "Voice training allows the system to learn a user’s style, language, tone, and expression within approved privacy and consent boundaries."
+        },
+        {
+          "title": "Trust systems",
+          "body": "Verification, safety, anti-impersonation, device integrity, appeal, and restriction systems protect public trust and model identity."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Product Capabilities",
+        "searchDescription": "Explore the core capabilities of ICOS: profile, memory, voice, model identity, Posts, verification, safety, and continuity.",
+        "searchKeywords": [
+          "Product Capabilities",
+          "Product",
+          "Capabilities",
+          "Capabilities",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-PRODUCT_CAPABILITIES",
+          "route": "/platform/capabilities/",
+          "category": "Product",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Product Capabilities",
+            "body": "Explore the core capabilities of ICOS: profile, memory, voice, model identity, Posts, verification, safety, and continuity."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the product layer. It explains ICOS, platform capabilities, memory, voice, profile identity, model identity, and continuity."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users, product reviewers, developers, operators, investors, and partners evaluating what the platform does."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand the product capability, its boundary, and the next related product article."
+          },
+          {
+            "type": "section",
+            "title": "Profile and identity",
+            "body": "A profile is the user’s canonical public or private identity surface. It connects the user, their Posts, their model identity, and their continuity controls."
+          },
+          {
+            "type": "section",
+            "title": "Memory and reflection",
+            "body": "ICOS is designed to support long-term memory, thought structure, reflection, pattern recognition, and continuity over time."
+          },
+          {
+            "type": "section",
+            "title": "Voice and style",
+            "body": "Voice training allows the system to learn a user’s style, language, tone, and expression within approved privacy and consent boundaries."
+          },
+          {
+            "type": "section",
+            "title": "Trust systems",
+            "body": "Verification, safety, anti-impersonation, device integrity, appeal, and restriction systems protect public trust and model identity."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "voice-training",
+      "route": "/platform/voice-training/",
+      "category": "Product",
+      "type": "Capability",
+      "title": "Voice Training",
+      "eyebrow": "Voice",
+      "description": "Understand voice and style training as a controlled feature for developing a more accurate personal model.",
+      "tabs": [
+        "Overview",
+        "Controls"
+      ],
+      "recommended": [
+        "memory-continuity",
+        "profile-system",
+        "privacy"
+      ],
+      "articles": [
+        "memory-continuity",
+        "profile-system",
+        "privacy",
+        "device-integrity"
+      ],
+      "sections": [
+        {
+          "title": "Purpose",
+          "body": "Voice training helps a user’s model better reflect their language, tone, expression, and preferred communication style."
+        },
+        {
+          "title": "Source boundary",
+          "body": "Voice and style training should use authorized user-provided sources, consented material, corrections, and approved training inputs."
+        },
+        {
+          "title": "Public boundary",
+          "body": "Voice training must not be described as creating a conscious copy, legal person, or autonomous authority."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Voice Training",
+        "searchDescription": "Understand voice and style training as a controlled feature for developing a more accurate personal model.",
+        "searchKeywords": [
+          "Voice Training",
+          "Product",
+          "Capability",
+          "Voice",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-VOICE_TRAINING",
+          "route": "/platform/voice-training/",
+          "category": "Product",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Voice Training",
+            "body": "Understand voice and style training as a controlled feature for developing a more accurate personal model."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the product layer. It explains ICOS, platform capabilities, memory, voice, profile identity, model identity, and continuity."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users, product reviewers, developers, operators, investors, and partners evaluating what the platform does."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand the product capability, its boundary, and the next related product article."
+          },
+          {
+            "type": "section",
+            "title": "Purpose",
+            "body": "Voice training helps a user’s model better reflect their language, tone, expression, and preferred communication style."
+          },
+          {
+            "type": "section",
+            "title": "Source boundary",
+            "body": "Voice and style training should use authorized user-provided sources, consented material, corrections, and approved training inputs."
+          },
+          {
+            "type": "section",
+            "title": "Public boundary",
+            "body": "Voice training must not be described as creating a conscious copy, legal person, or autonomous authority."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "memory-continuity",
+      "route": "/platform/memory-continuity/",
+      "category": "Product",
+      "type": "Capability",
+      "title": "Memory & Continuity",
+      "eyebrow": "Memory",
+      "description": "Understand memory and continuity as the long-term structure behind ICOS and the canonical personal model.",
+      "tabs": [
+        "Overview",
+        "Privacy"
+      ],
+      "recommended": [
+        "posts-and-thought-bank",
+        "model-identity",
+        "privacy"
+      ],
+      "articles": [
+        "posts-and-thought-bank",
+        "model-identity",
+        "one-profile-one-model",
+        "privacy"
+      ],
+      "sections": [
+        {
+          "title": "Memory role",
+          "body": "Memory supports continuity by helping the model retain structured context, user preferences, recurring themes, corrections, and approved source material."
+        },
+        {
+          "title": "User control",
+          "body": "Memory should be governed by user visibility, privacy, deletion, correction, and source-control settings."
+        },
+        {
+          "title": "Boundary",
+          "body": "Memory does not guarantee perfect recall, universal truth, therapy, diagnosis, legal advice, or professional judgment."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Memory & Continuity",
+        "searchDescription": "Understand memory and continuity as the long-term structure behind ICOS and the canonical personal model.",
+        "searchKeywords": [
+          "Memory & Continuity",
+          "Product",
+          "Capability",
+          "Memory",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-MEMORY_CONTINUITY",
+          "route": "/platform/memory-continuity/",
+          "category": "Product",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Memory & Continuity",
+            "body": "Understand memory and continuity as the long-term structure behind ICOS and the canonical personal model."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the product layer. It explains ICOS, platform capabilities, memory, voice, profile identity, model identity, and continuity."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users, product reviewers, developers, operators, investors, and partners evaluating what the platform does."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand the product capability, its boundary, and the next related product article."
+          },
+          {
+            "type": "section",
+            "title": "Memory role",
+            "body": "Memory supports continuity by helping the model retain structured context, user preferences, recurring themes, corrections, and approved source material."
+          },
+          {
+            "type": "section",
+            "title": "User control",
+            "body": "Memory should be governed by user visibility, privacy, deletion, correction, and source-control settings."
+          },
+          {
+            "type": "section",
+            "title": "Boundary",
+            "body": "Memory does not guarantee perfect recall, universal truth, therapy, diagnosis, legal advice, or professional judgment."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "profile-system",
+      "route": "/platform/profile-system/",
+      "category": "Product",
+      "type": "Capability",
+      "title": "Profile System",
+      "eyebrow": "Profile",
+      "description": "Understand the profile as the canonical identity surface for public or private continuity.",
+      "tabs": [
+        "Overview",
+        "Visibility"
+      ],
+      "recommended": [
+        "model-identity",
+        "verification",
+        "plans"
+      ],
+      "articles": [
+        "model-identity",
+        "one-profile-one-model",
+        "verification",
+        "privacy"
+      ],
+      "sections": [
+        {
+          "title": "Profile role",
+          "body": "A profile anchors account identity, public or private visibility, model identity, Posts, verification status, and continuity settings."
+        },
+        {
+          "title": "Visibility",
+          "body": "Profiles may support public and private states. Public surfaces should expose only approved public information."
+        },
+        {
+          "title": "Trust relationship",
+          "body": "Verification, anti-impersonation review, and model identity protection support public profile trust where approved."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Profile System",
+        "searchDescription": "Understand the profile as the canonical identity surface for public or private continuity.",
+        "searchKeywords": [
+          "Profile System",
+          "Product",
+          "Capability",
+          "Profile",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-PROFILE_SYSTEM",
+          "route": "/platform/profile-system/",
+          "category": "Product",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Profile System",
+            "body": "Understand the profile as the canonical identity surface for public or private continuity."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the product layer. It explains ICOS, platform capabilities, memory, voice, profile identity, model identity, and continuity."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users, product reviewers, developers, operators, investors, and partners evaluating what the platform does."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand the product capability, its boundary, and the next related product article."
+          },
+          {
+            "type": "section",
+            "title": "Profile role",
+            "body": "A profile anchors account identity, public or private visibility, model identity, Posts, verification status, and continuity settings."
+          },
+          {
+            "type": "section",
+            "title": "Visibility",
+            "body": "Profiles may support public and private states. Public surfaces should expose only approved public information."
+          },
+          {
+            "type": "section",
+            "title": "Trust relationship",
+            "body": "Verification, anti-impersonation review, and model identity protection support public profile trust where approved."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "posts-and-thought-bank",
+      "route": "/get-started/posts-and-thought-bank/",
+      "category": "Start",
+      "type": "Guide",
+      "title": "Posts and Thought Bank",
+      "eyebrow": "Expression",
+      "description": "Understand the boundary between private thought capture and public expression.",
+      "tabs": [
+        "Overview",
+        "Privacy"
+      ],
+      "recommended": [
+        "memory-continuity",
+        "model-identity",
+        "privacy"
+      ],
+      "articles": [
+        "memory-continuity",
+        "model-identity",
+        "profile-system",
+        "privacy"
+      ],
+      "sections": [
+        {
+          "title": "Thought Bank",
+          "body": "Thought Bank is the private cognitive substrate for capturing ideas, reflections, notes, and internal continuity material."
+        },
+        {
+          "title": "Posts",
+          "body": "Posts are the expression and publishing layer. They are distinct from private thought material and should support visibility controls."
+        },
+        {
+          "title": "Public boundary",
+          "body": "Private Thoughts are not public Posts. Public surfaces must not expose private thought content without explicit user action and approved controls."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Posts and Thought Bank",
+        "searchDescription": "Understand the boundary between private thought capture and public expression.",
+        "searchKeywords": [
+          "Posts and Thought Bank",
+          "Start",
+          "Guide",
+          "Expression",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-POSTS_AND_THOUGHT_BANK",
+          "route": "/get-started/posts-and-thought-bank/",
+          "category": "Start",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Posts and Thought Bank",
+            "body": "Understand the boundary between private thought capture and public expression."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the entry layer of Neuroartan documentation. It explains the foundation of the company, ICOS, public documentation, product boundaries, and first reading path."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "New users, early members, partners, reviewers, support teams, and public readers who need a clear starting point."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand where to begin, what Neuroartan is building, and which documentation path to follow next."
+          },
+          {
+            "type": "section",
+            "title": "Thought Bank",
+            "body": "Thought Bank is the private cognitive substrate for capturing ideas, reflections, notes, and internal continuity material."
+          },
+          {
+            "type": "section",
+            "title": "Posts",
+            "body": "Posts are the expression and publishing layer. They are distinct from private thought material and should support visibility controls."
+          },
+          {
+            "type": "section",
+            "title": "Public boundary",
+            "body": "Private Thoughts are not public Posts. Public surfaces must not expose private thought content without explicit user action and approved controls."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "plans",
+      "route": "/plans/",
+      "category": "Plans",
+      "type": "Plans",
+      "title": "Plans & Subscriptions",
+      "eyebrow": "Plans",
+      "description": "Compare Free, Pro, and Pro Max boundaries, including canonical model depth and verification eligibility.",
+      "tabs": [
+        "Overview",
+        "Comparison"
+      ],
+      "recommended": [
+        "free-plan",
+        "pro-plan",
+        "pro-max-plan"
+      ],
+      "articles": [
+        "free-plan",
+        "pro-plan",
+        "pro-max-plan",
+        "pricing-principles",
+        "verification",
+        "one-profile-one-model"
+      ],
+      "sections": [
+        {
+          "title": "Plan principle",
+          "body": "Every profile receives one canonical personal model. Paid tiers deepen that model rather than creating additional canonical personal models."
+        },
+        {
+          "title": "Verification eligibility",
+          "body": "Verification submission begins at Pro and remains review-based. Pro or Pro Max membership does not guarantee verification approval."
+        },
+        {
+          "title": "Economy boundary",
+          "body": "Marketplace, payouts, hiring, public ranking, inter-model coordination, and posthumous economy remain blocked until review."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Plans & Subscriptions",
+        "searchDescription": "Compare Free, Pro, and Pro Max boundaries, including canonical model depth and verification eligibility.",
+        "searchKeywords": [
+          "Plans & Subscriptions",
+          "Plans",
+          "Plans",
+          "Plans",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-PLANS",
+          "route": "/plans/",
+          "category": "Plans",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Plans & Subscriptions",
+            "body": "Compare Free, Pro, and Pro Max boundaries, including canonical model depth and verification eligibility."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the subscription layer. It explains Free, Pro, Pro Max, verification eligibility, pricing principles, and monetization boundaries."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users comparing plans, reviewers evaluating the business model, and internal teams preparing pricing UX."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand what each tier unlocks, what remains blocked, and what requires review."
+          },
+          {
+            "type": "section",
+            "title": "Plan principle",
+            "body": "Every profile receives one canonical personal model. Paid tiers deepen that model rather than creating additional canonical personal models."
+          },
+          {
+            "type": "section",
+            "title": "Verification eligibility",
+            "body": "Verification submission begins at Pro and remains review-based. Pro or Pro Max membership does not guarantee verification approval."
+          },
+          {
+            "type": "section",
+            "title": "Economy boundary",
+            "body": "Marketplace, payouts, hiring, public ranking, inter-model coordination, and posthumous economy remain blocked until review."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "free-plan",
+      "route": "/plans/free/",
+      "category": "Plans",
+      "type": "Plan",
+      "title": "Free",
+      "eyebrow": "Plan",
+      "description": "Free gives users foundation access to profile creation, one canonical personal model, private Thought Bank, Posts, and basic continuity.",
+      "tabs": [
+        "Included",
+        "Limits"
+      ],
+      "recommended": [
+        "pro-plan",
+        "plans",
+        "verification"
+      ],
+      "articles": [
+        "plans",
+        "pro-plan",
+        "model-identity",
+        "verification"
+      ],
+      "sections": [
+        {
+          "title": "Included",
+          "body": "Free includes account creation, profile creation, one canonical personal model, private Thought Bank, Posts, basic continuity, and standard safety protection."
+        },
+        {
+          "title": "Not included",
+          "body": "Free does not include verification submission, verified badge eligibility, advanced model training, priority review, marketplace activation, payouts, or additional canonical personal models."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Free",
+        "searchDescription": "Free gives users foundation access to profile creation, one canonical personal model, private Thought Bank, Posts, and basic continuity.",
+        "searchKeywords": [
+          "Free",
+          "Plans",
+          "Plan",
+          "Plan",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-FREE_PLAN",
+          "route": "/plans/free/",
+          "category": "Plans",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Free",
+            "body": "Free gives users foundation access to profile creation, one canonical personal model, private Thought Bank, Posts, and basic continuity."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the subscription layer. It explains Free, Pro, Pro Max, verification eligibility, pricing principles, and monetization boundaries."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users comparing plans, reviewers evaluating the business model, and internal teams preparing pricing UX."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand what each tier unlocks, what remains blocked, and what requires review."
+          },
+          {
+            "type": "section",
+            "title": "Included",
+            "body": "Free includes account creation, profile creation, one canonical personal model, private Thought Bank, Posts, basic continuity, and standard safety protection."
+          },
+          {
+            "type": "section",
+            "title": "Not included",
+            "body": "Free does not include verification submission, verified badge eligibility, advanced model training, priority review, marketplace activation, payouts, or additional canonical personal models."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "pro-plan",
+      "route": "/plans/pro/",
+      "category": "Plans",
+      "type": "Plan",
+      "title": "Pro",
+      "eyebrow": "Plan",
+      "description": "Pro is the first paid trust-and-depth tier for deeper model training, verification submission eligibility, and stronger creator controls.",
+      "tabs": [
+        "Included",
+        "Verification"
+      ],
+      "recommended": [
+        "pro-max-plan",
+        "verification",
+        "pricing-principles"
+      ],
+      "articles": [
+        "plans",
+        "verification",
+        "model-identity",
+        "voice-training"
+      ],
+      "sections": [
+        {
+          "title": "Depth",
+          "body": "Pro expands the canonical personal model through deeper memory controls, richer voice and style training, expanded source ingestion, and advanced profile tools."
+        },
+        {
+          "title": "Verification",
+          "body": "Pro unlocks verification submission eligibility. Approval remains review-based and is never guaranteed by payment."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Pro",
+        "searchDescription": "Pro is the first paid trust-and-depth tier for deeper model training, verification submission eligibility, and stronger creator controls.",
+        "searchKeywords": [
+          "Pro",
+          "Plans",
+          "Plan",
+          "Plan",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-PRO_PLAN",
+          "route": "/plans/pro/",
+          "category": "Plans",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Pro",
+            "body": "Pro is the first paid trust-and-depth tier for deeper model training, verification submission eligibility, and stronger creator controls."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the subscription layer. It explains Free, Pro, Pro Max, verification eligibility, pricing principles, and monetization boundaries."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users comparing plans, reviewers evaluating the business model, and internal teams preparing pricing UX."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand what each tier unlocks, what remains blocked, and what requires review."
+          },
+          {
+            "type": "section",
+            "title": "Depth",
+            "body": "Pro expands the canonical personal model through deeper memory controls, richer voice and style training, expanded source ingestion, and advanced profile tools."
+          },
+          {
+            "type": "section",
+            "title": "Verification",
+            "body": "Pro unlocks verification submission eligibility. Approval remains review-based and is never guaranteed by payment."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "pro-max-plan",
+      "route": "/plans/pro-max/",
+      "category": "Plans",
+      "type": "Plan",
+      "title": "Pro Max",
+      "eyebrow": "Plan",
+      "description": "Pro Max is the highest-depth individual continuity tier for advanced model development, premium controls, and priority review pathways where approved.",
+      "tabs": [
+        "Included",
+        "Boundaries"
+      ],
+      "recommended": [
+        "plans",
+        "verification",
+        "appeals"
+      ],
+      "articles": [
+        "plans",
+        "verification",
+        "appeals",
+        "one-profile-one-model"
+      ],
+      "sections": [
+        {
+          "title": "Highest-depth continuity",
+          "body": "Pro Max expands model development, continuity controls, analytics, studio tooling, publishing support, and priority review pathways where approved."
+        },
+        {
+          "title": "Boundary",
+          "body": "Pro Max does not create additional canonical personal models and does not guarantee verification, appeal approval, income, or marketplace access."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Pro Max",
+        "searchDescription": "Pro Max is the highest-depth individual continuity tier for advanced model development, premium controls, and priority review pathways where approved.",
+        "searchKeywords": [
+          "Pro Max",
+          "Plans",
+          "Plan",
+          "Plan",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-PRO_MAX_PLAN",
+          "route": "/plans/pro-max/",
+          "category": "Plans",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Pro Max",
+            "body": "Pro Max is the highest-depth individual continuity tier for advanced model development, premium controls, and priority review pathways where approved."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the subscription layer. It explains Free, Pro, Pro Max, verification eligibility, pricing principles, and monetization boundaries."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users comparing plans, reviewers evaluating the business model, and internal teams preparing pricing UX."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand what each tier unlocks, what remains blocked, and what requires review."
+          },
+          {
+            "type": "section",
+            "title": "Highest-depth continuity",
+            "body": "Pro Max expands model development, continuity controls, analytics, studio tooling, publishing support, and priority review pathways where approved."
+          },
+          {
+            "type": "section",
+            "title": "Boundary",
+            "body": "Pro Max does not create additional canonical personal models and does not guarantee verification, appeal approval, income, or marketplace access."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "pricing-principles",
+      "route": "/plans/pricing-principles/",
+      "category": "Plans",
+      "type": "Policy Direction",
+      "title": "Pricing Principles",
+      "eyebrow": "Pricing",
+      "description": "Understand the commercial logic behind Neuroartan subscriptions before final public pricing is approved.",
+      "tabs": [
+        "Principles",
+        "Boundaries"
+      ],
+      "recommended": [
+        "plans",
+        "pro-plan",
+        "pro-max-plan"
+      ],
+      "articles": [
+        "plans",
+        "verification",
+        "one-profile-one-model"
+      ],
+      "sections": [
+        {
+          "title": "Monetization direction",
+          "body": "Neuroartan should monetize depth, memory quality, training quality, voice/style development, analytics, studio tooling, publishing controls, verification submission, and support depth."
+        },
+        {
+          "title": "Blocked monetization",
+          "body": "The platform should not monetize additional canonical personal models, guaranteed verification, guaranteed income, paid impersonation loopholes, or abuse-risk bypass."
+        },
+        {
+          "title": "Pricing status",
+          "body": "Public price points require separate approval before publication."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Pricing Principles",
+        "searchDescription": "Understand the commercial logic behind Neuroartan subscriptions before final public pricing is approved.",
+        "searchKeywords": [
+          "Pricing Principles",
+          "Plans",
+          "Policy Direction",
+          "Pricing",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-PRICING_PRINCIPLES",
+          "route": "/plans/pricing-principles/",
+          "category": "Plans",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Pricing Principles",
+            "body": "Understand the commercial logic behind Neuroartan subscriptions before final public pricing is approved."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the subscription layer. It explains Free, Pro, Pro Max, verification eligibility, pricing principles, and monetization boundaries."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users comparing plans, reviewers evaluating the business model, and internal teams preparing pricing UX."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand what each tier unlocks, what remains blocked, and what requires review."
+          },
+          {
+            "type": "section",
+            "title": "Monetization direction",
+            "body": "Neuroartan should monetize depth, memory quality, training quality, voice/style development, analytics, studio tooling, publishing controls, verification submission, and support depth."
+          },
+          {
+            "type": "section",
+            "title": "Blocked monetization",
+            "body": "The platform should not monetize additional canonical personal models, guaranteed verification, guaranteed income, paid impersonation loopholes, or abuse-risk bypass."
+          },
+          {
+            "type": "section",
+            "title": "Pricing status",
+            "body": "Public price points require separate approval before publication."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "model-identity",
+      "route": "/model-identity/",
+      "category": "Product",
+      "type": "Model Identity",
+      "title": "Model Identity",
+      "eyebrow": "Model identity",
+      "description": "Understand one profile, one canonical personal model, public and private model identity, and future economy boundaries.",
+      "tabs": [
+        "Overview",
+        "Canonical Model"
+      ],
+      "recommended": [
+        "one-profile-one-model",
+        "plans",
+        "verification"
+      ],
+      "articles": [
+        "one-profile-one-model",
+        "plans",
+        "verification",
+        "device-integrity"
+      ],
+      "sections": [
+        {
+          "title": "Canonical model",
+          "body": "Every profile is designed to have one canonical personal model. Paid tiers deepen the model rather than multiplying it."
+        },
+        {
+          "title": "Public/private identity",
+          "body": "Public model identity may show only approved public information. Private memory, provider routing, verification evidence, and abuse-review records remain private."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Model Identity",
+        "searchDescription": "Understand one profile, one canonical personal model, public and private model identity, and future economy boundaries.",
+        "searchKeywords": [
+          "Model Identity",
+          "Product",
+          "Model Identity",
+          "Model identity",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-MODEL_IDENTITY",
+          "route": "/model-identity/",
+          "category": "Product",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Model Identity",
+            "body": "Understand one profile, one canonical personal model, public and private model identity, and future economy boundaries."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the product layer. It explains ICOS, platform capabilities, memory, voice, profile identity, model identity, and continuity."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users, product reviewers, developers, operators, investors, and partners evaluating what the platform does."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand the product capability, its boundary, and the next related product article."
+          },
+          {
+            "type": "section",
+            "title": "Canonical model",
+            "body": "Every profile is designed to have one canonical personal model. Paid tiers deepen the model rather than multiplying it."
+          },
+          {
+            "type": "section",
+            "title": "Public/private identity",
+            "body": "Public model identity may show only approved public information. Private memory, provider routing, verification evidence, and abuse-review records remain private."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "one-profile-one-model",
+      "route": "/model-identity/one-profile-one-model/",
+      "category": "Product",
+      "type": "Doctrine",
+      "title": "One Profile One Canonical Model",
+      "eyebrow": "Model identity",
+      "description": "The canonical model is the user’s continuity layer. Paid tiers deepen the model; they do not multiply it.",
+      "tabs": [
+        "Doctrine",
+        "Boundaries"
+      ],
+      "recommended": [
+        "plans",
+        "verification",
+        "safety"
+      ],
+      "articles": [
+        "model-identity",
+        "plans",
+        "verification",
+        "device-integrity"
+      ],
+      "sections": [
+        {
+          "title": "One profile / one model",
+          "body": "A user may create one profile and one canonical personal model. No paid tier may create additional canonical personal models under the same profile."
+        },
+        {
+          "title": "Anti-abuse purpose",
+          "body": "This rule reduces duplicate-abuse risk, impersonation risk, bot-factory behavior, public trust manipulation, and misleading model identity creation."
+        },
+        {
+          "title": "Future economy boundary",
+          "body": "Marketplace activation, payouts, hiring, public ranking, inter-model coordination, and posthumous economy remain blocked until review."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "One Profile One Canonical Model",
+        "searchDescription": "The canonical model is the user’s continuity layer. Paid tiers deepen the model; they do not multiply it.",
+        "searchKeywords": [
+          "One Profile One Canonical Model",
+          "Product",
+          "Doctrine",
+          "Model identity",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-ONE_PROFILE_ONE_MODEL",
+          "route": "/model-identity/one-profile-one-model/",
+          "category": "Product",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "One Profile One Canonical Model",
+            "body": "The canonical model is the user’s continuity layer. Paid tiers deepen the model; they do not multiply it."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the product layer. It explains ICOS, platform capabilities, memory, voice, profile identity, model identity, and continuity."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users, product reviewers, developers, operators, investors, and partners evaluating what the platform does."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand the product capability, its boundary, and the next related product article."
+          },
+          {
+            "type": "section",
+            "title": "One profile / one model",
+            "body": "A user may create one profile and one canonical personal model. No paid tier may create additional canonical personal models under the same profile."
+          },
+          {
+            "type": "section",
+            "title": "Anti-abuse purpose",
+            "body": "This rule reduces duplicate-abuse risk, impersonation risk, bot-factory behavior, public trust manipulation, and misleading model identity creation."
+          },
+          {
+            "type": "section",
+            "title": "Future economy boundary",
+            "body": "Marketplace activation, payouts, hiring, public ranking, inter-model coordination, and posthumous economy remain blocked until review."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "verification",
+      "route": "/verification/",
+      "category": "Trust & Safety",
+      "type": "Verification",
+      "title": "Verification",
+      "eyebrow": "Trust",
+      "description": "Understand verification submission, verified badge meaning, identity review, denial, re-review, and appeal boundaries.",
+      "tabs": [
+        "Overview",
+        "Badge",
+        "Appeals"
+      ],
+      "recommended": [
+        "verification-badge",
+        "anti-impersonation",
+        "appeals"
+      ],
+      "articles": [
+        "verification-badge",
+        "anti-impersonation",
+        "device-integrity",
+        "appeals"
+      ],
+      "sections": [
+        {
+          "title": "Verification is review-based",
+          "body": "Verification is not automatic, guaranteed, permanent, transferable, or purchasable as a status symbol."
+        },
+        {
+          "title": "Eligibility",
+          "body": "Verification submission begins at Pro. Free users remain protected by baseline anti-impersonation systems but do not receive verification submission access."
+        },
+        {
+          "title": "Badge limitation",
+          "body": "A verified badge does not guarantee output accuracy, professional authority, endorsement, or immunity from review."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Verification",
+        "searchDescription": "Understand verification submission, verified badge meaning, identity review, denial, re-review, and appeal boundaries.",
+        "searchKeywords": [
+          "Verification",
+          "Trust & Safety",
+          "Verification",
+          "Trust",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-VERIFICATION",
+          "route": "/verification/",
+          "category": "Trust & Safety",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Verification",
+            "body": "Understand verification submission, verified badge meaning, identity review, denial, re-review, and appeal boundaries."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the trust and safety layer. It explains verification, anti-impersonation, abuse prevention, restrictions, review, and appeal boundaries."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users, support teams, reviewers, verified-profile applicants, and public readers concerned with platform trust."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand how Neuroartan protects identity and trust without exposing internal enforcement mechanics."
+          },
+          {
+            "type": "section",
+            "title": "Verification is review-based",
+            "body": "Verification is not automatic, guaranteed, permanent, transferable, or purchasable as a status symbol."
+          },
+          {
+            "type": "section",
+            "title": "Eligibility",
+            "body": "Verification submission begins at Pro. Free users remain protected by baseline anti-impersonation systems but do not receive verification submission access."
+          },
+          {
+            "type": "section",
+            "title": "Badge limitation",
+            "body": "A verified badge does not guarantee output accuracy, professional authority, endorsement, or immunity from review."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "verification-badge",
+      "route": "/verification/badge/",
+      "category": "Trust & Safety",
+      "type": "Verification",
+      "title": "Verification Badge",
+      "eyebrow": "Verification",
+      "description": "Understand what the verified badge means and what it does not mean.",
+      "tabs": [
+        "Badge",
+        "Limits"
+      ],
+      "recommended": [
+        "verification",
+        "appeals",
+        "safety"
+      ],
+      "articles": [
+        "verification",
+        "anti-impersonation",
+        "appeals"
+      ],
+      "sections": [
+        {
+          "title": "Badge meaning",
+          "body": "A verified badge means the profile passed Neuroartan’s verification review process according to the active verification policy."
+        },
+        {
+          "title": "Badge limits",
+          "body": "The badge must not be used as a public reputation score or guarantee of accuracy, authority, endorsement, or permanent trust."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Verification Badge",
+        "searchDescription": "Understand what the verified badge means and what it does not mean.",
+        "searchKeywords": [
+          "Verification Badge",
+          "Trust & Safety",
+          "Verification",
+          "Verification",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-VERIFICATION_BADGE",
+          "route": "/verification/badge/",
+          "category": "Trust & Safety",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Verification Badge",
+            "body": "Understand what the verified badge means and what it does not mean."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the trust and safety layer. It explains verification, anti-impersonation, abuse prevention, restrictions, review, and appeal boundaries."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users, support teams, reviewers, verified-profile applicants, and public readers concerned with platform trust."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand how Neuroartan protects identity and trust without exposing internal enforcement mechanics."
+          },
+          {
+            "type": "section",
+            "title": "Badge meaning",
+            "body": "A verified badge means the profile passed Neuroartan’s verification review process according to the active verification policy."
+          },
+          {
+            "type": "section",
+            "title": "Badge limits",
+            "body": "The badge must not be used as a public reputation score or guarantee of accuracy, authority, endorsement, or permanent trust."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "safety",
+      "route": "/safety/",
+      "category": "Trust & Safety",
+      "type": "Safety",
+      "title": "Safety & Trust",
+      "eyebrow": "Safety",
+      "description": "Learn how Neuroartan frames anti-impersonation, abuse prevention, fraud prevention, model identity protection, and public trust.",
+      "tabs": [
+        "Overview",
+        "Anti-Impersonation",
+        "Abuse Prevention"
+      ],
+      "recommended": [
+        "anti-impersonation",
+        "abuse-prevention",
+        "device-integrity"
+      ],
+      "articles": [
+        "anti-impersonation",
+        "abuse-prevention",
+        "verification",
+        "device-integrity",
+        "appeals"
+      ],
+      "sections": [
+        {
+          "title": "Safety position",
+          "body": "Neuroartan protects profiles, canonical personal models, verification status, Posts, public identity surfaces, and user trust."
+        },
+        {
+          "title": "Public boundary",
+          "body": "Safety documentation may describe protective principles but must not expose internal detection mechanics, evasion-sensitive methods, private evidence, or investigation tooling."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Safety & Trust",
+        "searchDescription": "Learn how Neuroartan frames anti-impersonation, abuse prevention, fraud prevention, model identity protection, and public trust.",
+        "searchKeywords": [
+          "Safety & Trust",
+          "Trust & Safety",
+          "Safety",
+          "Safety",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-SAFETY",
+          "route": "/safety/",
+          "category": "Trust & Safety",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Safety & Trust",
+            "body": "Learn how Neuroartan frames anti-impersonation, abuse prevention, fraud prevention, model identity protection, and public trust."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the trust and safety layer. It explains verification, anti-impersonation, abuse prevention, restrictions, review, and appeal boundaries."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users, support teams, reviewers, verified-profile applicants, and public readers concerned with platform trust."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand how Neuroartan protects identity and trust without exposing internal enforcement mechanics."
+          },
+          {
+            "type": "section",
+            "title": "Safety position",
+            "body": "Neuroartan protects profiles, canonical personal models, verification status, Posts, public identity surfaces, and user trust."
+          },
+          {
+            "type": "section",
+            "title": "Public boundary",
+            "body": "Safety documentation may describe protective principles but must not expose internal detection mechanics, evasion-sensitive methods, private evidence, or investigation tooling."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "anti-impersonation",
+      "route": "/safety/anti-impersonation/",
+      "category": "Trust & Safety",
+      "type": "Safety",
+      "title": "Anti-Impersonation",
+      "eyebrow": "Safety",
+      "description": "Understand Neuroartan’s public anti-impersonation boundary for profiles, verified identities, Posts, and model identity.",
+      "tabs": [
+        "Overview",
+        "Review"
+      ],
+      "recommended": [
+        "verification",
+        "model-identity",
+        "appeals"
+      ],
+      "articles": [
+        "verification",
+        "safety",
+        "model-identity",
+        "appeals"
+      ],
+      "sections": [
+        {
+          "title": "Anti-impersonation protection",
+          "body": "Anti-impersonation systems protect users, verified identities, public profiles, Posts, and canonical model identity."
+        },
+        {
+          "title": "Review boundary",
+          "body": "Anti-impersonation review must remain governed, reviewable, and appeal-aware where appropriate."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Anti-Impersonation",
+        "searchDescription": "Understand Neuroartan’s public anti-impersonation boundary for profiles, verified identities, Posts, and model identity.",
+        "searchKeywords": [
+          "Anti-Impersonation",
+          "Trust & Safety",
+          "Safety",
+          "Safety",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-ANTI_IMPERSONATION",
+          "route": "/safety/anti-impersonation/",
+          "category": "Trust & Safety",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Anti-Impersonation",
+            "body": "Understand Neuroartan’s public anti-impersonation boundary for profiles, verified identities, Posts, and model identity."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the trust and safety layer. It explains verification, anti-impersonation, abuse prevention, restrictions, review, and appeal boundaries."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users, support teams, reviewers, verified-profile applicants, and public readers concerned with platform trust."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand how Neuroartan protects identity and trust without exposing internal enforcement mechanics."
+          },
+          {
+            "type": "section",
+            "title": "Anti-impersonation protection",
+            "body": "Anti-impersonation systems protect users, verified identities, public profiles, Posts, and canonical model identity."
+          },
+          {
+            "type": "section",
+            "title": "Review boundary",
+            "body": "Anti-impersonation review must remain governed, reviewable, and appeal-aware where appropriate."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "abuse-prevention",
+      "route": "/safety/abuse-prevention/",
+      "category": "Trust & Safety",
+      "type": "Safety",
+      "title": "Abuse Prevention",
+      "eyebrow": "Safety",
+      "description": "Understand public abuse-prevention principles without exposing internal review mechanics.",
+      "tabs": [
+        "Overview",
+        "Boundaries"
+      ],
+      "recommended": [
+        "anti-impersonation",
+        "device-integrity",
+        "appeals"
+      ],
+      "articles": [
+        "anti-impersonation",
+        "device-integrity",
+        "verification",
+        "appeals"
+      ],
+      "sections": [
+        {
+          "title": "Abuse categories",
+          "body": "Public documentation may describe duplicate-abuse, model-slot abuse, fraud, scam activity, impersonation, verification misuse, automation abuse, and evasion attempts at a high level."
+        },
+        {
+          "title": "Sensitive mechanics",
+          "body": "Public documentation must not disclose detection rules, thresholds, private evidence, reporter identity, or evasion-sensitive mechanics."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Abuse Prevention",
+        "searchDescription": "Understand public abuse-prevention principles without exposing internal review mechanics.",
+        "searchKeywords": [
+          "Abuse Prevention",
+          "Trust & Safety",
+          "Safety",
+          "Safety",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-ABUSE_PREVENTION",
+          "route": "/safety/abuse-prevention/",
+          "category": "Trust & Safety",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Abuse Prevention",
+            "body": "Understand public abuse-prevention principles without exposing internal review mechanics."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the trust and safety layer. It explains verification, anti-impersonation, abuse prevention, restrictions, review, and appeal boundaries."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users, support teams, reviewers, verified-profile applicants, and public readers concerned with platform trust."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand how Neuroartan protects identity and trust without exposing internal enforcement mechanics."
+          },
+          {
+            "type": "section",
+            "title": "Abuse categories",
+            "body": "Public documentation may describe duplicate-abuse, model-slot abuse, fraud, scam activity, impersonation, verification misuse, automation abuse, and evasion attempts at a high level."
+          },
+          {
+            "type": "section",
+            "title": "Sensitive mechanics",
+            "body": "Public documentation must not disclose detection rules, thresholds, private evidence, reporter identity, or evasion-sensitive mechanics."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "privacy",
+      "route": "/privacy/",
+      "category": "Privacy & Legal",
+      "type": "Privacy",
+      "title": "Privacy",
+      "eyebrow": "Privacy",
+      "description": "Review the public privacy boundary for documentation, verification, device integrity, memory, profile identity, and model continuity.",
+      "tabs": [
+        "Overview",
+        "Policy",
+        "Device Integrity"
+      ],
+      "recommended": [
+        "privacy-policy",
+        "device-integrity",
+        "data-retention"
+      ],
+      "articles": [
+        "privacy-policy",
+        "device-integrity",
+        "data-retention",
+        "verification",
+        "appeals"
+      ],
+      "sections": [
+        {
+          "title": "Privacy-first documentation",
+          "body": "Public documentation must explain privacy boundaries without exposing internal records, private evidence, restricted governance logic, or sensitive implementation details."
+        },
+        {
+          "title": "Private source protection",
+          "body": "Private memory, Thought Bank entries, verification evidence, identity documents, device-risk records, and abuse-review material must not be exposed in public documentation."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Privacy",
+        "searchDescription": "Review the public privacy boundary for documentation, verification, device integrity, memory, profile identity, and model continuity.",
+        "searchKeywords": [
+          "Privacy",
+          "Privacy & Legal",
+          "Privacy",
+          "Privacy",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-PRIVACY",
+          "route": "/privacy/",
+          "category": "Privacy & Legal",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Privacy",
+            "body": "Review the public privacy boundary for documentation, verification, device integrity, memory, profile identity, and model continuity."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the privacy and legal direction layer. It explains privacy, device integrity, data retention, terms direction, and legal review boundaries."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users, reviewers, legal counsel, privacy reviewers, developers, and support teams."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand the public privacy direction while recognizing that final legal language requires review."
+          },
+          {
+            "type": "section",
+            "title": "Privacy-first documentation",
+            "body": "Public documentation must explain privacy boundaries without exposing internal records, private evidence, restricted governance logic, or sensitive implementation details."
+          },
+          {
+            "type": "section",
+            "title": "Private source protection",
+            "body": "Private memory, Thought Bank entries, verification evidence, identity documents, device-risk records, and abuse-review material must not be exposed in public documentation."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "privacy-policy",
+      "route": "/privacy/policy/",
+      "category": "Privacy & Legal",
+      "type": "Policy Direction",
+      "title": "Privacy Policy Direction",
+      "eyebrow": "Privacy",
+      "description": "Understand the public policy direction for privacy, memory, verification, device integrity, and user controls before final legal approval.",
+      "tabs": [
+        "Direction",
+        "Controls"
+      ],
+      "recommended": [
+        "device-integrity",
+        "data-retention",
+        "verification"
+      ],
+      "articles": [
+        "privacy",
+        "device-integrity",
+        "data-retention",
+        "verification"
+      ],
+      "sections": [
+        {
+          "title": "Policy direction",
+          "body": "Privacy policy language should explain what data may be used for profile identity, model continuity, verification, safety, security, and user-requested functionality."
+        },
+        {
+          "title": "User controls",
+          "body": "Public privacy documentation should explain visibility, correction, deletion, retention, source authorization, and appeal pathways where applicable."
+        },
+        {
+          "title": "Review status",
+          "body": "Final privacy policy language requires legal, governance, privacy, and security review before public release."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Privacy Policy Direction",
+        "searchDescription": "Understand the public policy direction for privacy, memory, verification, device integrity, and user controls before final legal approval.",
+        "searchKeywords": [
+          "Privacy Policy Direction",
+          "Privacy & Legal",
+          "Policy Direction",
+          "Privacy",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-PRIVACY_POLICY",
+          "route": "/privacy/policy/",
+          "category": "Privacy & Legal",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Privacy Policy Direction",
+            "body": "Understand the public policy direction for privacy, memory, verification, device integrity, and user controls before final legal approval."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the privacy and legal direction layer. It explains privacy, device integrity, data retention, terms direction, and legal review boundaries."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users, reviewers, legal counsel, privacy reviewers, developers, and support teams."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand the public privacy direction while recognizing that final legal language requires review."
+          },
+          {
+            "type": "section",
+            "title": "Policy direction",
+            "body": "Privacy policy language should explain what data may be used for profile identity, model continuity, verification, safety, security, and user-requested functionality."
+          },
+          {
+            "type": "section",
+            "title": "User controls",
+            "body": "Public privacy documentation should explain visibility, correction, deletion, retention, source authorization, and appeal pathways where applicable."
+          },
+          {
+            "type": "section",
+            "title": "Review status",
+            "body": "Final privacy policy language requires legal, governance, privacy, and security review before public release."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "device-integrity",
+      "route": "/privacy/device-integrity/",
+      "category": "Privacy & Legal",
+      "type": "Privacy",
+      "title": "Device Integrity",
+      "eyebrow": "Privacy",
+      "description": "Understand privacy-preserving device integrity signals for account integrity, anti-abuse, verification protection, and model identity protection.",
+      "tabs": [
+        "Overview",
+        "Limits"
+      ],
+      "recommended": [
+        "privacy",
+        "safety",
+        "appeals"
+      ],
+      "articles": [
+        "privacy",
+        "safety",
+        "anti-impersonation",
+        "appeals"
+      ],
+      "sections": [
+        {
+          "title": "Security-only signal",
+          "body": "Device integrity signals are security signals. Raw physical device serial-number collection remains prohibited."
+        },
+        {
+          "title": "Prohibited uses",
+          "body": "Device integrity signals must not be used for advertising, marketing, behavioral personalization, unrelated tracking, public scoring, or public reputation ranking."
+        },
+        {
+          "title": "Review boundary",
+          "body": "Device integrity may support review, but severe restrictions should include review and appeal where legally and operationally appropriate."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Device Integrity",
+        "searchDescription": "Understand privacy-preserving device integrity signals for account integrity, anti-abuse, verification protection, and model identity protection.",
+        "searchKeywords": [
+          "Device Integrity",
+          "Privacy & Legal",
+          "Privacy",
+          "Privacy",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-DEVICE_INTEGRITY",
+          "route": "/privacy/device-integrity/",
+          "category": "Privacy & Legal",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Device Integrity",
+            "body": "Understand privacy-preserving device integrity signals for account integrity, anti-abuse, verification protection, and model identity protection."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the privacy and legal direction layer. It explains privacy, device integrity, data retention, terms direction, and legal review boundaries."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users, reviewers, legal counsel, privacy reviewers, developers, and support teams."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand the public privacy direction while recognizing that final legal language requires review."
+          },
+          {
+            "type": "section",
+            "title": "Security-only signal",
+            "body": "Device integrity signals are security signals. Raw physical device serial-number collection remains prohibited."
+          },
+          {
+            "type": "section",
+            "title": "Prohibited uses",
+            "body": "Device integrity signals must not be used for advertising, marketing, behavioral personalization, unrelated tracking, public scoring, or public reputation ranking."
+          },
+          {
+            "type": "section",
+            "title": "Review boundary",
+            "body": "Device integrity may support review, but severe restrictions should include review and appeal where legally and operationally appropriate."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "data-retention",
+      "route": "/privacy/data-retention/",
+      "category": "Privacy & Legal",
+      "type": "Policy Direction",
+      "title": "Data Retention",
+      "eyebrow": "Privacy",
+      "description": "Understand the public retention direction for verification evidence, memory, device integrity signals, and abuse-review records before final approval.",
+      "tabs": [
+        "Overview",
+        "Review"
+      ],
+      "recommended": [
+        "privacy-policy",
+        "verification",
+        "device-integrity"
+      ],
+      "articles": [
+        "privacy",
+        "verification",
+        "device-integrity",
+        "appeals"
+      ],
+      "sections": [
+        {
+          "title": "Retention direction",
+          "body": "Retention should be purpose-bound, access-controlled, time-limited where appropriate, and tied to product, privacy, legal, security, or abuse-prevention needs."
+        },
+        {
+          "title": "Sensitive categories",
+          "body": "Verification evidence, identity documents, device integrity signals, and abuse-review records require explicit policy review before public retention language is finalized."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Data Retention",
+        "searchDescription": "Understand the public retention direction for verification evidence, memory, device integrity signals, and abuse-review records before final approval.",
+        "searchKeywords": [
+          "Data Retention",
+          "Privacy & Legal",
+          "Policy Direction",
+          "Privacy",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-DATA_RETENTION",
+          "route": "/privacy/data-retention/",
+          "category": "Privacy & Legal",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Data Retention",
+            "body": "Understand the public retention direction for verification evidence, memory, device integrity signals, and abuse-review records before final approval."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the privacy and legal direction layer. It explains privacy, device integrity, data retention, terms direction, and legal review boundaries."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users, reviewers, legal counsel, privacy reviewers, developers, and support teams."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand the public privacy direction while recognizing that final legal language requires review."
+          },
+          {
+            "type": "section",
+            "title": "Retention direction",
+            "body": "Retention should be purpose-bound, access-controlled, time-limited where appropriate, and tied to product, privacy, legal, security, or abuse-prevention needs."
+          },
+          {
+            "type": "section",
+            "title": "Sensitive categories",
+            "body": "Verification evidence, identity documents, device integrity signals, and abuse-review records require explicit policy review before public retention language is finalized."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "terms-direction",
+      "route": "/legal/terms-direction/",
+      "category": "Privacy & Legal",
+      "type": "Legal Direction",
+      "title": "Terms Direction",
+      "eyebrow": "Legal",
+      "description": "Understand the terms-of-use direction for accounts, profiles, models, Posts, verification, safety, and subscription boundaries before final legal approval.",
+      "tabs": [
+        "Direction",
+        "Boundaries"
+      ],
+      "recommended": [
+        "privacy-policy",
+        "plans",
+        "verification"
+      ],
+      "articles": [
+        "plans",
+        "verification",
+        "safety",
+        "appeals"
+      ],
+      "sections": [
+        {
+          "title": "Terms direction",
+          "body": "Terms should define account use, profile identity, model identity, Posts, verification, subscriptions, safety restrictions, appeals, and prohibited behavior."
+        },
+        {
+          "title": "Public status",
+          "body": "Final terms language requires legal and governance review before public release."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Terms Direction",
+        "searchDescription": "Understand the terms-of-use direction for accounts, profiles, models, Posts, verification, safety, and subscription boundaries before final legal approval.",
+        "searchKeywords": [
+          "Terms Direction",
+          "Privacy & Legal",
+          "Legal Direction",
+          "Legal",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-TERMS_DIRECTION",
+          "route": "/legal/terms-direction/",
+          "category": "Privacy & Legal",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Terms Direction",
+            "body": "Understand the terms-of-use direction for accounts, profiles, models, Posts, verification, safety, and subscription boundaries before final legal approval."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the privacy and legal direction layer. It explains privacy, device integrity, data retention, terms direction, and legal review boundaries."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users, reviewers, legal counsel, privacy reviewers, developers, and support teams."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand the public privacy direction while recognizing that final legal language requires review."
+          },
+          {
+            "type": "section",
+            "title": "Terms direction",
+            "body": "Terms should define account use, profile identity, model identity, Posts, verification, subscriptions, safety restrictions, appeals, and prohibited behavior."
+          },
+          {
+            "type": "section",
+            "title": "Public status",
+            "body": "Final terms language requires legal and governance review before public release."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "appeals",
+      "route": "/appeals/",
+      "category": "Trust & Safety",
+      "type": "Appeals",
+      "title": "Appeals & Restrictions",
+      "eyebrow": "Review",
+      "description": "Understand review, appeal, restriction, re-verification, and user-notice boundaries.",
+      "tabs": [
+        "Overview",
+        "Appeals"
+      ],
+      "recommended": [
+        "verification",
+        "safety",
+        "device-integrity"
+      ],
+      "articles": [
+        "verification",
+        "safety",
+        "device-integrity",
+        "anti-impersonation"
+      ],
+      "sections": [
+        {
+          "title": "Appeal principle",
+          "body": "Restrictions should be proportional, reviewable, and appeal-aware where legally and operationally appropriate."
+        },
+        {
+          "title": "Non-guarantee",
+          "body": "Appeal access does not guarantee reversal. Paid status must not bypass safety, verification, privacy, or anti-abuse review."
+        },
+        {
+          "title": "Notice boundary",
+          "body": "Public notice should explain the affected feature, general reason category, appeal availability, and next step without exposing internal evidence or detection logic."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Appeals & Restrictions",
+        "searchDescription": "Understand review, appeal, restriction, re-verification, and user-notice boundaries.",
+        "searchKeywords": [
+          "Appeals & Restrictions",
+          "Trust & Safety",
+          "Appeals",
+          "Review",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-APPEALS",
+          "route": "/appeals/",
+          "category": "Trust & Safety",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Appeals & Restrictions",
+            "body": "Understand review, appeal, restriction, re-verification, and user-notice boundaries."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the trust and safety layer. It explains verification, anti-impersonation, abuse prevention, restrictions, review, and appeal boundaries."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Users, support teams, reviewers, verified-profile applicants, and public readers concerned with platform trust."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand how Neuroartan protects identity and trust without exposing internal enforcement mechanics."
+          },
+          {
+            "type": "section",
+            "title": "Appeal principle",
+            "body": "Restrictions should be proportional, reviewable, and appeal-aware where legally and operationally appropriate."
+          },
+          {
+            "type": "section",
+            "title": "Non-guarantee",
+            "body": "Appeal access does not guarantee reversal. Paid status must not bypass safety, verification, privacy, or anti-abuse review."
+          },
+          {
+            "type": "section",
+            "title": "Notice boundary",
+            "body": "Public notice should explain the affected feature, general reason category, appeal availability, and next step without exposing internal evidence or detection logic."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "developers",
+      "route": "/developers/",
+      "category": "Developers",
+      "type": "Developer Documentation",
+      "title": "Developers",
+      "eyebrow": "Developers",
+      "description": "Understand Neuroartan’s developer direction for connectors, APIs, security, OAuth, and future controlled integrations.",
+      "tabs": [
+        "Overview",
+        "Security",
+        "Connectors"
+      ],
+      "recommended": [
+        "oauth-connectors",
+        "api-integration",
+        "security-requirements"
+      ],
+      "articles": [
+        "oauth-connectors",
+        "api-integration",
+        "security-requirements",
+        "privacy",
+        "device-integrity"
+      ],
+      "sections": [
+        {
+          "title": "Developer direction",
+          "body": "Developer documentation should explain approved integration surfaces, connector architecture, API direction, OAuth boundaries, security controls, and implementation status without exposing credentials or private implementation details."
+        },
+        {
+          "title": "Current status",
+          "body": "Developer and API documentation remains directional until production infrastructure, authentication, provider configuration, and security review are complete."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Developers",
+        "searchDescription": "Understand Neuroartan’s developer direction for connectors, APIs, security, OAuth, and future controlled integrations.",
+        "searchKeywords": [
+          "Developers",
+          "Developers",
+          "Developer Documentation",
+          "Developers",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-DEVELOPERS",
+          "route": "/developers/",
+          "category": "Developers",
+          "issueSearchable": true
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Developers",
+            "body": "Understand Neuroartan’s developer direction for connectors, APIs, security, OAuth, and future controlled integrations."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the developer layer. It explains integration direction, API boundaries, OAuth, security requirements, CLI, troubleshooting, error references, and release documentation."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Developers, support engineers, technical partners, operators, and future platform integrators."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand how technical documentation is structured for searchability, support, diagnostics, and public-safe implementation guidance."
+          },
+          {
+            "type": "section",
+            "title": "Developer direction",
+            "body": "Developer documentation should explain approved integration surfaces, connector architecture, API direction, OAuth boundaries, security controls, and implementation status without exposing credentials or private implementation details."
+          },
+          {
+            "type": "section",
+            "title": "Current status",
+            "body": "Developer and API documentation remains directional until production infrastructure, authentication, provider configuration, and security review are complete."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "oauth-connectors",
+      "route": "/developers/oauth-connectors/",
+      "category": "Developers",
+      "type": "Integration",
+      "title": "OAuth Connectors",
+      "eyebrow": "Connectors",
+      "description": "Understand the public connector direction for trusted external integrations such as GitHub, Slack, Notion, Google, and other approved services.",
+      "tabs": [
+        "Overview",
+        "Security"
+      ],
+      "recommended": [
+        "api-integration",
+        "security-requirements",
+        "privacy"
+      ],
+      "articles": [
+        "developers",
+        "api-integration",
+        "security-requirements",
+        "privacy"
+      ],
+      "sections": [
+        {
+          "title": "Connector purpose",
+          "body": "Connectors allow authorized external services to support a user’s workflow, memory, profile, or product experience where approved."
+        },
+        {
+          "title": "Security boundary",
+          "body": "OAuth integrations require provider setup, redirect control, PKCE where appropriate, state validation, token storage protections, refresh handling, revocation, and production security review."
+        },
+        {
+          "title": "Public boundary",
+          "body": "Public connector documentation must not expose client secrets, private tokens, environment variables, internal endpoint secrets, or provider credentials."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "OAuth Connectors",
+        "searchDescription": "Understand the public connector direction for trusted external integrations such as GitHub, Slack, Notion, Google, and other approved services.",
+        "searchKeywords": [
+          "OAuth Connectors",
+          "Developers",
+          "Integration",
+          "Connectors",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-OAUTH_CONNECTORS",
+          "route": "/developers/oauth-connectors/",
+          "category": "Developers",
+          "issueSearchable": true
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "OAuth Connectors",
+            "body": "Understand the public connector direction for trusted external integrations such as GitHub, Slack, Notion, Google, and other approved services."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the developer layer. It explains integration direction, API boundaries, OAuth, security requirements, CLI, troubleshooting, error references, and release documentation."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Developers, support engineers, technical partners, operators, and future platform integrators."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand how technical documentation is structured for searchability, support, diagnostics, and public-safe implementation guidance."
+          },
+          {
+            "type": "section",
+            "title": "Connector purpose",
+            "body": "Connectors allow authorized external services to support a user’s workflow, memory, profile, or product experience where approved."
+          },
+          {
+            "type": "section",
+            "title": "Security boundary",
+            "body": "OAuth integrations require provider setup, redirect control, PKCE where appropriate, state validation, token storage protections, refresh handling, revocation, and production security review."
+          },
+          {
+            "type": "section",
+            "title": "Public boundary",
+            "body": "Public connector documentation must not expose client secrets, private tokens, environment variables, internal endpoint secrets, or provider credentials."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "api-integration",
+      "route": "/developers/api-integration/",
+      "category": "Developers",
+      "type": "API Direction",
+      "title": "API Integration",
+      "eyebrow": "API",
+      "description": "Understand the public API direction for future Neuroartan integrations and controlled platform access.",
+      "tabs": [
+        "Overview",
+        "Boundaries"
+      ],
+      "recommended": [
+        "developers",
+        "oauth-connectors",
+        "security-requirements"
+      ],
+      "articles": [
+        "developers",
+        "oauth-connectors",
+        "security-requirements",
+        "privacy"
+      ],
+      "sections": [
+        {
+          "title": "API direction",
+          "body": "API documentation should support controlled integration with authentication, authorization, rate limits, privacy boundaries, and governance-aware access."
+        },
+        {
+          "title": "Server boundary",
+          "body": "Sensitive API operations, subscription handling, OAuth callbacks, webhook processing, and secret-bearing actions must live on trusted server infrastructure."
+        },
+        {
+          "title": "Public status",
+          "body": "Public API documentation should remain directional until endpoints, authentication, schemas, rate limits, and security review are approved."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "API Integration",
+        "searchDescription": "Understand the public API direction for future Neuroartan integrations and controlled platform access.",
+        "searchKeywords": [
+          "API Integration",
+          "Developers",
+          "API Direction",
+          "API",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-API_INTEGRATION",
+          "route": "/developers/api-integration/",
+          "category": "Developers",
+          "issueSearchable": true
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "API Integration",
+            "body": "Understand the public API direction for future Neuroartan integrations and controlled platform access."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the developer layer. It explains integration direction, API boundaries, OAuth, security requirements, CLI, troubleshooting, error references, and release documentation."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Developers, support engineers, technical partners, operators, and future platform integrators."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand how technical documentation is structured for searchability, support, diagnostics, and public-safe implementation guidance."
+          },
+          {
+            "type": "section",
+            "title": "API direction",
+            "body": "API documentation should support controlled integration with authentication, authorization, rate limits, privacy boundaries, and governance-aware access."
+          },
+          {
+            "type": "section",
+            "title": "Server boundary",
+            "body": "Sensitive API operations, subscription handling, OAuth callbacks, webhook processing, and secret-bearing actions must live on trusted server infrastructure."
+          },
+          {
+            "type": "section",
+            "title": "Public status",
+            "body": "Public API documentation should remain directional until endpoints, authentication, schemas, rate limits, and security review are approved."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "security-requirements",
+      "route": "/developers/security-requirements/",
+      "category": "Developers",
+      "type": "Security",
+      "title": "Security Requirements",
+      "eyebrow": "Security",
+      "description": "Understand the public security direction for connectors, APIs, billing, identity, verification, and device integrity.",
+      "tabs": [
+        "Overview",
+        "Requirements"
+      ],
+      "recommended": [
+        "privacy",
+        "device-integrity",
+        "oauth-connectors"
+      ],
+      "articles": [
+        "privacy",
+        "device-integrity",
+        "oauth-connectors",
+        "api-integration"
+      ],
+      "sections": [
+        {
+          "title": "Security posture",
+          "body": "Security documentation should emphasize least privilege, secret protection, server-side handling for sensitive operations, token revocation, auditability, and review-gated release."
+        },
+        {
+          "title": "No public secrets",
+          "body": "Public documentation must not expose secrets, private keys, environment variables, credentials, internal evidence, or evasion-sensitive security logic."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Security Requirements",
+        "searchDescription": "Understand the public security direction for connectors, APIs, billing, identity, verification, and device integrity.",
+        "searchKeywords": [
+          "Security Requirements",
+          "Developers",
+          "Security",
+          "Security",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-SECURITY_REQUIREMENTS",
+          "route": "/developers/security-requirements/",
+          "category": "Developers",
+          "issueSearchable": true
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Security Requirements",
+            "body": "Understand the public security direction for connectors, APIs, billing, identity, verification, and device integrity."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the developer layer. It explains integration direction, API boundaries, OAuth, security requirements, CLI, troubleshooting, error references, and release documentation."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Developers, support engineers, technical partners, operators, and future platform integrators."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand how technical documentation is structured for searchability, support, diagnostics, and public-safe implementation guidance."
+          },
+          {
+            "type": "section",
+            "title": "Security posture",
+            "body": "Security documentation should emphasize least privilege, secret protection, server-side handling for sensitive operations, token revocation, auditability, and review-gated release."
+          },
+          {
+            "type": "section",
+            "title": "No public secrets",
+            "body": "Public documentation must not expose secrets, private keys, environment variables, credentials, internal evidence, or evasion-sensitive security logic."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "investors",
+      "route": "/company/investors/",
+      "category": "Company",
+      "type": "Investor Relations",
+      "title": "Investors",
+      "eyebrow": "Investor relations",
+      "description": "Understand the public investor-facing direction for Neuroartan as a product infrastructure company building ICOS.",
+      "tabs": [
+        "Overview",
+        "Market",
+        "Governance"
+      ],
+      "recommended": [
+        "what-is-neuroartan",
+        "what-is-icos",
+        "platform"
+      ],
+      "articles": [
+        "what-is-neuroartan",
+        "what-is-icos",
+        "platform",
+        "plans",
+        "privacy"
+      ],
+      "sections": [
+        {
+          "title": "Investor position",
+          "body": "Neuroartan is positioned as a product infrastructure company building governed cognitive software, profile continuity, personal model identity, and trust systems."
+        },
+        {
+          "title": "Commercial model",
+          "body": "The first commercial direction is subscription-based depth, memory quality, training quality, verification submission, analytics, studio tools, publishing controls, and support depth."
+        },
+        {
+          "title": "Governance boundary",
+          "body": "Claims around marketplace, economy, payouts, hiring, inter-model coordination, and posthumous economy remain blocked until legal, governance, privacy, security, and product review."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Investors",
+        "searchDescription": "Understand the public investor-facing direction for Neuroartan as a product infrastructure company building ICOS.",
+        "searchKeywords": [
+          "Investors",
+          "Company",
+          "Investor Relations",
+          "Investor relations",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-INVESTORS",
+          "route": "/company/investors/",
+          "category": "Company",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Investors",
+            "body": "Understand the public investor-facing direction for Neuroartan as a product infrastructure company building ICOS."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the company layer. It explains investor relations, careers, public relations, and knowledge and research communication."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Investors, candidates, partners, media, researchers, and public readers."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand the company direction without unsupported claims, theatrical language, or private strategic leakage."
+          },
+          {
+            "type": "section",
+            "title": "Investor position",
+            "body": "Neuroartan is positioned as a product infrastructure company building governed cognitive software, profile continuity, personal model identity, and trust systems."
+          },
+          {
+            "type": "section",
+            "title": "Commercial model",
+            "body": "The first commercial direction is subscription-based depth, memory quality, training quality, verification submission, analytics, studio tools, publishing controls, and support depth."
+          },
+          {
+            "type": "section",
+            "title": "Governance boundary",
+            "body": "Claims around marketplace, economy, payouts, hiring, inter-model coordination, and posthumous economy remain blocked until legal, governance, privacy, security, and product review."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "careers",
+      "route": "/company/careers/",
+      "category": "Company",
+      "type": "Careers",
+      "title": "Careers",
+      "eyebrow": "Careers",
+      "description": "Understand the public hiring direction for Neuroartan and the kind of builders the company needs.",
+      "tabs": [
+        "Overview",
+        "Roles"
+      ],
+      "recommended": [
+        "developers",
+        "platform",
+        "research"
+      ],
+      "articles": [
+        "developers",
+        "platform",
+        "security-requirements",
+        "research"
+      ],
+      "sections": [
+        {
+          "title": "Hiring direction",
+          "body": "Neuroartan requires builders who can work with product architecture, software systems, design systems, privacy, security, infrastructure, research, and operational discipline."
+        },
+        {
+          "title": "Role areas",
+          "body": "Future opportunities may include software engineering, product design, design systems, security, infrastructure, AI systems, documentation, research, operations, legal, finance, and communications."
+        },
+        {
+          "title": "Standard",
+          "body": "Public careers language should remain precise, serious, and product-aligned without theatrical recruiting claims."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Careers",
+        "searchDescription": "Understand the public hiring direction for Neuroartan and the kind of builders the company needs.",
+        "searchKeywords": [
+          "Careers",
+          "Company",
+          "Careers",
+          "Careers",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-CAREERS",
+          "route": "/company/careers/",
+          "category": "Company",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Careers",
+            "body": "Understand the public hiring direction for Neuroartan and the kind of builders the company needs."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the company layer. It explains investor relations, careers, public relations, and knowledge and research communication."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Investors, candidates, partners, media, researchers, and public readers."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand the company direction without unsupported claims, theatrical language, or private strategic leakage."
+          },
+          {
+            "type": "section",
+            "title": "Hiring direction",
+            "body": "Neuroartan requires builders who can work with product architecture, software systems, design systems, privacy, security, infrastructure, research, and operational discipline."
+          },
+          {
+            "type": "section",
+            "title": "Role areas",
+            "body": "Future opportunities may include software engineering, product design, design systems, security, infrastructure, AI systems, documentation, research, operations, legal, finance, and communications."
+          },
+          {
+            "type": "section",
+            "title": "Standard",
+            "body": "Public careers language should remain precise, serious, and product-aligned without theatrical recruiting claims."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "public-relations",
+      "route": "/company/public-relations/",
+      "category": "Company",
+      "type": "Public Relations",
+      "title": "Public Relations",
+      "eyebrow": "Public relations",
+      "description": "Understand the public communication direction for Neuroartan, ICOS, product claims, trust, and release boundaries.",
+      "tabs": [
+        "Overview",
+        "Claims"
+      ],
+      "recommended": [
+        "what-is-neuroartan",
+        "what-is-icos",
+        "privacy"
+      ],
+      "articles": [
+        "what-is-neuroartan",
+        "what-is-icos",
+        "platform",
+        "safety",
+        "privacy"
+      ],
+      "sections": [
+        {
+          "title": "Communication standard",
+          "body": "Public communication must be clear, product-grounded, commercially coherent, and conservative around claims that involve intelligence, memory, identity, verification, safety, privacy, and future economy."
+        },
+        {
+          "title": "Claim boundary",
+          "body": "Neuroartan should avoid therapy claims, medical claims, legal advice claims, consciousness claims, guaranteed outcomes, guaranteed verification, guaranteed income, or guaranteed safety."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Public Relations",
+        "searchDescription": "Understand the public communication direction for Neuroartan, ICOS, product claims, trust, and release boundaries.",
+        "searchKeywords": [
+          "Public Relations",
+          "Company",
+          "Public Relations",
+          "Public relations",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-PUBLIC_RELATIONS",
+          "route": "/company/public-relations/",
+          "category": "Company",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Public Relations",
+            "body": "Understand the public communication direction for Neuroartan, ICOS, product claims, trust, and release boundaries."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the company layer. It explains investor relations, careers, public relations, and knowledge and research communication."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Investors, candidates, partners, media, researchers, and public readers."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand the company direction without unsupported claims, theatrical language, or private strategic leakage."
+          },
+          {
+            "type": "section",
+            "title": "Communication standard",
+            "body": "Public communication must be clear, product-grounded, commercially coherent, and conservative around claims that involve intelligence, memory, identity, verification, safety, privacy, and future economy."
+          },
+          {
+            "type": "section",
+            "title": "Claim boundary",
+            "body": "Neuroartan should avoid therapy claims, medical claims, legal advice claims, consciousness claims, guaranteed outcomes, guaranteed verification, guaranteed income, or guaranteed safety."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "research",
+      "route": "/company/research/",
+      "category": "Company",
+      "type": "Knowledge & Research",
+      "title": "Knowledge & Research",
+      "eyebrow": "Research",
+      "description": "Understand the knowledge and research direction behind Neuroartan’s product language and cognitive infrastructure.",
+      "tabs": [
+        "Overview",
+        "Boundaries"
+      ],
+      "recommended": [
+        "what-is-icos",
+        "memory-continuity",
+        "public-relations"
+      ],
+      "articles": [
+        "what-is-icos",
+        "memory-continuity",
+        "voice-training",
+        "public-relations"
+      ],
+      "sections": [
+        {
+          "title": "Research direction",
+          "body": "Neuroartan may draw on public scientific language around memory, attention, metacognition, executive function, learning, reflection, and behavior change while avoiding clinical or medical claims."
+        },
+        {
+          "title": "Scientific boundary",
+          "body": "Research communication should be evidence-aligned, non-therapeutic, and careful not to present product behavior as diagnosis, treatment, or scientific proof of consciousness."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Knowledge & Research",
+        "searchDescription": "Understand the knowledge and research direction behind Neuroartan’s product language and cognitive infrastructure.",
+        "searchKeywords": [
+          "Knowledge & Research",
+          "Company",
+          "Knowledge & Research",
+          "Research",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-RESEARCH",
+          "route": "/company/research/",
+          "category": "Company",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Knowledge & Research",
+            "body": "Understand the knowledge and research direction behind Neuroartan’s product language and cognitive infrastructure."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the company layer. It explains investor relations, careers, public relations, and knowledge and research communication."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Investors, candidates, partners, media, researchers, and public readers."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand the company direction without unsupported claims, theatrical language, or private strategic leakage."
+          },
+          {
+            "type": "section",
+            "title": "Research direction",
+            "body": "Neuroartan may draw on public scientific language around memory, attention, metacognition, executive function, learning, reflection, and behavior change while avoiding clinical or medical claims."
+          },
+          {
+            "type": "section",
+            "title": "Scientific boundary",
+            "body": "Research communication should be evidence-aligned, non-therapeutic, and careful not to present product behavior as diagnosis, treatment, or scientific proof of consciousness."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "public-documentation",
+      "route": "/get-started/public-documentation/",
+      "category": "Start",
+      "type": "Guide",
+      "title": "Public Documentation Policy",
+      "eyebrow": "Documentation",
+      "description": "Understand how public documentation is reviewed before release.",
+      "tabs": [
+        "Overview",
+        "Review"
+      ],
+      "recommended": [
+        "privacy",
+        "safety",
+        "verification"
+      ],
+      "articles": [
+        "privacy",
+        "safety",
+        "verification",
+        "public-relations"
+      ],
+      "sections": [
+        {
+          "title": "Review-gated release",
+          "body": "Sensitive verification, safety, privacy, restriction, device integrity, developer, and legal language is published only after legal, governance, privacy, and security review."
+        },
+        {
+          "title": "Private source boundary",
+          "body": "Internal drafts, private evidence, abuse-review records, implementation secrets, credentials, and CEO-only planning must remain outside public docs."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Public Documentation Policy",
+        "searchDescription": "Understand how public documentation is reviewed before release.",
+        "searchKeywords": [
+          "Public Documentation Policy",
+          "Start",
+          "Guide",
+          "Documentation",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-PUBLIC_DOCUMENTATION",
+          "route": "/get-started/public-documentation/",
+          "category": "Start",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Public Documentation Policy",
+            "body": "Understand how public documentation is reviewed before release."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the entry layer of Neuroartan documentation. It explains the foundation of the company, ICOS, public documentation, product boundaries, and first reading path."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "New users, early members, partners, reviewers, support teams, and public readers who need a clear starting point."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand where to begin, what Neuroartan is building, and which documentation path to follow next."
+          },
+          {
+            "type": "section",
+            "title": "Review-gated release",
+            "body": "Sensitive verification, safety, privacy, restriction, device integrity, developer, and legal language is published only after legal, governance, privacy, and security review."
+          },
+          {
+            "type": "section",
+            "title": "Private source boundary",
+            "body": "Internal drafts, private evidence, abuse-review records, implementation secrets, credentials, and CEO-only planning must remain outside public docs."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "cli",
+      "route": "/developers/cli/",
+      "category": "Developers",
+      "type": "CLI",
+      "title": "CLI",
+      "eyebrow": "Developer tools",
+      "description": "Public CLI documentation will explain command-line workflows, authentication boundaries, project operations, deployment commands, diagnostics, and traceable support outputs.",
+      "tabs": [
+        "Overview",
+        "Commands",
+        "Diagnostics"
+      ],
+      "recommended": [
+        "developers",
+        "api-integration",
+        "troubleshooting"
+      ],
+      "articles": [
+        "developers",
+        "api-integration",
+        "security-requirements",
+        "troubleshooting",
+        "error-reference"
+      ],
+      "sections": [
+        {
+          "title": "Purpose",
+          "body": "The Neuroartan CLI is a future developer and operator interface for controlled project operations, diagnostics, build workflows, deployment checks, documentation tasks, and support-safe output."
+        },
+        {
+          "title": "Command design",
+          "body": "CLI commands should be explicit, traceable, reversible where possible, and safe for public support documentation. Command output should use stable IDs, clear status messages, and copy-safe remediation steps."
+        },
+        {
+          "title": "Security boundary",
+          "body": "CLI documentation must never expose credentials, private keys, tokens, environment secrets, privileged infrastructure paths, or internal abuse-detection logic."
+        },
+        {
+          "title": "Traceability",
+          "body": "Every public CLI error should include a stable code, short title, category, user-safe cause, recommended fix, and escalation path."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "CLI",
+        "searchDescription": "Public CLI documentation will explain command-line workflows, authentication boundaries, project operations, deployment commands, diagnostics, and traceable support outputs.",
+        "searchKeywords": [
+          "CLI",
+          "Developers",
+          "CLI",
+          "Developer tools",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-CLI",
+          "route": "/developers/cli/",
+          "category": "Developers",
+          "issueSearchable": true
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "CLI",
+            "body": "Public CLI documentation will explain command-line workflows, authentication boundaries, project operations, deployment commands, diagnostics, and traceable support outputs."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the developer layer. It explains integration direction, API boundaries, OAuth, security requirements, CLI, troubleshooting, error references, and release documentation."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Developers, support engineers, technical partners, operators, and future platform integrators."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand how technical documentation is structured for searchability, support, diagnostics, and public-safe implementation guidance."
+          },
+          {
+            "type": "section",
+            "title": "Purpose",
+            "body": "The Neuroartan CLI is a future developer and operator interface for controlled project operations, diagnostics, build workflows, deployment checks, documentation tasks, and support-safe output."
+          },
+          {
+            "type": "section",
+            "title": "Command design",
+            "body": "CLI commands should be explicit, traceable, reversible where possible, and safe for public support documentation. Command output should use stable IDs, clear status messages, and copy-safe remediation steps."
+          },
+          {
+            "type": "section",
+            "title": "Security boundary",
+            "body": "CLI documentation must never expose credentials, private keys, tokens, environment secrets, privileged infrastructure paths, or internal abuse-detection logic."
+          },
+          {
+            "type": "section",
+            "title": "Traceability",
+            "body": "Every public CLI error should include a stable code, short title, category, user-safe cause, recommended fix, and escalation path."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "troubleshooting",
+      "route": "/developers/troubleshooting/",
+      "category": "Developers",
+      "type": "Support",
+      "title": "Troubleshooting",
+      "eyebrow": "Support",
+      "description": "Troubleshooting articles explain common user-facing problems, public-safe diagnostics, fix paths, and escalation boundaries.",
+      "tabs": [
+        "Overview",
+        "Diagnostics",
+        "Escalation"
+      ],
+      "recommended": [
+        "error-reference",
+        "cli",
+        "security-requirements"
+      ],
+      "articles": [
+        "error-reference",
+        "cli",
+        "api-integration",
+        "oauth-connectors",
+        "security-requirements"
+      ],
+      "sections": [
+        {
+          "title": "Purpose",
+          "body": "Troubleshooting documentation helps users and developers resolve public-facing product, account, connector, verification, privacy, and platform issues without exposing private infrastructure or internal review mechanics."
+        },
+        {
+          "title": "Article standard",
+          "body": "Each troubleshooting article should include a stable issue ID, symptoms, likely cause, public-safe explanation, step-by-step fix, verification step, and escalation route."
+        },
+        {
+          "title": "Searchability",
+          "body": "Issue titles, error IDs, and short explanations should be written so users can search the web and land on the correct Neuroartan documentation page."
+        },
+        {
+          "title": "Escalation",
+          "body": "Escalation language must distinguish user-fixable issues from account review, verification review, security review, privacy request, and support-only intervention."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Troubleshooting",
+        "searchDescription": "Troubleshooting articles explain common user-facing problems, public-safe diagnostics, fix paths, and escalation boundaries.",
+        "searchKeywords": [
+          "Troubleshooting",
+          "Developers",
+          "Support",
+          "Support",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-TROUBLESHOOTING",
+          "route": "/developers/troubleshooting/",
+          "category": "Developers",
+          "issueSearchable": true
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Troubleshooting",
+            "body": "Troubleshooting articles explain common user-facing problems, public-safe diagnostics, fix paths, and escalation boundaries."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the developer layer. It explains integration direction, API boundaries, OAuth, security requirements, CLI, troubleshooting, error references, and release documentation."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Developers, support engineers, technical partners, operators, and future platform integrators."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand how technical documentation is structured for searchability, support, diagnostics, and public-safe implementation guidance."
+          },
+          {
+            "type": "section",
+            "title": "Purpose",
+            "body": "Troubleshooting documentation helps users and developers resolve public-facing product, account, connector, verification, privacy, and platform issues without exposing private infrastructure or internal review mechanics."
+          },
+          {
+            "type": "section",
+            "title": "Article standard",
+            "body": "Each troubleshooting article should include a stable issue ID, symptoms, likely cause, public-safe explanation, step-by-step fix, verification step, and escalation route."
+          },
+          {
+            "type": "section",
+            "title": "Searchability",
+            "body": "Issue titles, error IDs, and short explanations should be written so users can search the web and land on the correct Neuroartan documentation page."
+          },
+          {
+            "type": "section",
+            "title": "Escalation",
+            "body": "Escalation language must distinguish user-fixable issues from account review, verification review, security review, privacy request, and support-only intervention."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "error-reference",
+      "route": "/developers/errors/",
+      "category": "Developers",
+      "type": "Error Reference",
+      "title": "Error Reference",
+      "eyebrow": "Errors",
+      "description": "The error reference defines traceable public error codes for product, account, verification, device integrity, connector, API, billing, and documentation issues.",
+      "tabs": [
+        "Overview",
+        "Codes",
+        "Resolution"
+      ],
+      "recommended": [
+        "troubleshooting",
+        "cli",
+        "api-integration"
+      ],
+      "articles": [
+        "troubleshooting",
+        "cli",
+        "api-integration",
+        "oauth-connectors",
+        "security-requirements"
+      ],
+      "sections": [
+        {
+          "title": "Error code standard",
+          "body": "Public error codes should be stable, searchable, and safe to disclose. Each code should include a category prefix, short title, public cause, fix path, and escalation condition."
+        },
+        {
+          "title": "Initial code families",
+          "body": "Recommended public code families include AUTH for authentication, ACC for account, VER for verification, DEV for device integrity, API for integration, CLI for command-line workflows, BILL for billing, DOC for documentation, and SAFE for trust and safety review states."
+        },
+        {
+          "title": "Private boundary",
+          "body": "Error documentation must not reveal fraud signals, device-risk scoring, enforcement thresholds, internal evidence, investigation tooling, private account state, or evasion-sensitive mechanics."
+        },
+        {
+          "title": "Support use",
+          "body": "Support and developer teams should reference public error codes when writing help articles, release notes, CLI output, API responses, and user-facing diagnostics."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Error Reference",
+        "searchDescription": "The error reference defines traceable public error codes for product, account, verification, device integrity, connector, API, billing, and documentation issues.",
+        "searchKeywords": [
+          "Error Reference",
+          "Developers",
+          "Error Reference",
+          "Errors",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-ERROR_REFERENCE",
+          "route": "/developers/errors/",
+          "category": "Developers",
+          "issueSearchable": true
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Error Reference",
+            "body": "The error reference defines traceable public error codes for product, account, verification, device integrity, connector, API, billing, and documentation issues."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the developer layer. It explains integration direction, API boundaries, OAuth, security requirements, CLI, troubleshooting, error references, and release documentation."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Developers, support engineers, technical partners, operators, and future platform integrators."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand how technical documentation is structured for searchability, support, diagnostics, and public-safe implementation guidance."
+          },
+          {
+            "type": "section",
+            "title": "Error code standard",
+            "body": "Public error codes should be stable, searchable, and safe to disclose. Each code should include a category prefix, short title, public cause, fix path, and escalation condition."
+          },
+          {
+            "type": "section",
+            "title": "Initial code families",
+            "body": "Recommended public code families include AUTH for authentication, ACC for account, VER for verification, DEV for device integrity, API for integration, CLI for command-line workflows, BILL for billing, DOC for documentation, and SAFE for trust and safety review states."
+          },
+          {
+            "type": "section",
+            "title": "Private boundary",
+            "body": "Error documentation must not reveal fraud signals, device-risk scoring, enforcement thresholds, internal evidence, investigation tooling, private account state, or evasion-sensitive mechanics."
+          },
+          {
+            "type": "section",
+            "title": "Support use",
+            "body": "Support and developer teams should reference public error codes when writing help articles, release notes, CLI output, API responses, and user-facing diagnostics."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "release-notes",
+      "route": "/developers/release-notes/",
+      "category": "Developers",
+      "type": "Release Notes",
+      "title": "Release Notes",
+      "eyebrow": "Updates",
+      "description": "Release notes document public product changes, documentation updates, developer changes, known issues, fixes, and migration notices.",
+      "tabs": [
+        "Overview",
+        "Format",
+        "Known issues"
+      ],
+      "recommended": [
+        "developers",
+        "troubleshooting",
+        "error-reference"
+      ],
+      "articles": [
+        "developers",
+        "troubleshooting",
+        "error-reference",
+        "api-integration"
+      ],
+      "sections": [
+        {
+          "title": "Purpose",
+          "body": "Release notes give users, developers, investors, and support teams a public record of product changes, documentation changes, known issues, fixes, and migration notices."
+        },
+        {
+          "title": "Release format",
+          "body": "Each release note should include a date, version or release ID, affected surfaces, summary, user impact, developer impact where applicable, known issues, and linked troubleshooting or error-reference articles."
+        },
+        {
+          "title": "Public boundary",
+          "body": "Release notes must not expose private infrastructure details, security-sensitive fixes before safe disclosure, internal incident notes, credentials, private review evidence, or unreleased strategic plans."
+        },
+        {
+          "title": "Documentation requirement",
+          "body": "When a public feature, error, CLI command, API behavior, verification flow, privacy control, or account state changes, the related documentation article should be updated with the release."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Release Notes",
+        "searchDescription": "Release notes document public product changes, documentation updates, developer changes, known issues, fixes, and migration notices.",
+        "searchKeywords": [
+          "Release Notes",
+          "Developers",
+          "Release Notes",
+          "Updates",
+          "Neuroartan",
+          "ICOS"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-RELEASE_NOTES",
+          "route": "/developers/release-notes/",
+          "category": "Developers",
+          "issueSearchable": true
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Release Notes",
+            "body": "Release notes document public product changes, documentation updates, developer changes, known issues, fixes, and migration notices."
+          },
+          {
+            "type": "purpose",
+            "title": "Purpose",
+            "body": "This article belongs to the developer layer. It explains integration direction, API boundaries, OAuth, security requirements, CLI, troubleshooting, error references, and release documentation."
+          },
+          {
+            "type": "audience",
+            "title": "Who this is for",
+            "body": "Developers, support engineers, technical partners, operators, and future platform integrators."
+          },
+          {
+            "type": "outcome",
+            "title": "What this article should clarify",
+            "body": "Readers should understand how technical documentation is structured for searchability, support, diagnostics, and public-safe implementation guidance."
+          },
+          {
+            "type": "section",
+            "title": "Purpose",
+            "body": "Release notes give users, developers, investors, and support teams a public record of product changes, documentation changes, known issues, fixes, and migration notices."
+          },
+          {
+            "type": "section",
+            "title": "Release format",
+            "body": "Each release note should include a date, version or release ID, affected surfaces, summary, user impact, developer impact where applicable, known issues, and linked troubleshooting or error-reference articles."
+          },
+          {
+            "type": "section",
+            "title": "Public boundary",
+            "body": "Release notes must not expose private infrastructure details, security-sensitive fixes before safe disclosure, internal incident notes, credentials, private review evidence, or unreleased strategic plans."
+          },
+          {
+            "type": "section",
+            "title": "Documentation requirement",
+            "body": "When a public feature, error, CLI command, API behavior, verification flow, privacy control, or account state changes, the related documentation article should be updated with the release."
+          },
+          {
+            "type": "public-boundary",
+            "title": "Public boundary",
+            "body": "This article is written for public documentation. It must stay commercially clear, product-grounded, searchable, and safe for public release. It must not expose credentials, private review evidence, internal enforcement thresholds, private infrastructure, legal advice, medical claims, therapy claims, consciousness claims, or guaranteed outcomes."
+          },
+          {
+            "type": "next-step",
+            "title": "Next step",
+            "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    }
+  ]
+}

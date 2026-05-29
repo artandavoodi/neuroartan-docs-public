@@ -1,0 +1,54 @@
+/* =============================================================================
+   00) FILE INDEX
+   01) MODULE IDENTITY
+   02) CORE SPACING TOKENS
+   03) CONTENT WIDTH TOKENS
+   04) SECTION RHYTHM TOKENS
+   05) END OF FILE
+============================================================================= */
+
+/* =============================================================================
+   01) MODULE IDENTITY
+============================================================================= */
+/* /website/docs/assets/css/core/01-tokens/spacing.tokens.css */
+
+/* =============================================================================
+   02) CORE SPACING TOKENS
+============================================================================= */
+:root{
+  --spacing-xs:calc(0.35rem * var(--accessibility-density-scale));
+  --spacing-sm:calc(0.75rem * var(--accessibility-density-scale));
+  --spacing-md:calc(1.1rem * var(--accessibility-density-scale));
+  --spacing-lg:calc(1.6rem * var(--accessibility-density-scale));
+  --spacing-xl:calc(2.4rem * var(--accessibility-density-scale));
+  --spacing-2xl:calc(3.6rem * var(--accessibility-density-scale));
+  --spacing-3xl:calc(4.5rem * var(--accessibility-density-scale));
+  --spacing-4xl:calc(6rem * var(--accessibility-density-scale));
+}
+
+/* =============================================================================
+   03) CONTENT WIDTH TOKENS
+============================================================================= */
+:root{
+  --reading-width-sm:64ch;
+  --reading-width-md:74ch;
+  --reading-width-lg:78ch;
+
+  --content-max-width-sm:var(--reading-width-sm);
+  --content-max-width-md:var(--reading-width-md);
+  --content-max-width-lg:var(--reading-width-lg);
+}
+
+/* =============================================================================
+   04) SECTION RHYTHM TOKENS
+============================================================================= */
+:root{
+  --section-padding-y:10vh;
+  --section-padding-y-mobile:12vh;
+  --section-min-height:100vh;
+  --section-min-height-stable:100svh;
+}
+
+/* =============================================================================
+   05) END OF FILE
+============================================================================= */

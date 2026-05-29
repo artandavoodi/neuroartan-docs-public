@@ -1,0 +1,1265 @@
+{
+  "schema": "neuroartan.docs.registry.v1",
+  "meta": {
+    "title": "Neuroartan Documentation",
+    "description": "Public documentation for ICOS, products, plans, privacy, verification, safety, developers, support, investors, press, jobs, model identity, and public platform direction.",
+    "source": "canonical-docs-registry",
+    "language": "en"
+  },
+  "runtime": {
+    "shell": "detail",
+    "dataDriven": true,
+    "htmlMode": "minimal-host",
+    "canonicalRegistry": "/assets/data/docs/index.json",
+    "pagesIndex": "/assets/data/docs/pages/pages.json"
+  },
+  "global": {
+    "brand": {
+      "label": "Neuroartan Docs",
+      "href": "/"
+    },
+    "search": {
+      "label": "Search documentation",
+      "placeholder": "Search articles"
+    },
+    "breadcrumbs": {
+      "homeLabel": "Home",
+      "homeHref": "/"
+    },
+    "tabs": ["Home", "Product", "Trust", "Developers"]
+  },
+  "categories": [
+    {
+      "id": "get-started",
+      "title": "Get Started",
+      "description": "Orientation articles for understanding Neuroartan, ICOS, public documentation, Thought Bank, Posts, and the platform direction.",
+      "href": "/get-started/"
+    },
+    {
+      "id": "products",
+      "title": "Products",
+      "description": "Product documentation for ICOS, capabilities, continuity, memory, voice, publishing, profile identity, settings, and model development.",
+      "href": "/products/"
+    },
+    {
+      "id": "plans",
+      "title": "Plans & Subscriptions",
+      "description": "Plan direction, subscription boundaries, pricing principles, billing direction, and feature-depth differences.",
+      "href": "/plans/"
+    },
+    {
+      "id": "privacy",
+      "title": "Privacy",
+      "description": "Privacy direction for memory, Thought Bank, profile identity, connected services, data retention, device integrity, and user controls.",
+      "href": "/privacy/"
+    },
+    {
+      "id": "verification",
+      "title": "Verification",
+      "description": "Verification review, badge meaning, badge limits, badge suspension, re-review, and public trust boundaries.",
+      "href": "/verification/"
+    },
+    {
+      "id": "safety",
+      "title": "Safety",
+      "description": "Abuse prevention, anti-impersonation, restrictions, appeals, public identity integrity, and model-integrity protection.",
+      "href": "/safety/"
+    },
+    {
+      "id": "developers",
+      "title": "Developers",
+      "description": "Developer documentation for APIs, OAuth connectors, CLI, troubleshooting, error codes, security requirements, and release notes.",
+      "href": "/developers/"
+    },
+    {
+      "id": "company",
+      "title": "Company",
+      "description": "Support, investor relations, press, jobs, public company direction, and communication boundaries.",
+      "href": "/support/"
+    },
+    {
+      "id": "model-identity",
+      "title": "Model Identity",
+      "description": "One profile, one canonical personal model, continuity, anti-impersonation protection, and model identity governance.",
+      "href": "/model-identity/one-profile-one-model/"
+    }
+  ],
+  "sidebars": {
+    "home": [
+      {
+        "title": "Start here",
+        "links": [
+          { "label": "Documentation Home", "href": "/" },
+          { "label": "Get Started", "href": "/get-started/" },
+          { "label": "What Is Neuroartan", "href": "/get-started/what-is-neuroartan/" },
+          { "label": "What Is ICOS", "href": "/get-started/what-is-icos/" }
+        ]
+      },
+      {
+        "title": "Product",
+        "links": [
+          { "label": "Products", "href": "/products/" },
+          { "label": "ICOS", "href": "/products/icos/" },
+          { "label": "Capabilities", "href": "/products/capabilities/" },
+          { "label": "Continuity", "href": "/products/continuity/" }
+        ]
+      },
+      {
+        "title": "Trust",
+        "links": [
+          { "label": "Privacy", "href": "/privacy/" },
+          { "label": "Verification", "href": "/verification/" },
+          { "label": "Abuse Prevention", "href": "/safety/abuse-prevention/" },
+          { "label": "Model Identity", "href": "/model-identity/one-profile-one-model/" }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          { "label": "Support", "href": "/support/" },
+          { "label": "Developers", "href": "/developers/" },
+          { "label": "Investors", "href": "/investors/" },
+          { "label": "Press", "href": "/press/" },
+          { "label": "Jobs", "href": "/jobs/" }
+        ]
+      }
+    ],
+    "products": [
+      {
+        "title": "Product",
+        "links": [
+          { "label": "Products", "href": "/products/" },
+          { "label": "ICOS", "href": "/products/icos/" },
+          { "label": "Capabilities", "href": "/products/capabilities/" },
+          { "label": "Continuity", "href": "/products/continuity/" }
+        ]
+      },
+      {
+        "title": "Core surfaces",
+        "links": [
+          { "label": "Thought Bank", "href": "/products/thought-bank/" },
+          { "label": "Posts", "href": "/products/posts/" },
+          { "label": "Profile", "href": "/products/profile/" },
+          { "label": "Public Profile", "href": "/products/public-profile/" }
+        ]
+      },
+      {
+        "title": "Model development",
+        "links": [
+          { "label": "Memory", "href": "/products/memory/" },
+          { "label": "Voice Training", "href": "/products/voice-training/" },
+          { "label": "Model Training", "href": "/products/model-training/" },
+          { "label": "Settings", "href": "/products/settings/" }
+        ]
+      }
+    ],
+    "developers": [
+      {
+        "title": "Platform integration",
+        "links": [
+          { "label": "Developers", "href": "/developers/" },
+          { "label": "OAuth Connectors", "href": "/developers/oauth-connectors/" },
+          { "label": "API Integration", "href": "/developers/api-integration/" },
+          { "label": "Security Requirements", "href": "/developers/security-requirements/" }
+        ]
+      },
+      {
+        "title": "Operations",
+        "links": [
+          { "label": "CLI", "href": "/developers/cli/" },
+          { "label": "Troubleshooting", "href": "/developers/troubleshooting/" },
+          { "label": "Error Reference", "href": "/developers/errors/" },
+          { "label": "Release Notes", "href": "/developers/release-notes/" }
+        ]
+      }
+    ],
+    "trust": [
+      {
+        "title": "Trust & Safety",
+        "links": [
+          { "label": "Privacy", "href": "/privacy/" },
+          { "label": "Data Retention", "href": "/privacy/data-retention/" },
+          { "label": "Device Integrity", "href": "/privacy/device-integrity/" },
+          { "label": "Verification", "href": "/verification/" },
+          { "label": "Verification Badge", "href": "/verification/badge/" },
+          { "label": "Abuse Prevention", "href": "/safety/abuse-prevention/" },
+          { "label": "Anti-Impersonation", "href": "/safety/anti-impersonation/" },
+          { "label": "Appeals", "href": "/appeals/" }
+        ]
+      },
+      {
+        "title": "Model identity",
+        "links": [
+          { "label": "One Profile One Canonical Model", "href": "/model-identity/one-profile-one-model/" }
+        ]
+      }
+    ],
+    "company": [
+      {
+        "title": "Company",
+        "links": [
+          { "label": "Support", "href": "/support/" },
+          { "label": "Investors", "href": "/investors/" },
+          { "label": "Press", "href": "/press/" },
+          { "label": "Jobs", "href": "/jobs/" }
+        ]
+      },
+      {
+        "title": "Reference",
+        "links": [
+          { "label": "ICOS", "href": "/products/icos/" },
+          { "label": "Capabilities", "href": "/products/capabilities/" },
+          { "label": "Developers", "href": "/developers/" },
+          { "label": "Privacy", "href": "/privacy/" }
+        ]
+      }
+    ],
+    "plans": [
+      {
+        "title": "Plans",
+        "links": [
+          { "label": "Plans & Subscriptions", "href": "/plans/" },
+          { "label": "Free", "href": "/plans/free/" },
+          { "label": "Pro", "href": "/plans/pro/" },
+          { "label": "Pro Max", "href": "/plans/pro-max/" },
+          { "label": "Pricing Principles", "href": "/plans/pricing-principles/" }
+        ]
+      },
+      {
+        "title": "Related",
+        "links": [
+          { "label": "Model Identity", "href": "/model-identity/one-profile-one-model/" },
+          { "label": "Verification", "href": "/verification/" },
+          { "label": "Support", "href": "/support/" }
+        ]
+      }
+    ],
+    "legal": [
+      {
+        "title": "Legal",
+        "links": [
+          { "label": "Terms Direction", "href": "/legal/terms-direction/" },
+          { "label": "Privacy", "href": "/privacy/" },
+          { "label": "Data Retention", "href": "/privacy/data-retention/" },
+          { "label": "Support", "href": "/support/" }
+        ]
+      }
+    ]
+  },
+  "recommendedGroups": {
+    "home": [
+      { "label": "Product", "title": "ICOS", "href": "/products/icos/", "description": "The cognitive operating system for continuity, memory, voice, profile identity, publishing, and governed model development." },
+      { "label": "Private substrate", "title": "Thought Bank", "href": "/products/thought-bank/", "description": "Private thought capture, reflection, correction, and structured continuity signals." },
+      { "label": "Developers", "title": "Developer Documentation", "href": "/developers/", "description": "API, OAuth connectors, CLI, troubleshooting, release notes, and support-safe error references." }
+    ],
+    "products": [
+      { "label": "Product", "title": "ICOS", "href": "/products/icos/", "description": "The primary product system for continuity, memory, reflection, voice, profile identity, and governed cognitive infrastructure." },
+      { "label": "Private substrate", "title": "Thought Bank", "href": "/products/thought-bank/", "description": "The private cognitive substrate where thoughts, reflections, corrections, and continuity signals can be captured and organized." },
+      { "label": "Model identity", "title": "One Profile One Canonical Model", "href": "/model-identity/one-profile-one-model/", "description": "The identity rule that keeps product depth focused on one governed personal model rather than model multiplication." }
+    ],
+    "developers": [
+      { "label": "Support", "title": "Troubleshooting", "href": "/developers/troubleshooting/", "description": "Searchable issue paths for diagnostics, public-safe causes, fix steps, and escalation." },
+      { "label": "Diagnostics", "title": "Error Reference", "href": "/developers/errors/", "description": "Stable public error codes for support, APIs, CLI, account, verification, billing, and safety states." },
+      { "label": "Security", "title": "Security Requirements", "href": "/developers/security-requirements/", "description": "Security boundaries for diagnostics, logs, secrets, public examples, and support-safe output." }
+    ],
+    "trust": [
+      { "label": "Privacy", "title": "Privacy", "href": "/privacy/", "description": "The trust foundation for memory, Thought Bank, profile identity, verification, and user controls." },
+      { "label": "Verification", "title": "Verification", "href": "/verification/", "description": "How verification review supports public identity clarity without guaranteeing authority." },
+      { "label": "Safety", "title": "Anti-Impersonation", "href": "/safety/anti-impersonation/", "description": "How public identity surfaces are protected from misleading representation and unauthorized identity use." }
+    ],
+    "company": [
+      { "label": "Product", "title": "ICOS", "href": "/products/icos/", "description": "The core product direction and public category language." },
+      { "label": "Investors", "title": "Investors", "href": "/investors/", "description": "Company direction, product thesis, market category, revenue direction, and disclosure boundary." },
+      { "label": "Support", "title": "Support", "href": "/support/", "description": "Support routing for account, product, privacy, verification, developer, billing, and escalation paths." }
+    ],
+    "plans": [
+      { "label": "Principles", "title": "Pricing Principles", "href": "/plans/pricing-principles/", "description": "How monetization should come from depth, memory quality, voice, analytics, studio tools, verification pathways, and support." },
+      { "label": "Model identity", "title": "One Profile One Canonical Model", "href": "/model-identity/one-profile-one-model/", "description": "Why plan depth should not create multiple canonical personal models for the same user." },
+      { "label": "Support", "title": "Support", "href": "/support/", "description": "Billing direction, entitlement states, support routing, and escalation boundaries." }
+    ]
+  },
+  "pages": [
+    {
+      "id": "home",
+      "route": "/",
+      "title": "Neuroartan Docs",
+      "description": "Explore Neuroartan documentation for ICOS, products, privacy, verification, safety, developers, support, investors, press, jobs, model identity, and public platform direction.",
+      "category": "home",
+      "sidebar": "home",
+      "recommended": "home",
+      "breadcrumb": "Docs",
+      "layout": "home",
+      "hero": { "eyebrow": "Documentation", "title": "How can we help?", "description": "Search Neuroartan documentation or browse the main documentation areas below.", "tabs": ["Home", "Product", "Trust", "Developers"] },
+      "sections": [
+        { "title": "Get started", "body": "Start with Neuroartan, ICOS, public documentation, Thought Bank, Posts, and the core platform direction." },
+        { "title": "Products", "body": "Explore ICOS, Thought Bank, Posts, Memory, Voice Training, Model Training, Continuity, Profile, Public Profile, Publishing, Settings, and product capabilities." },
+        { "title": "Trust and safety", "body": "Review privacy, verification, anti-impersonation, abuse prevention, data retention, device integrity, appeals, and model identity boundaries." },
+        { "title": "Developers", "body": "Use public developer documentation for APIs, OAuth connectors, CLI workflows, troubleshooting, error references, security requirements, and release notes." },
+        { "title": "Company", "body": "Find support routing, investor relations, press language, jobs, public company direction, product thesis, market category, and communication boundaries." }
+      ]
+    },
+    {
+      "id": "products",
+      "route": "/products/",
+      "title": "Products",
+      "description": "Neuroartan is built around ICOS: a cognitive operating system for personal continuity, memory, voice, reflection, profile identity, publishing, and governed model development.",
+      "category": "products",
+      "sidebar": "products",
+      "recommended": "products",
+      "breadcrumb": "Products",
+      "hero": { "eyebrow": "Products", "title": "Products", "description": "Neuroartan is built around ICOS: a cognitive operating system for personal continuity, memory, voice, reflection, profile identity, publishing, and governed model development.", "tabs": ["Overview", "Core surfaces", "Model depth", "Trust"] },
+      "sections": [
+        { "title": "Product direction", "body": "Neuroartan’s product direction begins with ICOS. ICOS is not positioned as a generic chatbot. It is a governed cognitive operating system focused on continuity, memory, reflection, profile identity, voice, publishing, and long-term personal model development." },
+        { "title": "Core product surfaces", "body": "The core product surfaces include Thought Bank, Posts, Profile, Public Profile, Memory, Voice Training, Continuity, Model Training, Publishing, Settings, and Capabilities. These surfaces should work together as one product architecture rather than isolated features." },
+        { "title": "Trust boundary", "body": "Product capabilities must remain aligned with privacy, verification, anti-impersonation, device integrity, safety, appeal, and data retention boundaries. Payment may increase depth and support pathways, but it must not bypass trust, safety, privacy, or legal review." }
+      ]
+    },
+    {
+      "id": "icos",
+      "route": "/products/icos/",
+      "title": "ICOS",
+      "description": "ICOS is Neuroartan’s cognitive operating system for personal continuity, memory, reflection, voice, profile identity, publishing, and governed model development.",
+      "category": "products",
+      "sidebar": "products",
+      "recommended": "products",
+      "breadcrumb": "Products / ICOS",
+      "hero": { "eyebrow": "Product", "title": "ICOS", "description": "ICOS is Neuroartan’s cognitive operating system for personal continuity, memory, reflection, voice, profile identity, publishing, and governed model development.", "tabs": ["Overview", "Continuity", "Model training", "Trust"] },
+      "sections": [
+        { "title": "Product definition", "body": "ICOS is the Intelligence Cognitive Operating System: a governed personal continuity system that helps a user capture thought, develop memory, refine voice, structure reflection, manage profile identity, and build one canonical personal model over time." },
+        { "title": "Not a generic chatbot", "body": "ICOS should not be framed as a generic chatbot. It is a continuity-centered cognitive system. The product value comes from structured memory, personal model fidelity, correction, voice alignment, privacy controls, publishing boundaries, and long-term profile coherence." },
+        { "title": "Trust and safety", "body": "ICOS must remain aligned with privacy, verification, anti-impersonation, abuse prevention, device integrity, data retention, and appeal boundaries. Product depth must not bypass safety review, verification review, identity protection, or legal requirements." }
+      ]
+    },
+    {
+      "id": "thought-bank",
+      "route": "/products/thought-bank/",
+      "title": "Thought Bank",
+      "description": "Thought Bank is the private cognitive substrate inside ICOS for thoughts, reflections, corrections, raw ideas, and continuity signals.",
+      "category": "products",
+      "sidebar": "products",
+      "recommended": "products",
+      "breadcrumb": "Products / Thought Bank",
+      "hero": { "eyebrow": "Private substrate", "title": "Thought Bank", "description": "Thought Bank is the private cognitive substrate inside ICOS. It is where thoughts, reflections, corrections, raw ideas, and continuity signals can be captured before any public expression is created.", "tabs": ["Overview", "Privacy", "Memory", "Publishing boundary"] },
+      "sections": [
+        { "title": "Purpose", "body": "Thought Bank exists to give users a private place to capture thought before it becomes publication, memory, profile expression, or structured output. It is a thinking surface, not a public feed." },
+        { "title": "Private by design", "body": "Thought Bank should remain private by default. Private entries should not appear as public Posts, public profile material, search-visible content, or externally visible publications unless the user explicitly chooses a publishing path through approved controls." },
+        { "title": "Relationship to Posts", "body": "Thought Bank and Posts are separate product layers. Thought Bank captures private cognition. Posts publish selected expression. This separation protects privacy, reduces accidental disclosure, and gives the user control over what becomes public." }
+      ]
+    },
+    {
+      "id": "posts",
+      "route": "/products/posts/",
+      "title": "Posts",
+      "description": "Posts are the expression and publishing layer of ICOS, separate from private Thought Bank material.",
+      "category": "products",
+      "sidebar": "products",
+      "recommended": "products",
+      "breadcrumb": "Products / Posts",
+      "hero": { "eyebrow": "Expression", "title": "Posts", "description": "Posts are the expression and publishing layer of ICOS. They are separate from private Thought Bank material and should publish only through deliberate user action and approved visibility controls.", "tabs": ["Overview", "Publishing", "Visibility", "Safety"] },
+      "sections": [
+        { "title": "Purpose", "body": "Posts exist to give users a controlled way to publish selected expression from their broader ICOS environment. They are not the same as Thought Bank. A post should represent deliberate public or visibility-controlled expression, not automatic exposure of private thought." },
+        { "title": "Publishing action", "body": "A post should require an intentional publishing action. Publishing workflows should make visibility, profile association, edit state, and public impact clear before content becomes visible outside the private workspace." },
+        { "title": "Safety and moderation", "body": "Posts should remain subject to safety, anti-impersonation, abuse-prevention, privacy, copyright, legal, and platform integrity rules." }
+      ]
+    },
+    {
+      "id": "memory",
+      "route": "/products/memory/",
+      "title": "Memory",
+      "description": "Memory gives ICOS continuity through approved context, corrections, preferences, source references, and long-term patterns.",
+      "category": "products",
+      "sidebar": "products",
+      "recommended": "products",
+      "breadcrumb": "Products / Memory",
+      "hero": { "eyebrow": "Continuity", "title": "Memory", "description": "Memory gives ICOS continuity. It preserves approved context, corrections, preferences, profile signals, source references, and long-term patterns so one canonical personal model can become more faithful over time.", "tabs": ["Overview", "Sources", "Controls", "Privacy"] },
+      "sections": [
+        { "title": "Purpose", "body": "Memory exists to make ICOS continuous rather than session-bound. It helps the system remember approved user context, preferences, corrections, source references, profile signals, and long-term patterns so responses can become more aligned with the user over time." },
+        { "title": "Approved memory", "body": "Memory should be built from approved sources, user actions, profile settings, corrections, preferences, Posts where allowed, Thought Bank signals where authorized, voice and style training, and other permitted continuity records." },
+        { "title": "One canonical model", "body": "Memory should deepen one canonical personal model. It should not create multiple personal models, duplicate identities, impersonation models, or unmanaged model copies." }
+      ]
+    },
+    {
+      "id": "developers",
+      "route": "/developers/",
+      "title": "Developers",
+      "description": "Developer documentation for APIs, OAuth connectors, CLI, troubleshooting, public error IDs, security requirements, release notes, and support-safe diagnostics.",
+      "category": "developers",
+      "sidebar": "developers",
+      "recommended": "developers",
+      "breadcrumb": "Developers",
+      "hero": { "eyebrow": "Developers", "title": "Developers", "description": "Developer documentation explains platform integration, OAuth connectors, API behavior, CLI direction, troubleshooting, release notes, security requirements, and public error IDs.", "tabs": ["Overview", "Integration", "Diagnostics", "Security"] },
+      "sections": [
+        { "title": "Purpose", "body": "Developer documentation gives engineers and technical users public-safe guidance for integrating with Neuroartan systems without exposing private infrastructure, secrets, security-sensitive implementation details, or abuse-sensitive mechanics." },
+        { "title": "Developer surfaces", "body": "Developer surfaces include APIs, OAuth connectors, CLI workflows, troubleshooting, error references, security requirements, release notes, and support-safe diagnostic output." },
+        { "title": "Security boundary", "body": "Developer documentation must not expose secrets, private endpoints, service keys, fraud signals, reviewer notes, private database identifiers, or security thresholds." }
+      ]
+    },
+    {
+      "id": "support",
+      "route": "/support/",
+      "title": "Support",
+      "description": "Support routing for account help, product questions, privacy requests, verification review, developer issues, billing direction, safety notices, and escalation.",
+      "category": "company",
+      "sidebar": "company",
+      "recommended": "company",
+      "breadcrumb": "Support",
+      "hero": { "eyebrow": "Support", "title": "Support", "description": "Support documentation helps users find the correct path for account help, product questions, privacy requests, verification review, developer issues, billing direction, safety notices, and escalation.", "tabs": ["Overview", "Account", "Product", "Escalation"] },
+      "sections": [
+        { "title": "Purpose", "body": "Support exists to route users to the correct help path. It should separate account help, product help, privacy requests, verification review, developer issues, billing direction, safety notices, and legal notices so each request can be handled by the correct process." },
+        { "title": "Support principle", "body": "Support should be clear, searchable, public-safe, and escalation-aware. It should help users resolve ordinary issues quickly while protecting private data, security systems, reviewer notes, device integrity signals, fraud controls, and legal-sensitive information." },
+        { "title": "Escalation boundary", "body": "Some issues may require support, privacy review, legal review, security review, verification review, safety review, or manual account review. Support documentation should identify the escalation path without promising a specific outcome." }
+      ]
+    },
+    {
+      "id": "investors",
+      "route": "/investors/",
+      "title": "Investors",
+      "description": "Investor relations direction for product thesis, market category, revenue direction, trust architecture, public roadmap, and disclosure boundaries.",
+      "category": "company",
+      "sidebar": "company",
+      "recommended": "company",
+      "breadcrumb": "Investors",
+      "hero": { "eyebrow": "Investor relations", "title": "Investors", "description": "Neuroartan is building ICOS: a governed cognitive operating system for continuity, memory, voice, profile identity, publishing, and long-term personal model development.", "tabs": ["Overview", "Product", "Market", "Governance"] },
+      "sections": [
+        { "title": "Purpose", "body": "This page gives investors a public-facing overview of Neuroartan’s product direction, commercial logic, trust architecture, and current disclosure boundary. It is informational and does not replace a private investor data room, securities document, legal review, or financial disclosure." },
+        { "title": "Product thesis", "body": "The product thesis is that personal AI value increases when the system develops continuity with the user: approved memory, corrections, voice, style, profile identity, private Thought Bank structure, public Posts, and one canonical personal model that becomes more faithful over time." },
+        { "title": "Investor relations boundary", "body": "Financial projections, fundraising terms, valuation, legal entity details, securities disclosures, cap table information, private roadmap material, and investor data-room access require executive, finance, legal, and governance approval." }
+      ]
+    },
+    {
+      "id": "press",
+      "route": "/press/",
+      "title": "Press",
+      "description": "Press documentation defines how Neuroartan should be described publicly: a company building ICOS, a cognitive operating system for continuity, memory, voice, profile identity, publishing, and governed personal model development.",
+      "category": "company",
+      "sidebar": "company",
+      "recommended": "company",
+      "breadcrumb": "Press",
+      "hero": { "eyebrow": "Press", "title": "Press", "description": "Press documentation defines how Neuroartan should be described publicly: a company building ICOS, a cognitive operating system for continuity, memory, voice, profile identity, publishing, and governed personal model development.", "tabs": ["Overview", "Company", "Product", "Boundaries"] },
+      "sections": [
+        { "title": "Purpose", "body": "This page gives press and public audiences a concise, accurate way to understand Neuroartan. It defines company language, product language, approved public framing, claim boundaries, media-use boundaries, and the review status for public communication." },
+        { "title": "Company description", "body": "Neuroartan is building ICOS, a cognitive operating system for personal continuity, memory, voice, profile identity, publishing, and governed personal model development. The company’s public language should remain clear, restrained, product-centered, and trust-aware." },
+        { "title": "Claim boundaries", "body": "Public claims should not promise medical, therapeutic, legal, financial, educational, employment, verification, safety, investment, marketplace, income, or product-availability outcomes unless those claims are separately approved and legally supported." }
+      ]
+    },
+    {
+      "id": "jobs",
+      "route": "/jobs/",
+      "title": "Jobs",
+      "description": "Neuroartan hiring will support ICOS across product, engineering, design, governance, privacy, trust and safety, developer systems, support, communications, and operations.",
+      "category": "company",
+      "sidebar": "company",
+      "recommended": "company",
+      "breadcrumb": "Jobs",
+      "hero": { "eyebrow": "Careers", "title": "Jobs", "description": "Neuroartan hiring will support ICOS across product, engineering, design, governance, privacy, trust and safety, developer systems, support, communications, and operations.", "tabs": ["Overview", "Roles", "Culture", "Review"] },
+      "sections": [
+        { "title": "Purpose", "body": "This page defines public-facing hiring direction for Neuroartan. It is not a list of currently open positions unless a role is explicitly published as open. It explains the kinds of functions Neuroartan expects to need as ICOS matures." },
+        { "title": "Hiring direction", "body": "Future hiring should support a careful product build: ICOS, memory, continuity, voice training, profile identity, publishing, verification, privacy, safety, developer systems, support infrastructure, design systems, and public communication." },
+        { "title": "Application boundary", "body": "Applications should route through the official hiring channel once active. Public job language should not imply employment guarantees, visa sponsorship, contractor terms, compensation, equity, start dates, or remote-work policy unless those details are approved for the specific role." }
+      ]
+    },
+    {
+      "id": "get-started",
+      "route": "/get-started/",
+      "title": "Get Started",
+      "description": "Start with Neuroartan documentation, ICOS, Thought Bank, Posts, public documentation, and the product direction.",
+      "category": "get-started",
+      "sidebar": "home",
+      "recommended": "home",
+      "breadcrumb": "Get Started",
+      "hero": { "eyebrow": "Start", "title": "Get Started", "description": "Start with Neuroartan documentation, ICOS, Thought Bank, Posts, public documentation, and the product direction.", "tabs": ["Overview", "ICOS", "Documentation", "Next"] },
+      "sections": [
+        { "title": "Purpose", "body": "This page orients new readers to Neuroartan documentation and the main product concepts." },
+        { "title": "Start path", "body": "Begin with what Neuroartan is, what ICOS is, public documentation boundaries, and the difference between Thought Bank and Posts." }
+      ]
+    },
+    {
+      "id": "what-is-neuroartan",
+      "route": "/get-started/what-is-neuroartan/",
+      "title": "What Is Neuroartan",
+      "description": "Neuroartan is building ICOS, a cognitive operating system for continuity, memory, voice, profile identity, publishing, and governed personal model development.",
+      "category": "get-started",
+      "sidebar": "home",
+      "recommended": "home",
+      "breadcrumb": "Get Started / What Is Neuroartan",
+      "hero": { "eyebrow": "Start", "title": "What Is Neuroartan", "description": "Neuroartan is building ICOS, a cognitive operating system for continuity, memory, voice, profile identity, publishing, and governed personal model development.", "tabs": ["Overview", "Product", "Trust", "Company"] },
+      "sections": [
+        { "title": "Definition", "body": "Neuroartan is a company and product system centered on ICOS and long-term personal cognitive continuity." },
+        { "title": "Public boundary", "body": "Public descriptions should remain product-centered, trust-aware, and legally reviewable." }
+      ]
+    },
+    {
+      "id": "what-is-icos",
+      "route": "/get-started/what-is-icos/",
+      "title": "What Is ICOS",
+      "description": "ICOS is Neuroartan’s cognitive operating system for personal continuity, memory, reflection, voice, profile identity, publishing, and governed model development.",
+      "category": "get-started",
+      "sidebar": "home",
+      "recommended": "products",
+      "breadcrumb": "Get Started / What Is ICOS",
+      "hero": { "eyebrow": "Start", "title": "What Is ICOS", "description": "ICOS is Neuroartan’s cognitive operating system for personal continuity, memory, reflection, voice, profile identity, publishing, and governed model development.", "tabs": ["Overview", "Continuity", "Memory", "Trust"] },
+      "sections": [
+        { "title": "Definition", "body": "ICOS is designed as a continuity-centered cognitive system, not a generic chatbot." },
+        { "title": "Core value", "body": "Its value comes from memory, correction, voice alignment, private thought capture, controlled publishing, and one canonical personal model." }
+      ]
+    },
+    {
+      "id": "public-documentation",
+      "route": "/get-started/public-documentation/",
+      "title": "Public Documentation",
+      "description": "Public documentation explains Neuroartan product direction, trust boundaries, developer direction, support paths, and company communication in a safe public format.",
+      "category": "get-started",
+      "sidebar": "home",
+      "recommended": "home",
+      "breadcrumb": "Get Started / Public Documentation",
+      "hero": { "eyebrow": "Documentation", "title": "Public Documentation", "description": "Public documentation explains Neuroartan product direction, trust boundaries, developer direction, support paths, and company communication in a safe public format.", "tabs": ["Overview", "Structure", "Trust", "Review"] },
+      "sections": [
+        { "title": "Purpose", "body": "Public documentation should be searchable, clear, public-safe, and synchronized with the canonical registry." },
+        { "title": "Boundary", "body": "Public documentation must not expose secrets, private evidence, internal review mechanics, or unreleased legal commitments." }
+      ]
+    },
+    {
+      "id": "posts-and-thought-bank",
+      "route": "/get-started/posts-and-thought-bank/",
+      "title": "Posts and Thought Bank",
+      "description": "Thought Bank is private cognitive substrate. Posts are the publishing and expression layer.",
+      "category": "get-started",
+      "sidebar": "home",
+      "recommended": "products",
+      "breadcrumb": "Get Started / Posts and Thought Bank",
+      "hero": { "eyebrow": "Start", "title": "Posts and Thought Bank", "description": "Thought Bank is private cognitive substrate. Posts are the publishing and expression layer.", "tabs": ["Overview", "Private", "Public", "Controls"] },
+      "sections": [
+        { "title": "Thought Bank", "body": "Thought Bank captures private thoughts, reflections, corrections, and continuity signals." },
+        { "title": "Posts", "body": "Posts publish selected expression through deliberate action and visibility controls." }
+      ]
+    },
+    {
+      "id": "capabilities",
+      "route": "/products/capabilities/",
+      "title": "Capabilities",
+      "description": "Product capabilities across memory, continuity, Thought Bank, Posts, profile identity, voice training, model training, publishing, settings, privacy, and trust boundaries.",
+      "category": "products",
+      "sidebar": "products",
+      "recommended": "products",
+      "breadcrumb": "Products / Capabilities",
+      "hero": { "eyebrow": "Capabilities", "title": "Capabilities", "description": "Product capabilities across memory, continuity, Thought Bank, Posts, profile identity, voice training, model training, publishing, settings, privacy, and trust boundaries.", "tabs": ["Overview", "Core", "Model", "Trust"] },
+      "sections": [
+        { "title": "Purpose", "body": "Capabilities describe the connected product powers of ICOS rather than isolated features." },
+        { "title": "Trust boundary", "body": "Capabilities must remain aligned with privacy, verification, anti-impersonation, abuse prevention, and legal review." }
+      ]
+    },
+    {
+      "id": "continuity",
+      "route": "/products/continuity/",
+      "title": "Continuity",
+      "description": "Continuity is the long-term coherence layer of ICOS across memory, corrections, voice, profile identity, Thought Bank, Posts, and model development.",
+      "category": "products",
+      "sidebar": "products",
+      "recommended": "products",
+      "breadcrumb": "Products / Continuity",
+      "hero": { "eyebrow": "Continuity", "title": "Continuity", "description": "Continuity is the long-term coherence layer of ICOS across memory, corrections, voice, profile identity, Thought Bank, Posts, and model development.", "tabs": ["Overview", "Memory", "Model", "Controls"] },
+      "sections": [
+        { "title": "Purpose", "body": "Continuity allows ICOS to become more coherent over time through approved context and correction." },
+        { "title": "Principle", "body": "Continuity should deepen one canonical personal model, not multiply identity." }
+      ]
+    },
+    {
+      "id": "voice-training",
+      "route": "/products/voice-training/",
+      "title": "Voice Training",
+      "description": "Voice training supports voice and style alignment, personal expression, approved source signals, memory relationship, model fidelity, consent, and privacy controls.",
+      "category": "products",
+      "sidebar": "products",
+      "recommended": "products",
+      "breadcrumb": "Products / Voice Training",
+      "hero": { "eyebrow": "Model development", "title": "Voice Training", "description": "Voice training supports voice and style alignment, personal expression, approved source signals, memory relationship, model fidelity, consent, and privacy controls.", "tabs": ["Overview", "Sources", "Controls", "Safety"] },
+      "sections": [
+        { "title": "Purpose", "body": "Voice training helps ICOS reflect the user’s approved tone, rhythm, language, structure, and expression style." },
+        { "title": "Boundary", "body": "Voice training must preserve consent, privacy, source authorization, and anti-impersonation boundaries." }
+      ]
+    },
+    {
+      "id": "model-training",
+      "route": "/products/model-training/",
+      "title": "Model Training",
+      "description": "Model training deepens one canonical personal model through approved memory, corrections, voice signals, source authorization, continuity, privacy, and safety boundaries.",
+      "category": "products",
+      "sidebar": "products",
+      "recommended": "products",
+      "breadcrumb": "Products / Model Training",
+      "hero": { "eyebrow": "Model development", "title": "Model Training", "description": "Model training deepens one canonical personal model through approved memory, corrections, voice signals, source authorization, continuity, privacy, and safety boundaries.", "tabs": ["Overview", "Sources", "Controls", "Trust"] },
+      "sections": [
+        { "title": "Purpose", "body": "Model training improves fidelity of the user’s canonical personal model." },
+        { "title": "Boundary", "body": "Training should deepen one model and must not create duplicate identities or unauthorized replicas." }
+      ]
+    },
+    {
+      "id": "profile",
+      "route": "/products/profile/",
+      "title": "Profile",
+      "description": "Profile documentation for private profile identity, public profile relationship, canonical model identity, settings, visibility, verification, privacy, and continuity boundaries.",
+      "category": "products",
+      "sidebar": "products",
+      "recommended": "products",
+      "breadcrumb": "Products / Profile",
+      "hero": { "eyebrow": "Identity", "title": "Profile", "description": "The Neuroartan profile connects account state, private settings, public visibility, verification, Posts, memory, and one canonical personal model.", "tabs": ["Overview", "Identity", "Visibility", "Trust"] },
+      "sections": [
+        { "title": "Purpose", "body": "The profile gives ICOS a stable identity surface for the user." },
+        { "title": "Canonical model", "body": "Each profile should remain tied to one canonical personal model." }
+      ]
+    },
+    {
+      "id": "public-profile",
+      "route": "/products/public-profile/",
+      "title": "Public Profile",
+      "description": "Public Profile documentation for public identity, verified visibility, Posts, profile presentation, model identity, anti-impersonation, privacy controls, and public trust boundaries.",
+      "category": "products",
+      "sidebar": "products",
+      "recommended": "products",
+      "breadcrumb": "Products / Public Profile",
+      "hero": { "eyebrow": "Public identity", "title": "Public Profile", "description": "A public profile is the externally visible identity surface for a Neuroartan user.", "tabs": ["Overview", "Visibility", "Verification", "Safety"] },
+      "sections": [
+        { "title": "Purpose", "body": "The public profile gives users a controlled public identity surface." },
+        { "title": "Private boundary", "body": "Public profiles must not expose private Thought Bank entries, private memories, private settings, or verification evidence." }
+      ]
+    },
+    {
+      "id": "publishing",
+      "route": "/products/publishing/",
+      "title": "Publishing",
+      "description": "Publishing is the controlled path from private work to public expression through Posts, profile visibility, public profile presentation, privacy controls, moderation, and trust boundaries.",
+      "category": "products",
+      "sidebar": "products",
+      "recommended": "products",
+      "breadcrumb": "Products / Publishing",
+      "hero": { "eyebrow": "Publishing", "title": "Publishing", "description": "Publishing is the controlled path from private work to public expression through Posts, profile visibility, public profile presentation, privacy controls, moderation, and trust boundaries.", "tabs": ["Overview", "Workflow", "Visibility", "Safety"] },
+      "sections": [
+        { "title": "Purpose", "body": "Publishing gives users a deliberate path for turning selected work into public or visibility-controlled expression." },
+        { "title": "Boundary", "body": "Private Thought Bank material should not become public automatically." }
+      ]
+    },
+    {
+      "id": "settings",
+      "route": "/products/settings/",
+      "title": "Settings",
+      "description": "Settings documentation for privacy, visibility, memory, voice, profile, publishing, notifications, source authorization, connected services, account controls, and continuity management.",
+      "category": "products",
+      "sidebar": "products",
+      "recommended": "products",
+      "breadcrumb": "Products / Settings",
+      "hero": { "eyebrow": "Controls", "title": "Settings", "description": "Settings are the control layer for privacy, visibility, memory, voice, profile identity, publishing, source authorization, connected services, notifications, and continuity management.", "tabs": ["Overview", "Privacy", "Memory", "Visibility"] },
+      "sections": [
+        { "title": "Purpose", "body": "Settings give users direct control over how ICOS behaves." },
+        { "title": "Controls", "body": "Settings should make privacy, memory, voice, profile visibility, public publishing, connected services, notifications, and continuity choices understandable." }
+      ]
+    },
+    {
+      "id": "plans",
+      "route": "/plans/",
+      "title": "Plans & Subscriptions",
+      "description": "Plans and subscriptions documentation for Free, Pro, Pro Max, verification eligibility, canonical model depth, pricing principles, and public safety boundaries.",
+      "category": "plans",
+      "sidebar": "plans",
+      "recommended": "plans",
+      "breadcrumb": "Plans",
+      "hero": { "eyebrow": "Plans", "title": "Plans & Subscriptions", "description": "Neuroartan plans are designed around one profile and one canonical personal model.", "tabs": ["Overview", "Comparison", "Verification", "Boundaries"] },
+      "sections": [
+        { "title": "Plan principle", "body": "Every Neuroartan profile receives one canonical personal model." },
+        { "title": "Boundary", "body": "Paid tiers deepen the model, expand controls, and unlock eligible pathways without creating additional canonical models." }
+      ]
+    },
+    {
+      "id": "plans-free",
+      "route": "/plans/free/",
+      "title": "Free",
+      "description": "Free plan documentation for foundation access, profile creation, one canonical personal model, Thought Bank, Posts, basic continuity, safety protection, and verification limits.",
+      "category": "plans",
+      "sidebar": "plans",
+      "recommended": "plans",
+      "breadcrumb": "Plans / Free",
+      "hero": { "eyebrow": "Plan", "title": "Free", "description": "Free gives foundation access to Neuroartan: profile creation, one canonical personal model, Thought Bank, Posts, basic continuity, and standard safety protection.", "tabs": ["Included", "Limits", "Verification", "Upgrade"] },
+      "sections": [
+        { "title": "Purpose", "body": "Free is the foundation tier for entering the Neuroartan system." },
+        { "title": "Limit", "body": "Free does not include verification submission or advanced model depth." }
+      ]
+    },
+    {
+      "id": "plans-pro",
+      "route": "/plans/pro/",
+      "title": "Pro",
+      "description": "Pro plan documentation for verification submission eligibility, expanded canonical model depth, advanced memory, voice training, creator tools, and trust boundaries.",
+      "category": "plans",
+      "sidebar": "plans",
+      "recommended": "plans",
+      "breadcrumb": "Plans / Pro",
+      "hero": { "eyebrow": "Plan", "title": "Pro", "description": "Pro is the first paid trust-and-depth tier and unlocks verification submission eligibility without guaranteeing badge approval.", "tabs": ["Included", "Verification", "Model depth", "Boundaries"] },
+      "sections": [
+        { "title": "Purpose", "body": "Pro supports deeper continuity, richer model training, stronger controls, and access to verification submission." },
+        { "title": "Boundary", "body": "Pro does not guarantee verification approval, badge retention, appeal approval, public ranking, or marketplace access." }
+      ]
+    },
+    {
+      "id": "plans-pro-max",
+      "route": "/plans/pro-max/",
+      "title": "Pro Max",
+      "description": "Pro Max plan documentation for highest-depth individual continuity, advanced canonical model development, premium memory controls, studio tooling, analytics, publishing support, and priority review pathways.",
+      "category": "plans",
+      "sidebar": "plans",
+      "recommended": "plans",
+      "breadcrumb": "Plans / Pro Max",
+      "hero": { "eyebrow": "Plan", "title": "Pro Max", "description": "Pro Max is the highest-depth individual continuity tier.", "tabs": ["Included", "Continuity", "Priority", "Boundaries"] },
+      "sections": [
+        { "title": "Purpose", "body": "Pro Max is designed for the deepest individual continuity Neuroartan offers." },
+        { "title": "Boundary", "body": "Pro Max still deepens one canonical model and does not create more personal models." }
+      ]
+    },
+    {
+      "id": "pricing-principles",
+      "route": "/plans/pricing-principles/",
+      "title": "Pricing Principles",
+      "description": "Pricing principles for subscription value, canonical model depth, verification eligibility, anti-abuse boundaries, and blocked monetization categories.",
+      "category": "plans",
+      "sidebar": "plans",
+      "recommended": "plans",
+      "breadcrumb": "Plans / Pricing Principles",
+      "hero": { "eyebrow": "Pricing", "title": "Pricing Principles", "description": "Pricing should monetize depth, continuity, training quality, verification submission, analytics, studio tools, publishing controls, and support depth.", "tabs": ["Principles", "Value", "Blocked", "Review"] },
+      "sections": [
+        { "title": "Primary value", "body": "Paid value should come from depth, memory quality, training quality, analytics, studio tools, and support." },
+        { "title": "Blocked", "body": "Pricing must not monetize extra canonical personal models, guaranteed verification, or abuse-risk bypass." }
+      ]
+    },
+    {
+      "id": "privacy",
+      "route": "/privacy/",
+      "title": "Privacy",
+      "description": "Privacy documentation for memory and continuity controls, Thought Bank privacy, verification evidence, device integrity, data retention, user rights, and public-safe privacy boundaries.",
+      "category": "privacy",
+      "sidebar": "trust",
+      "recommended": "trust",
+      "breadcrumb": "Privacy",
+      "hero": { "eyebrow": "Privacy", "title": "Privacy", "description": "Privacy documentation explains memory, profiles, Thought Bank, Posts, verification, device integrity, data retention, user controls, and review boundaries.", "tabs": ["Overview", "Memory", "Controls", "Review"] },
+      "sections": [
+        { "title": "Purpose", "body": "Privacy documentation explains public-safe privacy concepts in clear language." },
+        { "title": "Boundary", "body": "Private memory, Thought Bank entries, verification evidence, and internal review notes must remain protected." }
+      ]
+    },
+    {
+      "id": "privacy-policy",
+      "route": "/privacy/policy/",
+      "title": "Privacy Policy Direction",
+      "description": "Privacy policy direction for profile identity, memory, Thought Bank, Posts, verification evidence, device integrity, safety review, user controls, retention, and public legal review boundaries.",
+      "category": "privacy",
+      "sidebar": "trust",
+      "recommended": "trust",
+      "breadcrumb": "Privacy / Policy Direction",
+      "hero": { "eyebrow": "Privacy", "title": "Privacy Policy Direction", "description": "Public privacy policy direction before final legal approval.", "tabs": ["Direction", "Data use", "Controls", "Review"] },
+      "sections": [
+        { "title": "Purpose", "body": "This page defines public privacy policy direction before final legal approval." },
+        { "title": "Scope", "body": "The policy direction covers accounts, profiles, models, Thought Bank, Posts, memory, verification evidence, device integrity, and support records." }
+      ]
+    },
+    {
+      "id": "device-integrity",
+      "route": "/privacy/device-integrity/",
+      "title": "Device Integrity",
+      "description": "Device integrity documentation for privacy-preserving security signals, fraud prevention, duplicate-abuse detection, one-profile-one-model protection, verification protection, and model identity integrity.",
+      "category": "privacy",
+      "sidebar": "trust",
+      "recommended": "trust",
+      "breadcrumb": "Privacy / Device Integrity",
+      "hero": { "eyebrow": "Privacy", "title": "Device Integrity", "description": "Device integrity uses privacy-preserving security signals to protect accounts, profiles, verification, and model identity.", "tabs": ["Overview", "Permitted", "Prohibited", "Review"] },
+      "sections": [
+        { "title": "Core rule", "body": "Neuroartan should not collect raw physical device serial numbers." },
+        { "title": "Permitted purpose", "body": "Device integrity may support fraud prevention, duplicate-abuse detection, account integrity, verification protection, and model identity protection." }
+      ]
+    },
+    {
+      "id": "data-retention",
+      "route": "/privacy/data-retention/",
+      "title": "Data Retention",
+      "description": "Data retention documentation for memory, Thought Bank, Posts, verification evidence, device integrity signals, safety review records, support records, deletion, correction, and retention requests.",
+      "category": "privacy",
+      "sidebar": "trust",
+      "recommended": "trust",
+      "breadcrumb": "Privacy / Data Retention",
+      "hero": { "eyebrow": "Privacy", "title": "Data Retention", "description": "Data retention should be purpose-bound, access-controlled, review-gated, and tied to user control, product continuity, verification, safety, support, security, legal obligations, and abuse prevention.", "tabs": ["Overview", "Records", "Requests", "Review"] },
+      "sections": [
+        { "title": "Purpose", "body": "Data retention documentation explains public-facing retention direction." },
+        { "title": "Principle", "body": "Retention should be purpose-bound, access-controlled, proportionate, and review-gated." }
+      ]
+    },
+    {
+      "id": "verification",
+      "route": "/verification/",
+      "title": "Verification",
+      "description": "Verification documentation for identity review, verified badge meaning, Pro eligibility, anti-impersonation protection, denial, re-review, revocation, and appeals.",
+      "category": "verification",
+      "sidebar": "trust",
+      "recommended": "trust",
+      "breadcrumb": "Verification",
+      "hero": { "eyebrow": "Trust", "title": "Verification", "description": "Verification is a review-based trust system. Submission begins at Pro, but approval is never guaranteed.", "tabs": ["Overview", "Eligibility", "Badge", "Appeals"] },
+      "sections": [
+        { "title": "Purpose", "body": "Verification supports public trust, anti-impersonation protection, badge integrity, and model identity governance." },
+        { "title": "Approval", "body": "Verification is review-based. Submission and payment do not guarantee approval." }
+      ]
+    },
+    {
+      "id": "verification-badge",
+      "route": "/verification/badge/",
+      "title": "Verification Badge",
+      "description": "Verification badge documentation explaining badge meaning, limits, review status, revocation, anti-impersonation relationship, and public trust boundaries.",
+      "category": "verification",
+      "sidebar": "trust",
+      "recommended": "trust",
+      "breadcrumb": "Verification / Badge",
+      "hero": { "eyebrow": "Verification", "title": "Verification Badge", "description": "A Neuroartan verified badge means a profile passed the active verification review process.", "tabs": ["Meaning", "Limits", "Review", "Revocation"] },
+      "sections": [
+        { "title": "Meaning", "body": "The badge means the profile met Neuroartan’s active verification standard at the time of review." },
+        { "title": "Limit", "body": "The badge does not guarantee output accuracy, professional authority, endorsement, income, or immunity from review." }
+      ]
+    },
+    {
+      "id": "safety",
+      "route": "/safety/",
+      "title": "Safety & Trust",
+      "description": "Safety and trust documentation for anti-impersonation, abuse prevention, verification support, public trust protection, restrictions, appeals, and privacy-safe enforcement boundaries.",
+      "category": "safety",
+      "sidebar": "trust",
+      "recommended": "trust",
+      "breadcrumb": "Safety",
+      "hero": { "eyebrow": "Safety", "title": "Safety & Trust", "description": "Neuroartan safety systems protect profiles, canonical personal models, Posts, verification status, public identity surfaces, account integrity, and user trust.", "tabs": ["Overview", "Identity", "Abuse", "Review"] },
+      "sections": [
+        { "title": "Purpose", "body": "Safety and trust documentation explains how Neuroartan protects identity, continuity, profile integrity, public surfaces, model identity, verification status, and user confidence." },
+        { "title": "Payment boundary", "body": "No subscription tier may bypass safety, privacy, verification, identity review, abuse prevention, or appeal procedure." }
+      ]
+    },
+    {
+      "id": "anti-impersonation",
+      "route": "/safety/anti-impersonation/",
+      "title": "Anti-Impersonation",
+      "description": "Anti-impersonation documentation for profile identity, verified identity, model identity, false affiliation, badge misuse, unauthorized representation, reporting, review, and appeal boundaries.",
+      "category": "safety",
+      "sidebar": "trust",
+      "recommended": "trust",
+      "breadcrumb": "Safety / Anti-Impersonation",
+      "hero": { "eyebrow": "Safety", "title": "Anti-Impersonation", "description": "Anti-impersonation systems protect users, public profiles, verified identities, Posts, canonical personal models, and public trust from misleading identity claims.", "tabs": ["Overview", "Identity", "Reporting", "Review"] },
+      "sections": [
+        { "title": "Purpose", "body": "Anti-impersonation protects the relationship between a person, account, public profile, verified status, Posts, and canonical personal model." },
+        { "title": "Boundary", "body": "Users must not present a model as another person or another person’s authority without authorization and review." }
+      ]
+    },
+    {
+      "id": "abuse-prevention",
+      "route": "/safety/abuse-prevention/",
+      "title": "Abuse Prevention",
+      "description": "Abuse prevention documentation for duplicate abuse, model-slot abuse, fraud, scams, impersonation, verification misuse, automation abuse, evasion attempts, restrictions, appeals, and public-safe review boundaries.",
+      "category": "safety",
+      "sidebar": "trust",
+      "recommended": "trust",
+      "breadcrumb": "Safety / Abuse Prevention",
+      "hero": { "eyebrow": "Safety", "title": "Abuse Prevention", "description": "Abuse prevention protects users, profiles, canonical personal models, verification systems, public identity surfaces, Posts, privacy controls, and platform trust from misuse.", "tabs": ["Overview", "Categories", "Restrictions", "Appeals"] },
+      "sections": [
+        { "title": "Purpose", "body": "Abuse prevention keeps Neuroartan useful, trustworthy, and safe." },
+        { "title": "Categories", "body": "Public categories may include duplicate abuse, model-slot abuse, verification misuse, impersonation, fraud, automation abuse, and evasion attempts." }
+      ]
+    },
+    {
+      "id": "appeals",
+      "route": "/appeals/",
+      "title": "Appeals & Restrictions",
+      "description": "Appeals and restrictions documentation for review decisions, proportional restrictions, user notices, re-review, appeal paths, verification denial, badge suspension, account restrictions, and support boundaries.",
+      "category": "safety",
+      "sidebar": "trust",
+      "recommended": "trust",
+      "breadcrumb": "Appeals",
+      "hero": { "eyebrow": "Review", "title": "Appeals & Restrictions", "description": "Appeals and restrictions documentation explains review decisions, feature limits, verification holds, badge actions, account restrictions, re-review options, and appeal paths.", "tabs": ["Overview", "Restrictions", "Notices", "Appeals"] },
+      "sections": [
+        { "title": "Purpose", "body": "Appeals and restrictions documentation explains how users may understand and respond to review decisions." },
+        { "title": "Non-guarantee", "body": "Appeal access does not guarantee reversal, restored access, verification approval, badge restoration, or removal of every restriction." }
+      ]
+    },
+    {
+      "id": "terms-direction",
+      "route": "/legal/terms-direction/",
+      "title": "Terms Direction",
+      "description": "Terms direction documentation for accounts, profiles, canonical personal models, Posts, subscriptions, verification, safety restrictions, appeals, privacy, developer use, and public legal review boundaries.",
+      "category": "legal",
+      "sidebar": "legal",
+      "recommended": "trust",
+      "breadcrumb": "Legal / Terms Direction",
+      "hero": { "eyebrow": "Legal", "title": "Terms Direction", "description": "Terms direction defines public legal structure before final legal approval.", "tabs": ["Direction", "Accounts", "Subscriptions", "Restrictions"] },
+      "sections": [
+        { "title": "Purpose", "body": "Terms direction defines public legal structure for account use, profiles, canonical personal models, Posts, subscriptions, verification, safety restrictions, developer access, privacy controls, support, and dispute handling." },
+        { "title": "Review status", "body": "Final terms require legal, governance, privacy, security, product, finance, support, infrastructure, and executive review." }
+      ]
+    },
+    {
+      "id": "model-identity",
+      "route": "/model-identity/",
+      "title": "Model Identity",
+      "description": "Model identity documentation for one profile, one canonical personal model, continuity, anti-impersonation protection, and model identity governance.",
+      "category": "model-identity",
+      "sidebar": "trust",
+      "recommended": "trust",
+      "breadcrumb": "Model Identity",
+      "hero": { "eyebrow": "Model identity", "title": "Model Identity", "description": "Model identity documentation defines the relationship between profile identity, canonical personal model continuity, and trust boundaries.", "tabs": ["Overview", "Continuity", "Trust", "Safety"] },
+      "sections": [
+        { "title": "Purpose", "body": "Model identity keeps profile identity and canonical personal model continuity governed and protected." },
+        { "title": "Core rule", "body": "One profile should remain tied to one canonical personal model." }
+      ]
+    },
+    {
+      "id": "one-profile-one-model",
+      "route": "/model-identity/one-profile-one-model/",
+      "title": "One Profile One Canonical Model",
+      "description": "One profile one canonical model documentation for identity continuity, personal model governance, anti-impersonation protection, subscription boundaries, verification, abuse prevention, and model integrity.",
+      "category": "model-identity",
+      "sidebar": "trust",
+      "recommended": "trust",
+      "breadcrumb": "Model Identity / One Profile One Canonical Model",
+      "hero": { "eyebrow": "Model identity", "title": "One Profile One Canonical Model", "description": "Each Neuroartan profile is tied to one canonical personal model.", "tabs": ["Principle", "Continuity", "Plans", "Safety"] },
+      "sections": [
+        { "title": "Purpose", "body": "The one-profile-one-model principle protects continuity and identity integrity." },
+        { "title": "Subscription boundary", "body": "Subscriptions may increase depth and controls, but they must not create additional canonical personal models." }
+      ]
+    },
+    {
+      "id": "developers-oauth-connectors",
+      "route": "/developers/oauth-connectors/",
+      "title": "OAuth Connectors",
+      "description": "OAuth connectors documentation for trusted external integrations, authorization, scopes, redirect control, token protection, revocation, provider boundaries, consent, privacy, and security review.",
+      "category": "developers",
+      "sidebar": "developers",
+      "recommended": "developers",
+      "breadcrumb": "Developers / OAuth Connectors",
+      "hero": { "eyebrow": "Connectors", "title": "OAuth Connectors", "description": "OAuth connectors allow approved external services to connect with Neuroartan through consent, scoped authorization, secure token handling, revocation, and provider-specific boundaries.", "tabs": ["Overview", "Authorization", "Security", "Revocation"] },
+      "sections": [
+        { "title": "Purpose", "body": "OAuth connectors give users a controlled way to authorize external services for approved Neuroartan functionality." },
+        { "title": "Security", "body": "Connector documentation must not expose tokens, client secrets, provider credentials, or private implementation details." }
+      ]
+    },
+    {
+      "id": "developers-api-integration",
+      "route": "/developers/api-integration/",
+      "title": "API Integration",
+      "description": "API integration documentation for approved endpoints, authentication, authorization, schemas, rate limits, public errors, privacy boundaries, support-safe examples, and security review.",
+      "category": "developers",
+      "sidebar": "developers",
+      "recommended": "developers",
+      "breadcrumb": "Developers / API Integration",
+      "hero": { "eyebrow": "API", "title": "API Integration", "description": "API integration documentation defines approved endpoints, authentication, authorization, schemas, rate limits, error responses, and support-safe examples.", "tabs": ["Overview", "Authentication", "Schemas", "Errors"] },
+      "sections": [
+        { "title": "Purpose", "body": "API documentation explains approved integrations in a controlled, searchable, support-safe way." },
+        { "title": "Boundary", "body": "Draft endpoints, internal routing, private infrastructure paths, service keys, and abuse-sensitive controls must remain private." }
+      ]
+    },
+    {
+      "id": "developers-security-requirements",
+      "route": "/developers/security-requirements/",
+      "title": "Security Requirements",
+      "description": "Security requirements documentation for developer integrations, OAuth, APIs, CLI, secrets, server-side boundaries, webhooks, rate limits, abuse-sensitive systems, and public-safe technical documentation.",
+      "category": "developers",
+      "sidebar": "developers",
+      "recommended": "developers",
+      "breadcrumb": "Developers / Security Requirements",
+      "hero": { "eyebrow": "Security", "title": "Security Requirements", "description": "Security requirements define the public developer boundary for secrets, OAuth, APIs, CLI output, server-side operations, webhooks, rate limits, provider data, support diagnostics, and abuse-sensitive systems.", "tabs": ["Overview", "Secrets", "Runtime", "Review"] },
+      "sections": [
+        { "title": "Purpose", "body": "Security requirements define what must be protected before any developer-facing integration or public technical article is released." },
+        { "title": "Secret handling", "body": "Secrets must never appear in public documentation, frontend code, screenshots, support output, CLI examples, logs, copied commands, or issue reports." }
+      ]
+    },
+    {
+      "id": "developers-cli",
+      "route": "/developers/cli/",
+      "title": "CLI",
+      "description": "CLI documentation for command-line workflows, diagnostics, build checks, deployment checks, support-safe output, public error IDs, security boundaries, and developer operations.",
+      "category": "developers",
+      "sidebar": "developers",
+      "recommended": "developers",
+      "breadcrumb": "Developers / CLI",
+      "hero": { "eyebrow": "Developer tools", "title": "CLI", "description": "The Neuroartan CLI is a future developer and operator interface for controlled diagnostics, build checks, deployment checks, documentation tasks, support-safe output, and traceable public errors.", "tabs": ["Overview", "Commands", "Diagnostics", "Security"] },
+      "sections": [
+        { "title": "Purpose", "body": "The CLI should provide controlled command-line workflows for diagnostics, build checks, deployment checks, documentation checks, and support-safe command output." },
+        { "title": "Output standard", "body": "CLI output should be direct, machine-readable where appropriate, human-readable by default, and safe for support use." }
+      ]
+    },
+    {
+      "id": "developers-troubleshooting",
+      "route": "/developers/troubleshooting/",
+      "title": "Troubleshooting",
+      "description": "Troubleshooting documentation for searchable diagnostics, public issue IDs, user-safe fixes, verification steps, escalation routes, developer operations, connectors, APIs, CLI, and support boundaries.",
+      "category": "developers",
+      "sidebar": "developers",
+      "recommended": "developers",
+      "breadcrumb": "Developers / Troubleshooting",
+      "hero": { "eyebrow": "Support", "title": "Troubleshooting", "description": "Troubleshooting documentation gives users, developers, and support teams searchable issue paths with public-safe causes, fix steps, verification checks, and escalation routes.", "tabs": ["Overview", "Diagnostics", "Fix paths", "Escalation"] },
+      "sections": [
+        { "title": "Purpose", "body": "Troubleshooting documentation helps users and developers resolve public-facing issues without exposing private infrastructure or security-sensitive data." },
+        { "title": "Article standard", "body": "Every troubleshooting article should include a stable issue ID, affected surface, symptom, public-safe cause, recommended fix, verification step, and escalation condition." }
+      ]
+    },
+    {
+      "id": "developers-errors",
+      "route": "/developers/errors/",
+      "title": "Error Reference",
+      "description": "Error reference documentation for stable public error IDs, authentication, accounts, verification, device integrity, APIs, CLI, billing, documentation, safety states, troubleshooting, and support-safe remediation.",
+      "category": "developers",
+      "sidebar": "developers",
+      "recommended": "developers",
+      "breadcrumb": "Developers / Error Reference",
+      "hero": { "eyebrow": "Diagnostics", "title": "Error Reference", "description": "The error reference defines stable public error ID families for support, troubleshooting, CLI output, API responses, account states, verification review, device integrity, billing, documentation, and safety states.", "tabs": ["Overview", "Code families", "Remediation", "Security"] },
+      "sections": [
+        { "title": "Purpose", "body": "The Error Reference makes Neuroartan issues searchable and supportable." },
+        { "title": "Code families", "body": "Recommended code families include AUTH, ACC, VER, DEV, API, CLI, BILL, DOC, SAFE, and SYS." }
+      ]
+    },
+    {
+      "id": "developers-release-notes",
+      "route": "/developers/release-notes/",
+      "title": "Release Notes",
+      "description": "Release notes documentation for public product changes, developer changes, API updates, CLI changes, documentation changes, known issues, migration paths, support impact, and security-safe changelog boundaries.",
+      "category": "developers",
+      "sidebar": "developers",
+      "recommended": "developers",
+      "breadcrumb": "Developers / Release Notes",
+      "hero": { "eyebrow": "Updates", "title": "Release Notes", "description": "Release notes explain public product changes, developer changes, API behavior, CLI commands, documentation updates, known issues, migration paths, and support impact.", "tabs": ["Overview", "Changes", "Migration", "Known issues"] },
+      "sections": [
+        { "title": "Purpose", "body": "Release notes create a public memory of meaningful Neuroartan changes." },
+        { "title": "Standard", "body": "Each release note should include a release date, version or release ID, affected surfaces, summary, impact, migration steps, known issues, related error IDs, and related articles." }
+      ]
+    },
+    {
+      "id": "platform",
+      "route": "/platform/",
+      "title": "Platform",
+      "description": "Platform documentation for ICOS architecture, capabilities, memory continuity, profile systems, voice training, privacy, and product trust boundaries.",
+      "category": "products",
+      "sidebar": "products",
+      "recommended": "products",
+      "breadcrumb": "Platform",
+      "hero": { "eyebrow": "Platform", "title": "Platform", "description": "Platform documentation explains the public ICOS platform architecture across capabilities, memory continuity, profile systems, voice training, privacy, and trust boundaries.", "tabs": ["Overview", "Capabilities", "Memory", "Profile"] },
+      "sections": [
+        { "title": "Purpose", "body": "Platform documentation explains how ICOS surfaces connect as one product system." },
+        { "title": "Boundary", "body": "Platform documentation should remain public-safe and avoid exposing private implementation details." }
+      ]
+    },
+    {
+      "id": "platform-capabilities",
+      "route": "/platform/capabilities/",
+      "title": "Platform Capabilities",
+      "description": "Platform capabilities documentation for ICOS product powers across continuity, memory, profile, voice, publishing, and trust boundaries.",
+      "category": "products",
+      "sidebar": "products",
+      "recommended": "products",
+      "breadcrumb": "Platform / Capabilities",
+      "hero": { "eyebrow": "Platform", "title": "Platform Capabilities", "description": "Platform capabilities documentation explains ICOS product powers across continuity, memory, profile, voice, publishing, and trust boundaries.", "tabs": ["Overview", "Core", "Trust", "Review"] },
+      "sections": [
+        { "title": "Purpose", "body": "Platform capabilities define the connected ICOS product architecture." },
+        { "title": "Trust", "body": "Capabilities must remain governed by privacy, safety, and legal review boundaries." }
+      ]
+    },
+    {
+      "id": "platform-memory-continuity",
+      "route": "/platform/memory-continuity/",
+      "title": "Memory Continuity",
+      "description": "Platform memory continuity documentation for approved context, corrections, profile signals, Thought Bank, Posts, source authorization, and canonical model coherence.",
+      "category": "products",
+      "sidebar": "products",
+      "recommended": "products",
+      "breadcrumb": "Platform / Memory Continuity",
+      "hero": { "eyebrow": "Platform", "title": "Memory Continuity", "description": "Memory continuity explains how approved context, corrections, profile signals, Thought Bank, Posts, source authorization, and canonical model coherence connect.", "tabs": ["Overview", "Sources", "Controls", "Trust"] },
+      "sections": [
+        { "title": "Purpose", "body": "Memory continuity supports long-term coherence of the canonical personal model." },
+        { "title": "Controls", "body": "Memory continuity should remain tied to user controls, source authorization, privacy, and retention boundaries." }
+      ]
+    },
+    {
+      "id": "platform-profile-system",
+      "route": "/platform/profile-system/",
+      "title": "Profile System",
+      "description": "Platform profile system documentation for private profile, public profile, verification state, Posts, settings, visibility, memory, and canonical model identity.",
+      "category": "products",
+      "sidebar": "products",
+      "recommended": "products",
+      "breadcrumb": "Platform / Profile System",
+      "hero": { "eyebrow": "Platform", "title": "Profile System", "description": "The profile system connects private profile, public profile, verification state, Posts, settings, visibility, memory, and canonical model identity.", "tabs": ["Overview", "Private", "Public", "Trust"] },
+      "sections": [
+        { "title": "Purpose", "body": "The profile system governs how identity, visibility, Posts, settings, memory, and model identity connect." },
+        { "title": "Boundary", "body": "Public profile presentation must not expose private profile data, private memory, or verification evidence." }
+      ]
+    },
+    {
+      "id": "platform-voice-training",
+      "route": "/platform/voice-training/",
+      "title": "Platform Voice Training",
+      "description": "Platform voice training documentation for approved voice signals, style alignment, memory relationship, consent, privacy, and anti-impersonation boundaries.",
+      "category": "products",
+      "sidebar": "products",
+      "recommended": "products",
+      "breadcrumb": "Platform / Voice Training",
+      "hero": { "eyebrow": "Platform", "title": "Platform Voice Training", "description": "Platform voice training documentation explains approved voice signals, style alignment, memory relationship, consent, privacy, and anti-impersonation boundaries.", "tabs": ["Overview", "Signals", "Controls", "Safety"] },
+      "sections": [
+        { "title": "Purpose", "body": "Voice training aligns ICOS with the user’s approved expression style." },
+        { "title": "Boundary", "body": "Voice training must not enable unauthorized impersonation or misleading identity presentation." }
+      ]
+    },
+    {
+      "id": "company-investors",
+      "route": "/company/investors/",
+      "title": "Company Investors",
+      "description": "Company investor documentation for Neuroartan product thesis, ICOS market category, revenue direction, trust architecture, public roadmap, and disclosure boundaries.",
+      "category": "company",
+      "sidebar": "company",
+      "recommended": "company",
+      "breadcrumb": "Company / Investors",
+      "hero": { "eyebrow": "Company", "title": "Company Investors", "description": "Company investor documentation explains Neuroartan product thesis, ICOS market category, revenue direction, trust architecture, public roadmap, and disclosure boundaries.", "tabs": ["Overview", "Product", "Market", "Boundary"] },
+      "sections": [
+        { "title": "Purpose", "body": "This page provides company investor direction in public-safe form." },
+        { "title": "Boundary", "body": "Financial projections, fundraising terms, valuation, securities disclosures, and data-room access require approval." }
+      ]
+    },
+    {
+      "id": "company-public-relations",
+      "route": "/company/public-relations/",
+      "title": "Public Relations",
+      "description": "Public relations documentation for company language, ICOS product framing, communication boundaries, approved claims, press posture, and public trust.",
+      "category": "company",
+      "sidebar": "company",
+      "recommended": "company",
+      "breadcrumb": "Company / Public Relations",
+      "hero": { "eyebrow": "Company", "title": "Public Relations", "description": "Public relations documentation defines company language, ICOS product framing, communication boundaries, approved claims, press posture, and public trust.", "tabs": ["Overview", "Language", "Claims", "Review"] },
+      "sections": [
+        { "title": "Purpose", "body": "Public relations documentation keeps company communication coherent and review-aware." },
+        { "title": "Claims", "body": "Public claims should avoid unsupported legal, medical, financial, employment, safety, verification, or product-availability promises." }
+      ]
+    },
+    {
+      "id": "company-careers",
+      "route": "/company/careers/",
+      "title": "Careers",
+      "description": "Careers documentation for future hiring direction, product roles, engineering roles, governance roles, trust and safety roles, communications roles, and hiring review status.",
+      "category": "company",
+      "sidebar": "company",
+      "recommended": "company",
+      "breadcrumb": "Company / Careers",
+      "hero": { "eyebrow": "Company", "title": "Careers", "description": "Careers documentation explains future hiring direction, product roles, engineering roles, governance roles, trust and safety roles, communications roles, and hiring review status.", "tabs": ["Overview", "Roles", "Process", "Review"] },
+      "sections": [
+        { "title": "Purpose", "body": "Careers documentation defines future hiring direction and public role boundaries." },
+        { "title": "Boundary", "body": "Hiring language should not imply employment guarantees, compensation, equity, visa sponsorship, start dates, or remote-work policy unless approved." }
+      ]
+    },
+    {
+      "id": "company-research",
+      "route": "/company/research/",
+      "title": "Research",
+      "description": "Company research documentation for Neuroartan research direction, product-adjacent research, evidence boundaries, scientific caution, and publication review.",
+      "category": "company",
+      "sidebar": "company",
+      "recommended": "company",
+      "breadcrumb": "Company / Research",
+      "hero": { "eyebrow": "Company", "title": "Research", "description": "Company research documentation explains Neuroartan research direction, product-adjacent research, evidence boundaries, scientific caution, and publication review.", "tabs": ["Overview", "Scope", "Evidence", "Review"] },
+      "sections": [
+        { "title": "Purpose", "body": "Research documentation should connect Neuroartan’s product direction with careful evidence-aware public communication." },
+        { "title": "Boundary", "body": "Research language must avoid unsupported medical, therapeutic, consciousness, or regulated-domain claims." }
+      ]
+    }
+  ],
+  "articleRows": {
+    "home": [
+      { "meta": "Start", "title": "Get started", "href": "/get-started/", "description": "Start with the foundation of Neuroartan documentation." },
+      { "meta": "Product", "title": "Products", "href": "/products/", "description": "Learn about ICOS, Thought Bank, Posts, Memory, Continuity, Voice Training, Model Training, Publishing, Profile, and Settings." },
+      { "meta": "Plans", "title": "Plans and subscriptions", "href": "/plans/", "description": "Understand Free, Pro, Pro Max, billing direction, pricing principles, and feature-depth boundaries." },
+      { "meta": "Trust", "title": "Privacy", "href": "/privacy/", "description": "Review privacy direction for memory, Thought Bank, profile identity, connected services, device integrity, and user controls." },
+      { "meta": "Trust", "title": "Verification", "href": "/verification/", "description": "Understand verification review, badge state, badge limits, badge suspension, re-review, and public trust boundaries." },
+      { "meta": "Safety", "title": "Safety", "href": "/safety/", "description": "Review abuse prevention, anti-impersonation, appeals, restrictions, and model-integrity protection." },
+      { "meta": "Platform", "title": "Developers", "href": "/developers/", "description": "Use APIs, OAuth connectors, CLI workflows, troubleshooting, release notes, and public error references." },
+      { "meta": "Help", "title": "Support", "href": "/support/", "description": "Find the correct route for account help, product help, privacy requests, verification support, developer support, billing direction, and escalation." },
+      { "meta": "Company", "title": "Investors", "href": "/investors/", "description": "Read company direction, product thesis, market category, revenue direction, trust architecture, and investor relations boundaries." },
+      { "meta": "Company", "title": "Press", "href": "/press/", "description": "Use approved public communication direction, company language, product language, claim boundaries, and media-use boundaries." }
+    ],
+    "products": [
+      { "meta": "Products · Core", "title": "ICOS", "href": "/products/icos/", "description": "The main product category and operating system direction." },
+      { "meta": "Products · Capabilities", "title": "Capabilities", "href": "/products/capabilities/", "description": "The product capabilities across memory, reflection, voice, publishing, profile identity, and continuity." },
+      { "meta": "Products · Model depth", "title": "Memory", "href": "/products/memory/", "description": "How memory supports continuity, correction, personalization, and long-term model fidelity." },
+      { "meta": "Products · Expression", "title": "Publishing", "href": "/products/publishing/", "description": "How private cognition becomes controlled public expression through Posts and profile surfaces." }
+    ],
+    "developers": [
+      { "meta": "Developers · Support", "title": "Troubleshooting", "href": "/developers/troubleshooting/", "description": "Searchable issue paths, public-safe causes, fix paths, and escalation." },
+      { "meta": "Developers · Errors", "title": "Error Reference", "href": "/developers/errors/", "description": "Stable public error IDs, code families, support-safe causes, and remediation paths." },
+      { "meta": "Developers · CLI", "title": "CLI", "href": "/developers/cli/", "description": "Command output, diagnostics, build checks, deployment checks, and safe support workflows." },
+      { "meta": "Developers · Security", "title": "Security Requirements", "href": "/developers/security-requirements/", "description": "Security boundaries for diagnostics, logs, examples, and support output." }
+    ],
+    "company": [
+      { "meta": "Company · Support", "title": "Support", "href": "/support/", "description": "Support routing for account, product, privacy, verification, developer, billing, and escalation paths." },
+      { "meta": "Company · Investor relations", "title": "Investors", "href": "/investors/", "description": "Public company direction, product thesis, market category, revenue direction, and disclosure boundary." },
+      { "meta": "Company · Press", "title": "Press", "href": "/press/", "description": "Approved public communication direction and claim boundaries." },
+      { "meta": "Company · Careers", "title": "Jobs", "href": "/jobs/", "description": "Future hiring direction for product, engineering, governance, trust, design, and communications." }
+    ],
+    "trust": [
+      { "meta": "Trust · Privacy", "title": "Privacy", "href": "/privacy/", "description": "Privacy direction for memory, Thought Bank, profile identity, connected services, device integrity, and user controls." },
+      { "meta": "Trust · Verification", "title": "Verification", "href": "/verification/", "description": "Verification review, badge state, badge suspension, re-review, and public trust boundaries." },
+      { "meta": "Safety · Identity", "title": "Anti-Impersonation", "href": "/safety/anti-impersonation/", "description": "Public identity protection from false affiliation and unauthorized representation." },
+      { "meta": "Model identity · Principle", "title": "One Profile One Canonical Model", "href": "/model-identity/one-profile-one-model/", "description": "The principle that keeps continuity tied to one governed model relationship." }
+    ]
+  },
+  "routes": {
+    "/": "home",
+    "/appeals/": "appeals",
+    "/company/careers/": "company-careers",
+    "/company/investors/": "company-investors",
+    "/company/public-relations/": "company-public-relations",
+    "/company/research/": "company-research",
+    "/developers/": "developers",
+    "/developers/api-integration/": "developers-api-integration",
+    "/developers/cli/": "developers-cli",
+    "/developers/errors/": "developers-errors",
+    "/developers/oauth-connectors/": "developers-oauth-connectors",
+    "/developers/release-notes/": "developers-release-notes",
+    "/developers/security-requirements/": "developers-security-requirements",
+    "/developers/troubleshooting/": "developers-troubleshooting",
+    "/get-started/": "get-started",
+    "/get-started/posts-and-thought-bank/": "posts-and-thought-bank",
+    "/get-started/public-documentation/": "public-documentation",
+    "/get-started/what-is-icos/": "what-is-icos",
+    "/get-started/what-is-neuroartan/": "what-is-neuroartan",
+    "/investors/": "investors",
+    "/jobs/": "jobs",
+    "/legal/terms-direction/": "terms-direction",
+    "/model-identity/": "model-identity",
+    "/model-identity/one-profile-one-model/": "one-profile-one-model",
+    "/plans/": "plans",
+    "/plans/free/": "plans-free",
+    "/plans/pricing-principles/": "pricing-principles",
+    "/plans/pro/": "plans-pro",
+    "/plans/pro-max/": "plans-pro-max",
+    "/platform/": "platform",
+    "/platform/capabilities/": "platform-capabilities",
+    "/platform/memory-continuity/": "platform-memory-continuity",
+    "/platform/profile-system/": "platform-profile-system",
+    "/platform/voice-training/": "platform-voice-training",
+    "/press/": "press",
+    "/privacy/": "privacy",
+    "/privacy/data-retention/": "data-retention",
+    "/privacy/device-integrity/": "device-integrity",
+    "/privacy/policy/": "privacy-policy",
+    "/products/": "products",
+    "/products/capabilities/": "capabilities",
+    "/products/continuity/": "continuity",
+    "/products/icos/": "icos",
+    "/products/memory/": "memory",
+    "/products/model-training/": "model-training",
+    "/products/posts/": "posts",
+    "/products/profile/": "profile",
+    "/products/public-profile/": "public-profile",
+    "/products/publishing/": "publishing",
+    "/products/settings/": "settings",
+    "/products/thought-bank/": "thought-bank",
+    "/products/voice-training/": "voice-training",
+    "/safety/": "safety",
+    "/safety/abuse-prevention/": "abuse-prevention",
+    "/safety/anti-impersonation/": "anti-impersonation",
+    "/support/": "support",
+    "/verification/": "verification",
+    "/verification/badge/": "verification-badge"
+  }
+}

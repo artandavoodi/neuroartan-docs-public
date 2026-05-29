@@ -1,0 +1,37 @@
+/* =============================================================================
+   00) FILE INDEX
+   01) MODULE IDENTITY
+   02) TOKEN AUTHORITY IMPORTS
+   03) END OF FILE
+============================================================================= */
+
+/* =============================================================================
+   01) MODULE IDENTITY
+============================================================================= */
+/* /website/docs/assets/css/core/01-tokens/00-tokens-all.css */
+
+/* =============================================================================
+   02) TOKEN AUTHORITY IMPORTS
+============================================================================= */
+@import url('./color.tokens.css');
+@import url('./typography.tokens.css');
+@import url('./spacing.tokens.css');
+@import url('./radius.tokens.css');
+@import url('./shadow.tokens.css');
+@import url('./interaction.tokens.css');
+@import url('./motion.tokens.css');
+@import url('./zindex.tokens.css');
+@import url('./layout.tokens.css');
+@import url('./control.tokens.css');
+@import url('./overlay.tokens.css');
+@import url('./navigation.tokens.css');
+@import url('./feedback.tokens.css');
+@import url('./data.tokens.css');
+@import url('./editor.tokens.css');
+@import url('./slider.tokens.css');
+
+/* =============================================================================
+   03) END OF FILE
+============================================================================= */
+
+@import url('./control-center-completion.tokens.css');

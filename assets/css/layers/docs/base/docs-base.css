@@ -1,0 +1,26 @@
+/* =============================================================================
+   DOCS PUBLIC · BASE
+============================================================================= */
+
+html {
+  min-height: 100%;
+  background: var(--docs-bg);
+  color: var(--docs-text-primary);
+  font-family: var(--docs-font-family);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--docs-bg);
+  color: var(--docs-text-primary);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

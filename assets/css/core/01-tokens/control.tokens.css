@@ -1,0 +1,221 @@
+/* =============================================================================
+   00) FILE INDEX
+   01) MODULE IDENTITY
+   02) CONTROL SIZE TOKENS
+   03) BUTTON TOKENS
+   04) FIELD TOKENS
+   05) TOGGLE TOKENS
+   06) ACCOUNT / AUTH CONTROL TOKENS
+   07) ICON TOKENS
+   08) GLASS TOKENS
+   09) END OF FILE
+============================================================================= */
+
+
+/* =============================================================================
+   01) MODULE IDENTITY
+============================================================================= */
+/* /website/docs/assets/css/core/01-tokens/control.tokens.css */
+
+/* =============================================================================
+   02) CONTROL SIZE TOKENS
+============================================================================= */
+:root{
+  --control-height-sm:2.5rem;
+  --control-height-md:3rem;
+  --control-height-lg:3.5rem;
+
+  --control-width-auth-max:26rem;
+  --control-width-auth-max-wide:30rem;
+
+  --control-padding-x-sm:0.85rem;
+  --control-padding-x-md:1rem;
+  --control-padding-x-lg:1.25rem;
+
+  --control-gap-xs:0.46rem;
+  --control-gap-sm:0.52rem;
+  --control-gap-md:0.72rem;
+  --control-gap-lg:0.82rem;
+  --control-gap-xl:1rem;
+}
+
+/* =============================================================================
+   03) BUTTON TOKENS
+============================================================================= */
+:root{
+  --button-font-size:var(--body-2-size);
+  --button-font-weight:500;
+  --button-letter-spacing:var(--tracking-copy);
+  --button-line-height:1;
+}
+
+:root{
+  --button-height-sm:var(--control-height-sm);
+  --button-height-md:var(--control-height-md);
+  --button-height-lg:var(--control-height-lg);
+
+  --button-radius-sm:var(--radius-pill);
+  --button-radius-md:var(--radius-pill);
+  --button-radius-lg:var(--radius-pill);
+
+  --button-padding-x-sm:var(--control-padding-x-sm);
+  --button-padding-x-md:var(--control-padding-x-md);
+  --button-padding-x-lg:var(--control-padding-x-lg);
+
+  --button-hover-lift-y-subtle:0;
+  --button-hover-scale-subtle:1;
+}
+
+/* =============================================================================
+   04) FIELD TOKENS
+============================================================================= */
+:root{
+  --input-font-size:var(--body-2-size);
+  --input-line-height:var(--body-2-line-height);
+  --input-letter-spacing:var(--body-2-tracking);
+}
+
+:root{
+  --input-height-sm:var(--control-height-sm);
+  --input-height-md:var(--control-height-md);
+  --input-height-lg:var(--control-height-lg);
+
+  --input-radius-sm:var(--radius-pill);
+  --input-radius-md:var(--radius-pill);
+  --input-radius-lg:var(--radius-pill);
+
+  --input-padding-x-sm:var(--control-padding-x-sm);
+  --input-padding-x-md:var(--control-padding-x-md);
+  --input-padding-x-lg:var(--control-padding-x-lg);
+}
+
+/* =============================================================================
+   04A) MINIMAL FIELD TOKENS
+============================================================================= */
+:root{
+  --input-minimal-font-size:var(--body-2-size);
+  --input-minimal-line-height:var(--body-2-line-height);
+  --input-minimal-letter-spacing:var(--body-2-tracking);
+  --input-minimal-border:none;
+  --input-minimal-border-focus:none;
+  --input-minimal-background:transparent;
+  --input-minimal-padding:0;
+  --input-minimal-radius:0;
+  --input-minimal-outline:none;
+  --input-minimal-box-shadow:none;
+}
+
+/* =============================================================================
+   05) TOGGLE TOKENS
+============================================================================= */
+:root{
+  --toggle-width:2.625rem;
+  --toggle-height:1.25rem;
+  --toggle-padding:0.125rem;
+  --toggle-thumb-size:1rem;
+  --toggle-radius:999px;
+  --toggle-track-border-width:0;
+  --toggle-track-bg-off:color-mix(in srgb, var(--text-primary-color) 14%, transparent);
+  --toggle-track-bg-on:var(--color-primary1);
+  --toggle-track-border-color:transparent;
+  --toggle-track-border-hover-color:transparent;
+  --toggle-thumb-bg:rgb(255, 255, 255);
+  --toggle-thumb-shadow:0 0.0625rem 0.125rem rgba(0, 0, 0, 0.22), 0 0.03125rem 0.0625rem rgba(0, 0, 0, 0.14);
+  --toggle-thumb-shadow-active:0 0.03125rem 0.0625rem rgba(0, 0, 0, 0.16);
+  --toggle-focus-ring-width:0.125rem;
+  --toggle-focus-ring-color:color-mix(in srgb, var(--color-primary1) 22%, transparent);
+  --toggle-disabled-opacity:0.42;
+  --toggle-transition-duration:220ms;
+  --toggle-transition-ease:cubic-bezier(0.25, 0.1, 0.25, 1);
+  --toggle-thumb-translate-on:calc(var(--toggle-width) - var(--toggle-thumb-size) - (2 * var(--toggle-padding)));
+}
+
+/* =============================================================================
+   06) ACCOUNT / AUTH CONTROL TOKENS
+============================================================================= */
+:root{
+  --account-control-width-max:var(--control-width-auth-max);
+  --account-control-width-max-wide:var(--control-width-auth-max-wide);
+
+  --account-content-gap-xs:var(--control-gap-xs);
+  --account-content-gap-sm:var(--control-gap-sm);
+  --account-content-gap-md:var(--control-gap-md);
+  --account-content-gap-lg:var(--control-gap-lg);
+  --account-content-gap-xl:var(--control-gap-xl);
+
+  --account-button-height:var(--button-height-md);
+  --account-button-radius:var(--button-radius-md);
+  --account-button-padding-x:var(--button-padding-x-lg);
+  --account-button-font-size:var(--button-font-size);
+  --account-button-font-weight:var(--button-font-weight);
+  --account-button-letter-spacing:var(--button-letter-spacing);
+  --account-button-line-height:var(--button-line-height);
+  --account-button-hover-lift-y:var(--button-hover-lift-y-subtle);
+  --account-button-hover-scale:var(--button-hover-scale-subtle);
+
+  --account-field-height:var(--input-height-md);
+  --account-field-radius:var(--radius-sm);
+  --account-field-padding-x:var(--input-padding-x-md);
+  --account-field-font-size:var(--input-font-size);
+  --account-field-line-height:var(--input-line-height);
+  --account-field-letter-spacing:var(--input-letter-spacing);
+
+  --account-provider-button-height:var(--account-button-height);
+  --account-provider-button-radius:var(--account-button-radius);
+  --account-provider-button-padding-x:var(--account-button-padding-x);
+
+  --account-text-action-font-size:var(--body-3-size);
+  --account-text-action-line-height:var(--body-3-line-height);
+  --account-text-action-letter-spacing:var(--body-3-tracking);
+
+  --account-back-control-size:var(--icon-size-md);
+  --account-back-icon-size:1.12rem;
+}
+
+/* =============================================================================
+   07) ICON TOKENS
+============================================================================= */
+:root{
+  --icon-size-xs:0.9rem;
+  --icon-size-sm:1rem;
+  --icon-size-md:1.2rem;
+  --icon-size-lg:1.4rem;
+  --icon-size-xl:1.8rem;
+}
+
+/* =============================================================================
+   08) GLASS TOKENS
+============================================================================= */
+:root{
+  --glass-blur-sm:10px;
+  --glass-blur-md:16px;
+  --glass-blur-lg:24px;
+}
+
+/* =============================================================================
+   09) AVATAR TOKENS
+============================================================================= */
+:root{
+  --avatar-size:var(--spacing-3xl);
+  --avatar-bg:var(--color-primary1);
+  --avatar-border:var(--border-color);
+  --avatar-border-width:var(--border-width-hairline);
+  --avatar-radius:var(--radius-pill);
+  --avatar-layer:var(--z-raised);
+}
+
+:root{
+  --avatar-media-action-size:var(--spacing-lg);
+  --avatar-media-action-bg:var(--control-surface);
+  --avatar-media-action-bg-hover:var(--panel-surface-solid-unified);
+  --avatar-media-action-border:var(--control-border-unified);
+  --avatar-media-action-border-hover:var(--control-border-hover-unified);
+  --avatar-media-action-radius:var(--radius-pill);
+  --avatar-media-action-layer:var(--z-above);
+  --avatar-media-action-position-right:0;
+  --avatar-media-action-position-bottom:0;
+}
+
+/* =============================================================================
+   10) END OF FILE
+============================================================================= */

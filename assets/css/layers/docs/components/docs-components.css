@@ -1,0 +1,40 @@
+/* =============================================================================
+   DOCS PUBLIC · COMPONENTS
+============================================================================= */
+
+.docs-rail {
+  width: min(var(--site-rail-width), calc(100% - (var(--site-shell-inline-padding) * 2)));
+  margin-inline: auto;
+}
+
+.docs-surface {
+  border: var(--docs-border-width) solid var(--docs-border);
+  border-radius: var(--docs-radius-card);
+  background: var(--docs-surface);
+  color: var(--docs-text-primary);
+}
+
+.docs-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--docs-border-width) solid var(--docs-border);
+  border-radius: var(--docs-radius-pill);
+  background: var(--docs-surface-secondary);
+  color: var(--docs-text-secondary);
+}
+
+.docs-link-card {
+  display: flex;
+  flex-direction: column;
+  border: var(--docs-border-width) solid var(--docs-border);
+  border-radius: var(--docs-radius-card);
+  background: var(--docs-surface);
+  color: var(--docs-text-primary);
+  text-decoration: none;
+}
+
+.docs-link-card:focus-visible {
+  outline: var(--docs-focus-width) solid var(--docs-focus-color);
+  outline-offset: var(--docs-focus-offset);
+}

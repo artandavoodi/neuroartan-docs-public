@@ -1,0 +1,643 @@
+/* =============================================================================
+   00) FILE INDEX
+   01) MODULE IDENTITY
+   02) GLOBAL INTERACTION PRIMITIVES
+   03) INTERACTION STATE TOKENS
+   04) HOVER SURFACE TOKENS
+   05) HOVER TEXT TOKENS
+   06) HOVER BORDER TOKENS
+   07) FOCUS TOKENS
+   08) ACTIVE / PRESSED TOKENS
+   09) SELECTED / CURRENT TOKENS
+   10) DISABLED TOKENS
+   11) TRANSFORM EFFECT TOKENS
+   12) BLUR / FILTER EFFECT TOKENS
+   13) SHADOW EFFECT TOKENS
+   14) OVERLAY EFFECT TOKENS
+   15) DIALOG / CONSENT OVERLAY TOKENS
+   16) FEEDBACK EFFECT TOKENS
+   17) NAVIGATION EFFECT TOKENS
+   17A) INTERACTIVE ICON STROKE TOKENS
+   18) CONTROL EFFECT TOKENS
+   18A) COMPOSER / PROMPT SURFACE TOKENS
+   19) PROFILE EFFECT TOKENS
+   20) PRODUCT EFFECT TOKENS
+   21) MARKETING EFFECT TOKENS
+   22) END OF FILE
+============================================================================= */
+
+/* =============================================================================
+   01) MODULE IDENTITY
+============================================================================= */
+/* /website/docs/assets/css/core/01-tokens/interaction.tokens.css */
+
+/* =============================================================================
+   02) GLOBAL INTERACTION PRIMITIVES
+============================================================================= */
+:root{
+  /* Universal surface shape roles. */
+  --shape-control-radius:var(--radius-pill);
+  --shape-toggle-radius:var(--radius-pill);
+  --shape-icon-button-radius:var(--radius-circle);
+  --shape-card-radius:var(--radius-lg);
+  --shape-panel-radius:var(--radius-xl);
+  --shape-dialog-radius:var(--radius-dialog);
+  --shape-overlay-radius:var(--radius-dialog);
+  --shape-subpanel-radius:var(--radius-lg);
+
+  /* Universal control shape compatibility aliases. */
+  --control-radius:var(--shape-control-radius);
+  --control-radius-pill:var(--radius-pill);
+
+  /* Universal control rhythm. */
+  --control-height-sm:2.2rem;
+  --control-height-md:2.6rem;
+  --control-height-lg:3rem;
+  --control-padding-x-sm:0.82rem;
+  --control-padding-x-md:1rem;
+  --control-padding-x-lg:1.25rem;
+  --control-gap:0.42rem;
+  --control-font-size:calc(0.9rem * var(--accessibility-typography-scale));
+  --control-font-weight:400;
+  --control-line-height:1.2;
+  --control-tracking:-0.01em;
+
+  /* Universal control compatibility aliases. */
+  --control-width-min:2.75rem;
+  --border-width-thin:1px;
+  --space-8:2rem;
+  --z-above:20;
+  --viewport-width:100vw;
+  --viewport-height:100vh;
+
+  /* Universal button/control surface. */
+  --control-surface:color-mix(in srgb, var(--surface-color, var(--bg-color)) 82%, transparent);
+  --control-surface-hover:var(--hover-bg-medium);
+  --control-surface-active:var(--active-bg-medium);
+  --control-border-unified:var(--control-border-color, var(--border-color));
+  --control-border-hover-unified:var(--hover-border-medium);
+  --overlay-popover-surface:color-mix(in srgb, var(--surface-color, var(--bg-color)) 96%, var(--bg-color));
+  --overlay-popover-border:var(--control-border-unified);
+
+  /* ----------------------------------------------------------------
+  GLOBAL SEARCH INPUT SYSTEM
+  ---------------------------------------------------------------- */
+  --search-field-border-width:0;
+  --search-field-border:transparent;
+  --search-field-border-focus:transparent;
+  --search-field-radius:var(--control-radius-composer);
+  --search-field-surface:var(--field-bg);
+  --search-field-surface-clear:transparent;
+  --search-field-text:var(--text-primary-color);
+  --search-field-placeholder:var(--text-secondary-color);
+  --search-field-placeholder-opacity:0.72;
+  --search-field-caret:var(--text-primary-color);
+  --control-text-unified:var(--text-color);
+  --control-text-hover-unified:var(--hover-text-color);
+
+  /* Universal close button. */
+  --close-control-size:2.4rem;
+  --close-control-radius:var(--shape-icon-button-radius);
+  --close-control-line-width:1.05rem;
+  --close-control-line-height:1px;
+  --close-control-line-radius:var(--radius-pill);
+  --close-control-surface:transparent;
+  --close-control-surface-hover:var(--hover-bg-medium);
+  --close-control-border:transparent;
+  --close-control-border-hover:var(--hover-border-medium);
+  --close-control-color:var(--text-color);
+  --close-control-color-hover:var(--text-color);
+
+  /* Universal panel/dialog surface. */
+  --panel-surface-unified:color-mix(in srgb, var(--surface-color, var(--bg-color)) 86%, transparent);
+  --panel-surface-solid-unified:color-mix(in srgb, var(--surface-color, var(--bg-color)) 94%, transparent);
+  --panel-surface-dropdown-unified:color-mix(in srgb, var(--surface-color, var(--bg-color)) 98%, transparent);
+  --panel-border-unified:var(--control-border-color, var(--border-color));
+  --panel-shadow-unified:var(--dialog-overlay-shadow);
+  --panel-blur-unified:var(--dialog-overlay-panel-blur);
+  --panel-saturate-unified:1.18;
+  --panel-radius-unified:var(--shape-panel-radius);
+  --dialog-radius-unified:var(--shape-dialog-radius);
+  --overlay-radius-unified:var(--shape-overlay-radius);
+
+  /* Universal overlay motion. */
+  --overlay-motion-duration:320ms;
+  --overlay-motion-ease:cubic-bezier(0.22, 1, 0.36, 1);
+  --overlay-transform-closed:var(--dialog-overlay-transform-closed);
+  --overlay-transform-open:var(--dialog-overlay-transform-open);
+  --overlay-opacity-closed:0;
+  --overlay-opacity-open:1;
+
+  /* Universal interaction transition. */
+  --interaction-motion-fast:180ms;
+  --interaction-motion-medium:220ms;
+  --interaction-motion-slow:320ms;
+  --interaction-ease-standard:cubic-bezier(0.22, 1, 0.36, 1);
+  --interaction-transition-control:background-color var(--interaction-motion-medium) var(--interaction-ease-standard), border-color var(--interaction-motion-medium) var(--interaction-ease-standard), color var(--interaction-motion-medium) var(--interaction-ease-standard), opacity var(--interaction-motion-medium) var(--interaction-ease-standard), transform var(--interaction-motion-medium) var(--interaction-ease-standard);
+}
+
+/* =============================================================================
+   03) INTERACTION STATE TOKENS
+============================================================================= */
+:root{
+  /* Foundation opacity states for common interaction behavior. */
+  --state-opacity-idle:1;
+  --state-opacity-hover-subtle:0.82;
+  --state-opacity-hover-medium:0.9;
+  --state-opacity-hover-strong:1;
+  --state-opacity-active:0.72;
+  --state-opacity-selected:1;
+  --state-opacity-disabled:0.38;
+  --state-opacity-muted:0.62;
+}
+
+/* =============================================================================
+   04) HOVER SURFACE TOKENS
+============================================================================= */
+:root{
+  /* Subtle hover surface for restrained UI rows, cards, tabs, and links. */
+  --hover-bg-subtle:color-mix(in srgb, var(--text-primary-color) 4%, transparent);
+
+  /* Medium hover surface for controls and visible interactive panels. */
+  --hover-bg-medium:color-mix(in srgb, var(--text-primary-color) 7%, transparent);
+
+  /* Strong hover surface for high-emphasis actions and selected panels. */
+  --hover-bg-strong:color-mix(in srgb, var(--text-primary-color) 11%, transparent);
+
+  /* Inverted hover surface for dark-on-light or light-on-dark emphasis moments. */
+  --hover-bg-inverted:var(--text-primary-color);
+}
+
+/* =============================================================================
+   05) HOVER TEXT TOKENS
+============================================================================= */
+:root{
+  /* Standard hover text color for links and navigation. */
+  --hover-text-color:var(--text-primary-color);
+
+  /* Muted hover text color for secondary interface elements. */
+  --hover-text-muted-color:var(--text-secondary-color);
+
+  /* Inverted hover text color used when hover background becomes primary text color. */
+  --hover-text-inverted-color:var(--bg-color);
+}
+
+/* =============================================================================
+   06) HOVER BORDER TOKENS
+============================================================================= */
+:root{
+  /* Subtle hover border for low-emphasis cards and rows. */
+  --hover-border-subtle:color-mix(in srgb, var(--text-primary-color) 10%, transparent);
+
+  /* Medium hover border for controls and local navigation. */
+  --hover-border-medium:color-mix(in srgb, var(--text-primary-color) 18%, transparent);
+
+  /* Strong hover border for high-emphasis interactive surfaces. */
+  --hover-border-strong:color-mix(in srgb, var(--text-primary-color) 28%, transparent);
+}
+
+/* =============================================================================
+   07) FOCUS TOKENS
+============================================================================= */
+:root{
+  /* Global accessible focus ring. */
+  --focus-ring-width:2px;
+  --focus-ring-offset:3px;
+  --focus-ring-color:color-mix(in srgb, var(--text-primary-color) 52%, transparent);
+  --focus-ring-shadow:0 0 0 var(--focus-ring-width) var(--focus-ring-color);
+
+  /* Softer internal focus state for dense platform controls. */
+  --focus-ring-soft-color:color-mix(in srgb, var(--text-primary-color) 24%, transparent);
+  --focus-ring-soft-shadow:0 0 0 var(--focus-ring-width) var(--focus-ring-soft-color);
+}
+
+/* =============================================================================
+   08) ACTIVE / PRESSED TOKENS
+============================================================================= */
+:root{
+  /* Pressed interaction feedback. */
+  --active-bg-subtle:color-mix(in srgb, var(--text-primary-color) 8%, transparent);
+  --active-bg-medium:color-mix(in srgb, var(--text-primary-color) 12%, transparent);
+  --active-border-color:color-mix(in srgb, var(--text-primary-color) 24%, transparent);
+  --active-transform:translateY(0);
+  --active-scale:0.99;
+}
+
+/* =============================================================================
+   09) SELECTED / CURRENT TOKENS
+============================================================================= */
+:root{
+  /* Selected/current state for tabs, nav items, filters, and active controls. */
+  --selected-bg-subtle:color-mix(in srgb, var(--text-primary-color) 6%, transparent);
+  --selected-bg-medium:color-mix(in srgb, var(--text-primary-color) 10%, transparent);
+  --selected-text-color:var(--text-primary-color);
+  --selected-border-color:color-mix(in srgb, var(--text-primary-color) 20%, transparent);
+  --selected-indicator-color:var(--text-primary-color);
+  --selected-indicator-opacity:1;
+}
+
+/* =============================================================================
+   10) DISABLED TOKENS
+============================================================================= */
+:root{
+  /* Disabled state for non-interactive controls and pending unavailable actions. */
+  --interactive-cursor:pointer;
+  --text-input-cursor:text;
+  --disabled-opacity:var(--state-opacity-disabled);
+  --disabled-cursor:not-allowed;
+  --disabled-filter:saturate(0.4);
+}
+
+/* =============================================================================
+   11) TRANSFORM EFFECT TOKENS
+============================================================================= */
+:root{
+  /* Subtle transform effects for premium but restrained interaction feedback. */
+  --effect-lift-y-subtle:-1px;
+  --effect-lift-y-medium:-2px;
+  --effect-lift-y-strong:-4px;
+  --effect-scale-subtle:1.01;
+  --effect-scale-medium:1.018;
+  --effect-scale-strong:1.028;
+  --effect-press-scale:var(--active-scale);
+
+  --hover-transform-none:none;
+  --hover-transform-lift-subtle:translateY(var(--effect-lift-y-subtle));
+  --hover-transform-lift-medium:translateY(var(--effect-lift-y-medium));
+  --hover-transform-scale-subtle:scale(var(--effect-scale-subtle));
+}
+
+/* =============================================================================
+   12) BLUR / FILTER EFFECT TOKENS
+============================================================================= */
+:root{
+  /* Blur and filter values for glass surfaces, overlays, and media effects. */
+  --effect-blur-xs:4px;
+  --effect-blur-sm:8px;
+  --effect-blur-md:14px;
+  --effect-blur-lg:22px;
+  --effect-blur-xl:34px;
+
+  --effect-saturate-soft:saturate(1.08);
+  --effect-saturate-strong:saturate(1.18);
+  --effect-brightness-hover:brightness(1.04);
+  --effect-brightness-muted:brightness(0.92);
+}
+
+/* =============================================================================
+   13) SHADOW EFFECT TOKENS
+============================================================================= */
+:root{
+  /* Shadow effects should consume shadow primitives where available. */
+  --effect-shadow-none:none;
+  --effect-shadow-hover-subtle:0 10px 28px color-mix(in srgb, var(--text-primary-color) 8%, transparent);
+  --effect-shadow-hover-medium:0 18px 52px color-mix(in srgb, var(--text-primary-color) 12%, transparent);
+  --effect-shadow-hover-strong:0 28px 80px color-mix(in srgb, var(--text-primary-color) 16%, transparent);
+}
+
+/* =============================================================================
+   14) OVERLAY EFFECT TOKENS
+============================================================================= */
+:root{
+  /* Overlay opacity and surface layers. */
+  --overlay-opacity-subtle:0.18;
+  --overlay-opacity-medium:0.38;
+  --overlay-opacity-strong:0.62;
+  --overlay-bg-subtle:color-mix(in srgb, var(--bg-color) 72%, transparent);
+  --overlay-bg-medium:color-mix(in srgb, var(--bg-color) 84%, transparent);
+  --overlay-bg-strong:color-mix(in srgb, var(--bg-color) 92%, transparent);
+}
+
+/* =============================================================================
+   15) DIALOG / CONSENT OVERLAY TOKENS
+============================================================================= */
+:root{
+  /* Exact dialog and consent overlay values for mature modal-style surfaces. */
+  --dialog-overlay-viewport-gap:24px;
+  --dialog-overlay-viewport-gap-mobile:20px;
+  --dialog-overlay-shadow:0 20px 60px color-mix(in srgb, var(--shadow-color, #000000) 8%, transparent);
+  --dialog-overlay-shadow-dark:0 24px 70px color-mix(in srgb, var(--shadow-color, #000000) 24%, transparent);
+  --dialog-overlay-row-shadow:0 14px 34px color-mix(in srgb, var(--shadow-color, #000000) 4%, transparent);
+  --dialog-overlay-row-shadow-light:0 14px 34px color-mix(in srgb, var(--shadow-color, #000000) 3.5%, transparent);
+  --dialog-overlay-row-shadow-dark:0 14px 34px color-mix(in srgb, var(--shadow-color, #000000) 18%, transparent);
+  --dialog-overlay-radius:1.9rem;
+  --dialog-overlay-radius-mobile:1.5rem;
+  --dialog-overlay-card-radius:1rem;
+  --dialog-overlay-subitem-radius:0.9rem;
+  --dialog-overlay-pill-radius:999px;
+  --dialog-overlay-backdrop-blur:16px;
+  --dialog-overlay-panel-blur:18px;
+  --dialog-overlay-footer-separator-opacity:0.35;
+  --dialog-overlay-shell-gap:0.9rem;
+  --dialog-overlay-panel-min-height:24rem;
+  --dialog-overlay-panel-padding-y:1.25rem;
+  --dialog-overlay-panel-padding-x:1.25rem;
+  --dialog-overlay-panel-padding-y-mobile:0.95rem;
+  --dialog-overlay-panel-padding-x-mobile:0.95rem;
+  --dialog-overlay-transform-closed:translateY(1.2rem) scale(0.985);
+  --dialog-overlay-transform-open:translateY(0) scale(1);
+  --dialog-overlay-opacity-closed:0;
+  --dialog-overlay-opacity-open:1;
+}
+
+:root{
+  /* Exact consent/dialog content rhythm and typography values. */
+  --dialog-consent-header-gap:0.82rem;
+  --dialog-consent-header-gap-mobile:0.72rem;
+  --dialog-consent-header-padding-bottom:1.14rem;
+  --dialog-consent-header-padding-bottom-mobile:0.97rem;
+  --dialog-consent-body-padding-top:1.92rem;
+  --dialog-consent-body-padding-top-mobile:1.53rem;
+  --dialog-consent-body-padding-inline:0.52rem;
+  --dialog-consent-body-padding-inline-mobile:0.36rem;
+  --dialog-consent-content-gutter:1.42rem;
+  --dialog-consent-content-gutter-mobile:1.08rem;
+  --dialog-consent-body-edge-inset:0.52rem;
+  --dialog-consent-body-edge-inset-mobile:0.36rem;
+  --dialog-consent-row-margin-bottom:1rem;
+  --dialog-consent-subitems-margin-top:0.06rem;
+  --dialog-consent-settings-intro-margin-bottom:1rem;
+  --dialog-consent-eyebrow-size:0.78rem;
+  --dialog-consent-eyebrow-weight:400;
+  --dialog-consent-eyebrow-line-height:1.2;
+  --dialog-consent-eyebrow-tracking:0.08em;
+  --dialog-consent-copy-size:0.95rem;
+  --dialog-consent-copy-weight:300;
+  --dialog-consent-copy-line-height:1.58;
+  --dialog-consent-copy-tracking:-0.015em;
+  --dialog-consent-note-legal-size:0.8rem;
+  --dialog-consent-note-legal-line-height:1.45;
+  --dialog-consent-strong-weight:400;
+  --dialog-consent-mobile-title-size:1.46rem;
+  --dialog-consent-mobile-copy-size:0.9rem;
+}
+
+:root{
+  /* Exact consent/dialog row, action, learning, subitem, and footer values. */
+  --dialog-consent-action-gap:0.72rem;
+  --dialog-consent-action-min-height:3rem;
+  --dialog-consent-action-min-height-mobile:2.86rem;
+  --dialog-consent-action-padding-y:0.82rem;
+  --dialog-consent-action-padding-x:1rem;
+  --dialog-consent-action-padding-y-mobile:0.78rem;
+  --dialog-consent-action-padding-x-mobile:0.94rem;
+  --dialog-consent-action-size:0.94rem;
+  --dialog-consent-action-weight:300;
+  --dialog-consent-action-line-height:1.2;
+  --dialog-consent-action-tracking:-0.015em;
+  --dialog-consent-row-topline-gap:0.72rem;
+  --dialog-consent-row-topline-gap-mobile:0.62rem;
+  --dialog-consent-row-topline-padding-y:1rem;
+  --dialog-consent-row-topline-padding-y-mobile:0.92rem;
+  --dialog-consent-row-summary-gap:0.8rem;
+  --dialog-consent-row-copy-gap:0.22rem;
+  --dialog-consent-row-title-size:0.94rem;
+  --dialog-consent-row-title-weight:400;
+  --dialog-consent-row-title-line-height:1.2;
+  --dialog-consent-row-title-tracking:-0.016em;
+  --dialog-consent-row-copy-size:0.84rem;
+  --dialog-consent-row-copy-size-mobile:0.78rem;
+  --dialog-consent-row-copy-weight:300;
+  --dialog-consent-row-copy-line-height:1.5;
+  --dialog-consent-row-copy-tracking:-0.012em;
+  --dialog-consent-row-status-size:0.76rem;
+  --dialog-consent-row-status-weight:400;
+  --dialog-consent-row-status-line-height:1.2;
+  --dialog-consent-row-status-tracking:-0.01em;
+  --dialog-consent-row-detail-gap:0.62rem;
+  --dialog-consent-row-detail-padding-y:0.92rem;
+  --dialog-consent-row-detail-padding-y-mobile:0.82rem;
+  --dialog-consent-row-link-size:0.8rem;
+  --dialog-consent-row-link-weight:400;
+  --dialog-consent-row-link-line-height:1.3;
+  --dialog-consent-row-link-tracking:-0.01em;
+  --dialog-consent-row-hover:color-mix(in srgb, var(--text-primary-color) 12%, transparent);
+  --dialog-consent-row-icon-size:1.68rem;
+  --dialog-consent-row-expand-size:0.92rem;
+  --dialog-consent-row-expand-icon-size:0.68rem;
+  --dialog-consent-row-expand-icon-size-mobile:0.64rem;
+}
+
+:root{
+  /* Exact consent/dialog brand, learning, subitem, footer, and mobile values. */
+  --dialog-consent-brand-gap:1.04rem;
+  --dialog-consent-brand-margin-top:0.28rem;
+  --dialog-consent-brand-margin-bottom:0.78rem;
+  --dialog-consent-brand-symbol-wrap-size:2.4rem;
+  --dialog-consent-brand-symbol-size:2.3rem;
+  --dialog-consent-brand-symbol-size-mobile:1.9rem;
+  --dialog-consent-brand-wordmark-width:11.8rem;
+  --dialog-consent-brand-wordmark-height:0.96rem;
+  --dialog-consent-brand-wordmark-height-mobile:0.84rem;
+  --dialog-consent-learning-shell-min-height:10.5rem;
+  --dialog-consent-learning-shell-radius:1rem;
+  --dialog-consent-learning-shell-padding:0.88rem;
+  --dialog-consent-learning-card-padding-mobile:0.84rem;
+  --dialog-consent-learning-icon-size:1.68rem;
+  --dialog-consent-learning-rail-gap:1rem;
+  --dialog-consent-learning-card-gap:0.82rem;
+  --dialog-consent-learning-copy-gap:0.28rem;
+  --dialog-consent-copy-stack-gap:0.56rem;
+  --dialog-consent-learning-title-size:0.94rem;
+  --dialog-consent-learning-title-size-mobile:0.9rem;
+  --dialog-consent-learning-title-weight:400;
+  --dialog-consent-learning-title-line-height:1.22;
+  --dialog-consent-learning-title-tracking:-0.016em;
+  --dialog-consent-learning-copy-size:0.84rem;
+  --dialog-consent-learning-copy-size-mobile:0.8rem;
+  --dialog-consent-learning-copy-weight:300;
+  --dialog-consent-learning-copy-line-height:1.52;
+  --dialog-consent-learning-copy-tracking:-0.01em;
+  --dialog-consent-subitem-gap:0.62rem;
+  --dialog-consent-subitem-layout-gap:0.9rem;
+  --dialog-consent-subitem-padding-y:0.92rem;
+  --dialog-consent-subitem-state-margin-top-mobile:0.12rem;
+  --dialog-consent-subitem-copy-gap:0.2rem;
+  --dialog-consent-subitem-title-size:0.86rem;
+  --dialog-consent-subitem-title-weight:400;
+  --dialog-consent-subitem-title-line-height:1.2;
+  --dialog-consent-subitem-title-tracking:-0.014em;
+  --dialog-consent-subitem-copy-size:0.76rem;
+  --dialog-consent-subitem-copy-weight:300;
+  --dialog-consent-subitem-copy-line-height:1.45;
+  --dialog-consent-subitem-copy-tracking:-0.01em;
+  --dialog-consent-subitem-state-size:0.74rem;
+  --dialog-consent-subitem-state-weight:400;
+  --dialog-consent-subitem-state-line-height:1.2;
+  --dialog-consent-subitem-state-tracking:-0.01em;
+  --dialog-consent-sticky-actions-padding-top:0.48rem;
+  --dialog-consent-sticky-actions-padding-top-mobile:0.42rem;
+  --dialog-consent-sticky-actions-padding-bottom:1.12rem;
+  --dialog-consent-sticky-actions-padding-bottom-mobile:1rem;
+  --dialog-consent-footer-gap:1rem;
+  --dialog-consent-footer-gap-mobile:0.78rem;
+  --dialog-consent-footer-link-row-gap:0.5rem;
+  --dialog-consent-footer-separator-size:0.95rem;
+  --dialog-consent-footer-separator-weight:400;
+  --dialog-consent-footer-separator-line-height:1;
+  --dialog-consent-footer-separator-margin-inline:1rem;
+  --dialog-consent-footer-link-size:0.78rem;
+  --dialog-consent-footer-link-weight:400;
+  --dialog-consent-footer-link-line-height:1.3;
+  --dialog-consent-footer-link-tracking:-0.01em;
+  --dialog-consent-footer-language-gap:0.42rem;
+  --dialog-consent-footer-language-min-height:2.2rem;
+  --dialog-consent-footer-language-padding-y:0.56rem;
+  --dialog-consent-footer-language-padding-x:0.82rem;
+  --dialog-consent-footer-language-label-size:0.74rem;
+  --dialog-consent-footer-language-label-weight:400;
+  --dialog-consent-footer-language-label-line-height:1.2;
+  --dialog-consent-footer-language-label-tracking:-0.01em;
+  --dialog-consent-footer-language-value-size:0.78rem;
+  --dialog-consent-footer-language-value-weight:400;
+  --dialog-consent-footer-language-value-line-height:1.2;
+  --dialog-consent-footer-language-value-tracking:-0.01em;
+}
+
+/* =============================================================================
+   16) FEEDBACK EFFECT TOKENS
+============================================================================= */
+:root{
+  /* Shared feedback effect states for success, warning, error, and info surfaces. */
+  --feedback-success-bg-hover:color-mix(in srgb, var(--feedback-success-color, var(--text-primary-color)) 10%, transparent);
+  --feedback-warning-bg-hover:color-mix(in srgb, var(--feedback-warning-color, var(--text-primary-color)) 10%, transparent);
+  --feedback-error-bg-hover:color-mix(in srgb, var(--feedback-error-color, var(--text-primary-color)) 10%, transparent);
+  --feedback-info-bg-hover:color-mix(in srgb, var(--feedback-info-color, var(--text-primary-color)) 10%, transparent);
+}
+
+/* =============================================================================
+   17) NAVIGATION EFFECT TOKENS
+============================================================================= */
+:root{
+  /* Navigation hover and active behavior. */
+  --nav-hover-text-color:var(--hover-text-color);
+  --nav-hover-opacity:var(--state-opacity-hover-strong);
+  --nav-hover-bg:transparent;
+  --nav-hover-transform:var(--hover-transform-none);
+  --nav-hover-text-only-bg:transparent;
+  --nav-hover-text-only-border:transparent;
+  --nav-hover-text-only-color:var(--hover-text-color);
+  --nav-active-text-color:var(--selected-text-color);
+  --nav-active-indicator-color:var(--selected-indicator-color);
+  --nav-active-indicator-opacity:var(--selected-indicator-opacity);
+
+  /* Local navigation and tabs. */
+  --local-nav-hover-text-color:var(--hover-text-color);
+  --local-nav-hover-opacity:var(--state-opacity-hover-strong);
+  --local-nav-hover-text-only-bg:var(--nav-hover-text-only-bg);
+  --local-nav-hover-text-only-border:var(--nav-hover-text-only-border);
+  --local-nav-hover-text-only-color:var(--nav-hover-text-only-color);
+  --local-nav-active-text-color:var(--selected-text-color);
+  --local-nav-active-indicator-color:var(--selected-indicator-color);
+}
+
+/* =============================================================================
+   17A) INTERACTIVE ICON STROKE TOKENS
+============================================================================= */
+:root{
+  /* Shared stroke-width states for line-based SVG icons that consume currentColor and CSS stroke tokens. */
+  --interactive-icon-stroke-width:0;
+  --interactive-icon-stroke-width-hover:var(--interactive-icon-stroke-width);
+  --interactive-icon-stroke-width-active:1.5;
+  --interactive-icon-stroke-width-selected:var(--interactive-icon-stroke-width-active);
+  --interactive-icon-stroke-width-current:var(--interactive-icon-stroke-width-active);
+  --interactive-icon-stroke-width-disabled:var(--interactive-icon-stroke-width);
+  --interactive-icon-stroke-transition:none;
+  --interactive-icon-transform:none;
+}
+
+/* =============================================================================
+   18) CONTROL EFFECT TOKENS
+============================================================================= */
+:root{
+  /* Buttons, toggles, chips, pills, and form controls. */
+  --toggle-track-bg:var(--toggle-track-bg-off);
+  --toggle-track-bg-off:color-mix(in srgb, var(--text-primary-color) 12%, transparent);
+  --toggle-track-bg-on:var(--text-primary-color);
+  --control-hover-bg:var(--hover-bg-subtle);
+  --control-hover-border-color:var(--hover-border-medium);
+  --control-hover-text-color:var(--hover-text-color);
+  --control-hover-transform:var(--hover-transform-lift-subtle);
+  --control-active-bg:var(--active-bg-medium);
+  --control-active-border-color:var(--active-border-color);
+  --control-active-transform:scale(var(--effect-press-scale));
+
+  --button-hover-bg:var(--hover-bg-medium);
+  --button-hover-border-color:var(--hover-border-medium);
+  --button-hover-text-color:var(--hover-text-color);
+  --button-hover-transform:var(--hover-transform-lift-subtle);
+}
+
+/* =============================================================================
+   18A) COMPOSER / PROMPT SURFACE TOKENS
+============================================================================= */
+:root{
+  /* Shared prompt/composer surface shape for query panels, input shells, and AI interaction surfaces. */
+  --shape-composer-radius:1rem;
+  --control-radius-composer:var(--shape-composer-radius);
+}
+
+/* =============================================================================
+   19) PROFILE EFFECT TOKENS
+============================================================================= */
+:root{
+  /* Profile-specific interactive effects. */
+  --profile-hover-bg:var(--hover-bg-subtle);
+  --profile-hover-border-color:var(--hover-border-subtle);
+  --profile-hover-transform:var(--hover-transform-lift-subtle);
+  --profile-card-hover-shadow:var(--effect-shadow-hover-subtle);
+  --profile-media-hover-filter:var(--effect-brightness-hover);
+}
+
+/* =============================================================================
+   20) PRODUCT EFFECT TOKENS
+============================================================================= */
+:root{
+  /* Product-specific interactive effects. */
+  --product-hover-bg:var(--hover-bg-subtle);
+  --product-hover-border-color:var(--hover-border-medium);
+  --product-hover-transform:var(--hover-transform-lift-subtle);
+  --product-card-hover-shadow:var(--effect-shadow-hover-subtle);
+  --product-media-hover-filter:var(--effect-brightness-hover);
+}
+
+/* =============================================================================
+   21) MARKETING EFFECT TOKENS
+============================================================================= */
+:root{
+  /* Marketing-specific effects for landing surfaces and conversion modules. */
+  --marketing-hover-bg:var(--hover-bg-medium);
+  --marketing-hover-border-color:var(--hover-border-strong);
+  --marketing-hover-transform:var(--hover-transform-lift-medium);
+  --marketing-card-hover-shadow:var(--effect-shadow-hover-medium);
+  --marketing-media-hover-filter:var(--effect-brightness-hover);
+}
+
+/* =============================================================================
+   22) END OF FILE
+============================================================================= */
+
+/* =============================================================================
+   SHARED GLASS BACKDROP SYSTEM
+   Canonical full-viewport overlay + glass panel parity system.
+============================================================================= */
+:root{
+  --glass-overlay-backdrop-bg:linear-gradient(180deg, color-mix(in srgb, var(--surface-color) 10%, transparent) 0%, color-mix(in srgb, var(--surface-color) 8%, transparent) 100%);
+  --glass-overlay-backdrop-blur:var(--nav-institutional-panel-backdrop-blur);
+  --glass-overlay-backdrop-saturate:var(--nav-institutional-panel-backdrop-saturate);
+
+  --glass-overlay-shell-bg:color-mix(in srgb, var(--surface-color) 58%, transparent);
+  --glass-overlay-drawer-shell-bg:color-mix(in srgb, var(--surface-color) 76%, transparent);
+  --glass-overlay-shell-blur:var(--nav-institutional-panel-shell-blur);
+  --glass-overlay-shell-saturate:var(--nav-institutional-panel-shell-saturate);
+}
+
+html[data-theme-effective="light"]{
+  --glass-overlay-backdrop-bg:linear-gradient(180deg, color-mix(in srgb, var(--surface-color) 10%, transparent) 0%, color-mix(in srgb, var(--surface-color) 8%, transparent) 100%);
+}
+
+html[data-theme-effective="dark"]{
+  --glass-overlay-backdrop-bg:linear-gradient(180deg, color-mix(in srgb, var(--bg-color) 10%, transparent) 0%, color-mix(in srgb, var(--bg-color) 8%, transparent) 100%);
+  --glass-overlay-shell-bg:color-mix(in srgb, var(--surface-color) 58%, transparent);
+  --glass-overlay-drawer-shell-bg:color-mix(in srgb, var(--surface-color) 76%, transparent);
+}
