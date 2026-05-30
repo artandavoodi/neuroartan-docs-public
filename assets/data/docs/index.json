@@ -289,13 +289,83 @@
       "recommended": "home",
       "breadcrumb": "Docs",
       "layout": "home",
-      "hero": { "eyebrow": "Documentation", "title": "How can we help?", "description": "Search Neuroartan documentation or browse the main documentation areas below.", "tabs": ["Home", "Product", "Trust", "Developers"] },
+      "hero": { "eyebrow": "Neuroartan Docs", "title": "Help for wherever you are on your Neuroartan journey.", "description": "Search Neuroartan documentation or browse the main documentation areas below.", "tabs": ["Home", "Product", "Trust", "Developers"] },
       "sections": [
-        { "title": "Get started", "body": "Start with Neuroartan, ICOS, public documentation, Thought Bank, Posts, and the core platform direction." },
-        { "title": "Products", "body": "Explore ICOS, Thought Bank, Posts, Memory, Voice Training, Model Training, Continuity, Profile, Public Profile, Publishing, Settings, and product capabilities." },
-        { "title": "Trust and safety", "body": "Review privacy, verification, anti-impersonation, abuse prevention, data retention, device integrity, appeals, and model identity boundaries." },
-        { "title": "Developers", "body": "Use public developer documentation for APIs, OAuth connectors, CLI workflows, troubleshooting, error references, security requirements, and release notes." },
-        { "title": "Company", "body": "Find support routing, investor relations, press language, jobs, public company direction, product thesis, market category, and communication boundaries." }
+        {
+          "title": "Get started",
+          "links": [
+            { "label": "Get Started", "href": "/get-started/" },
+            { "label": "What Is Neuroartan", "href": "/get-started/what-is-neuroartan/" },
+            { "label": "What Is ICOS", "href": "/get-started/what-is-icos/" },
+            { "label": "Public Documentation", "href": "/get-started/public-documentation/" },
+            { "label": "Posts and Thought Bank", "href": "/get-started/posts-and-thought-bank/" }
+          ]
+        },
+        {
+          "title": "Products",
+          "links": [
+            { "label": "Products", "href": "/products/" },
+            { "label": "ICOS", "href": "/products/icos/" },
+            { "label": "Thought Bank", "href": "/products/thought-bank/" },
+            { "label": "Posts", "href": "/products/posts/" },
+            { "label": "Memory", "href": "/products/memory/" },
+            { "label": "Profile", "href": "/products/profile/" },
+            { "label": "Public Profile", "href": "/products/public-profile/" },
+            { "label": "Publishing", "href": "/products/publishing/" },
+            { "label": "Voice Training", "href": "/products/voice-training/" },
+            { "label": "Model Training", "href": "/products/model-training/" },
+            { "label": "Continuity", "href": "/products/continuity/" },
+            { "label": "Capabilities", "href": "/products/capabilities/" },
+            { "label": "Settings", "href": "/products/settings/" }
+          ]
+        },
+        {
+          "title": "Trust and safety",
+          "links": [
+            { "label": "Privacy", "href": "/privacy/" },
+            { "label": "Data Retention", "href": "/privacy/data-retention/" },
+            { "label": "Device Integrity", "href": "/privacy/device-integrity/" },
+            { "label": "Verification", "href": "/verification/" },
+            { "label": "Verification Badge", "href": "/verification/badge/" },
+            { "label": "Safety", "href": "/safety/" },
+            { "label": "Abuse Prevention", "href": "/safety/abuse-prevention/" },
+            { "label": "Anti-Impersonation", "href": "/safety/anti-impersonation/" },
+            { "label": "Appeals", "href": "/appeals/" },
+            { "label": "Model Identity", "href": "/model-identity/one-profile-one-model/" }
+          ]
+        },
+        {
+          "title": "Developers",
+          "links": [
+            { "label": "Developers", "href": "/developers/" },
+            { "label": "API Integration", "href": "/developers/api-integration/" },
+            { "label": "OAuth Connectors", "href": "/developers/oauth-connectors/" },
+            { "label": "CLI", "href": "/developers/cli/" },
+            { "label": "Troubleshooting", "href": "/developers/troubleshooting/" },
+            { "label": "Error Reference", "href": "/developers/errors/" },
+            { "label": "Security Requirements", "href": "/developers/security-requirements/" },
+            { "label": "Release Notes", "href": "/developers/release-notes/" }
+          ]
+        },
+        {
+          "title": "Plans & subscriptions",
+          "links": [
+            { "label": "Plans & Subscriptions", "href": "/plans/" },
+            { "label": "Free", "href": "/plans/free/" },
+            { "label": "Pro", "href": "/plans/pro/" },
+            { "label": "Pro Max", "href": "/plans/pro-max/" },
+            { "label": "Pricing Principles", "href": "/plans/pricing-principles/" }
+          ]
+        },
+        {
+          "title": "Company",
+          "links": [
+            { "label": "Support", "href": "/support/" },
+            { "label": "Investors", "href": "/investors/" },
+            { "label": "Press", "href": "/press/" },
+            { "label": "Jobs", "href": "/jobs/" }
+          ]
+        }
       ]
     },
     {

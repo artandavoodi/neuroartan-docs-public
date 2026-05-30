@@ -3,7 +3,6 @@
 ============================================================================= */
 
 @import "../../../core/01-tokens/00-tokens-all.css";
-@import "../base/docs-token-map.css";
 @import "../base/docs-base.css";
 @import "../components/docs-components.css";
 @import "../pages/home/docs-home.css";

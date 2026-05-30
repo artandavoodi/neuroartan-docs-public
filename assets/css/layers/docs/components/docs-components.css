@@ -3,38 +3,38 @@
 ============================================================================= */
 
 .docs-rail {
-  width: min(var(--site-rail-width), calc(100% - (var(--site-shell-inline-padding) * 2)));
+  width: var(--site-rail-width);
   margin-inline: auto;
 }
 
 .docs-surface {
-  border: var(--docs-border-width) solid var(--docs-border);
-  border-radius: var(--docs-radius-card);
-  background: var(--docs-surface);
-  color: var(--docs-text-primary);
+  border: var(--border-width-hairline) solid var(--border-color);
+  border-radius: var(--radius-lg);
+  background: var(--surface-1);
+  color: var(--text-primary-color);
 }
 
 .docs-pill {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: var(--docs-border-width) solid var(--docs-border);
-  border-radius: var(--docs-radius-pill);
-  background: var(--docs-surface-secondary);
-  color: var(--docs-text-secondary);
+  border: var(--border-width-hairline) solid var(--border-color);
+  border-radius: var(--radius-pill);
+  background: var(--surface-2);
+  color: var(--text-secondary-color);
 }
 
 .docs-link-card {
   display: flex;
   flex-direction: column;
-  border: var(--docs-border-width) solid var(--docs-border);
-  border-radius: var(--docs-radius-card);
-  background: var(--docs-surface);
-  color: var(--docs-text-primary);
+  border: var(--border-width-hairline) solid var(--border-color);
+  border-radius: var(--radius-lg);
+  background: var(--surface-1);
+  color: var(--text-primary-color);
   text-decoration: none;
 }
 
 .docs-link-card:focus-visible {
-  outline: var(--docs-focus-width) solid var(--docs-focus-color);
-  outline-offset: var(--docs-focus-offset);
+  outline: var(--focus-ring-width) solid var(--text-primary-color);
+  outline-offset: var(--focus-ring-offset);
 }

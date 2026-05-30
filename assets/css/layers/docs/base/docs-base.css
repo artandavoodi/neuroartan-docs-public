@@ -4,16 +4,22 @@
 
 html {
   min-height: 100%;
-  background: var(--docs-bg);
-  color: var(--docs-text-primary);
-  font-family: var(--docs-font-family);
+  background: var(--bg-color);
+  color: var(--text-primary-color);
+  font-family: var(--font-base);
 }
 
 body {
   min-height: 100vh;
   margin: 0;
-  background: var(--docs-bg);
-  color: var(--docs-text-primary);
+  background: var(--bg-color);
+  color: var(--text-primary-color);
+}
+
+.docs-page-root {
+  display: grid;
+  gap: var(--spacing-3xl);
+  padding-block: var(--spacing-2xl) var(--spacing-4xl);
 }
 
 * {

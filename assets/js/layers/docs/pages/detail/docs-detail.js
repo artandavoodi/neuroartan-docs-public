@@ -280,15 +280,24 @@ function bindSearch() {
 }
 
 async function mountDocsDetail() {
+  const currentRoute = getCurrentRoute();
+  console.log("Detail page route check:", currentRoute);
+  if (currentRoute === "/") {
+    console.log("Skipping detail mount, on root route");
+    return;
+  }
+
   const mount = byId("docs-detail-root");
-  if (!mount) return;
+  if (!mount) {
+    console.error("Detail mount element not found");
+    return;
+  }
 
   const dataResponse = await fetch(DATA_URL);
   const shellResponse = await fetch(SHELL_URL);
   const data = await dataResponse.json();
   const shell = await shellResponse.text();
 
-  const currentRoute = getCurrentRoute();
   const pages = data.pages || [];
   const routeId = data.routes?.[currentRoute];
   const page = pages.find((item) => item.id === routeId) || pages.find((item) => item.route === currentRoute) || pages.find((item) => item.id === "home");

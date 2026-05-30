@@ -5,6 +5,20 @@
 const DATA_URL = "/assets/data/docs/index.json";
 const SHELL_URL = "/assets/fragments/layers/docs/index/index-shell.html";
 
+// Get home page data from the pages array
+async function getIndexData() {
+  const response = await fetch(DATA_URL);
+  const data = await response.json();
+  const homePage = data.pages?.find((page) => page.id === "home" || page.route === "/");
+  return {
+    meta: data.meta,
+    hero: homePage?.hero || {},
+    primaryDestination: homePage?.primaryDestination || { href: "/get-started/", label: "Get Started", description: "Start with the documentation" },
+    sections: homePage?.sections || [],
+    recommended: data.recommendedGroups?.home || []
+  };
+}
+
 function createSection(section) {
   const article = document.createElement("article");
   article.className = "docs-index-section docs-surface";
@@ -51,32 +65,49 @@ function createRecommendedCard(item) {
   return link;
 }
 
+function getCurrentRoute() {
+  const path = window.location.pathname;
+  return path.endsWith("/") ? path : `${path}/`;
+}
+
 async function mountDocsIndex() {
-  const mount = document.getElementById("docs-page-root");
-  if (!mount) return;
+  const currentRoute = getCurrentRoute();
+  console.log("Current route:", currentRoute);
+  if (currentRoute !== "/") {
+    return;
+  }
 
-  const dataResponse = await fetch(DATA_URL);
-  const shellResponse = await fetch(SHELL_URL);
-  const data = await dataResponse.json();
-  const shell = await shellResponse.text();
+  const mount = document.getElementById("docs-detail-root");
+  if (!mount) {
+    console.error("Mount element not found");
+    return;
+  }
 
-  document.title = data.meta?.title || document.title;
-  mount.innerHTML = shell;
+  try {
+    const shellResponse = await fetch(SHELL_URL);
+    const data = await getIndexData();
+    const shell = await shellResponse.text();
 
-  document.getElementById("docs-hero-eyebrow").textContent = data.hero?.eyebrow || "";
-  document.getElementById("docs-hero-title").textContent = data.hero?.title || "";
-  document.getElementById("docs-hero-description").textContent = data.hero?.description || "";
+    document.title = data.meta?.title || document.title;
+    mount.innerHTML = shell;
 
-  const primary = document.getElementById("docs-primary-destination");
-  primary.href = data.primaryDestination?.href || "#";
-  primary.textContent = data.primaryDestination?.label || "";
-  primary.setAttribute("aria-label", data.primaryDestination?.description || data.primaryDestination?.label || "");
+    document.getElementById("docs-hero-eyebrow").textContent = data.hero?.eyebrow || "";
+    document.getElementById("docs-hero-title").textContent = data.hero?.title || "";
+    document.getElementById("docs-hero-description").textContent = data.hero?.description || "";
 
-  const sections = document.getElementById("docs-sections");
-  (data.sections || []).forEach((section) => sections.append(createSection(section)));
+    const primary = document.getElementById("docs-primary-destination");
+    primary.href = data.primaryDestination?.href || "#";
+    primary.textContent = data.primaryDestination?.label || "";
+    primary.setAttribute("aria-label", data.primaryDestination?.description || data.primaryDestination?.label || "");
 
-  const recommended = document.getElementById("docs-recommended");
-  (data.recommended || []).forEach((item) => recommended.append(createRecommendedCard(item)));
+    const sections = document.getElementById("docs-sections");
+    (data.sections || []).forEach((section) => sections.append(createSection(section)));
+
+    const recommended = document.getElementById("docs-recommended");
+    (data.recommended || []).forEach((item) => recommended.append(createRecommendedCard(item)));
+  } catch (error) {
+    console.error("Failed to mount docs index:", error);
+  }
 }
 
 mountDocsIndex();
