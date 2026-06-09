@@ -50,7 +50,7 @@
     {
       "id": "privacy",
       "title": "Privacy",
-      "description": "Privacy direction for memory, Thought Bank, profile identity, connected services, data retention, device integrity, and user controls.",
+      "description": "Privacy direction for memory, Thought Bank, profile identity, connected services, data retention, device integrity, local-first architecture, data ownership, voice, legacy continuity, and assisted onboarding boundaries.",
       "href": "/privacy/"
     },
     {
@@ -108,6 +108,8 @@
         "title": "Trust",
         "links": [
           { "label": "Privacy", "href": "/privacy/" },
+          { "label": "Privacy-First Architecture", "href": "/privacy/privacy-first-architecture/" },
+          { "label": "Data Ownership & Portability", "href": "/privacy/data-ownership-portability/" },
           { "label": "Verification", "href": "/verification/" },
           { "label": "Abuse Prevention", "href": "/safety/abuse-prevention/" },
           { "label": "Model Identity", "href": "/model-identity/one-profile-one-model/" }
@@ -178,6 +180,10 @@
         "title": "Trust & Safety",
         "links": [
           { "label": "Privacy", "href": "/privacy/" },
+          { "label": "Privacy-First Architecture", "href": "/privacy/privacy-first-architecture/" },
+          { "label": "Data Ownership & Portability", "href": "/privacy/data-ownership-portability/" },
+          { "label": "Memory, Voice & Legacy Data", "href": "/privacy/memory-voice-legacy-data/" },
+          { "label": "Clinical & Assisted Onboarding", "href": "/privacy/clinical-assisted-onboarding/" },
           { "label": "Data Retention", "href": "/privacy/data-retention/" },
           { "label": "Device Integrity", "href": "/privacy/device-integrity/" },
           { "label": "Verification", "href": "/verification/" },
@@ -240,6 +246,10 @@
         "links": [
           { "label": "Terms Direction", "href": "/legal/terms-direction/" },
           { "label": "Privacy", "href": "/privacy/" },
+          { "label": "Privacy-First Architecture", "href": "/privacy/privacy-first-architecture/" },
+          { "label": "Data Ownership & Portability", "href": "/privacy/data-ownership-portability/" },
+          { "label": "Memory, Voice & Legacy Data", "href": "/privacy/memory-voice-legacy-data/" },
+          { "label": "Clinical & Assisted Onboarding", "href": "/privacy/clinical-assisted-onboarding/" },
           { "label": "Data Retention", "href": "/privacy/data-retention/" },
           { "label": "Support", "href": "/support/" }
         ]
@@ -263,9 +273,9 @@
       { "label": "Security", "title": "Security Requirements", "href": "/developers/security-requirements/", "description": "Security boundaries for diagnostics, logs, secrets, public examples, and support-safe output." }
     ],
     "trust": [
-      { "label": "Privacy", "title": "Privacy", "href": "/privacy/", "description": "The trust foundation for memory, Thought Bank, profile identity, verification, and user controls." },
-      { "label": "Verification", "title": "Verification", "href": "/verification/", "description": "How verification review supports public identity clarity without guaranteeing authority." },
-      { "label": "Safety", "title": "Anti-Impersonation", "href": "/safety/anti-impersonation/", "description": "How public identity surfaces are protected from misleading representation and unauthorized identity use." }
+      { "label": "Privacy", "title": "Privacy-First Architecture", "href": "/privacy/privacy-first-architecture/", "description": "Local-first, iCloud-aware, consent-bound architecture for sensitive memory, voice, model, and legacy data." },
+      { "label": "Data rights", "title": "Data Ownership & Portability", "href": "/privacy/data-ownership-portability/", "description": "User-owned archive direction, export, correction, deletion, revocation, and no-sale boundaries for mind-data." },
+      { "label": "Continuity", "title": "Memory, Voice & Legacy Data", "href": "/privacy/memory-voice-legacy-data/", "description": "How memory, voice, legacy continuity, loved-one access, and posthumous boundaries are governed." }
     ],
     "company": [
       { "label": "Product", "title": "ICOS", "href": "/products/icos/", "description": "The core product direction and public category language." },
@@ -323,6 +333,10 @@
           "title": "Trust and safety",
           "links": [
             { "label": "Privacy", "href": "/privacy/" },
+            { "label": "Privacy-First Architecture", "href": "/privacy/privacy-first-architecture/" },
+            { "label": "Data Ownership & Portability", "href": "/privacy/data-ownership-portability/" },
+            { "label": "Memory, Voice & Legacy Data", "href": "/privacy/memory-voice-legacy-data/" },
+            { "label": "Clinical & Assisted Onboarding", "href": "/privacy/clinical-assisted-onboarding/" },
             { "label": "Data Retention", "href": "/privacy/data-retention/" },
             { "label": "Device Integrity", "href": "/privacy/device-integrity/" },
             { "label": "Verification", "href": "/verification/" },
@@ -802,15 +816,17 @@
       "id": "privacy",
       "route": "/privacy/",
       "title": "Privacy",
-      "description": "Privacy documentation for memory and continuity controls, Thought Bank privacy, verification evidence, device integrity, data retention, user rights, and public-safe privacy boundaries.",
+      "description": "Privacy documentation for memory and continuity controls, Thought Bank privacy, verification evidence, device integrity, data retention, local-first architecture, data ownership, voice, legacy continuity, assisted onboarding boundaries, user rights, and public-safe privacy boundaries.",
       "category": "privacy",
       "sidebar": "trust",
       "recommended": "trust",
       "breadcrumb": "Privacy",
-      "hero": { "eyebrow": "Privacy", "title": "Privacy", "description": "Privacy documentation explains memory, profiles, Thought Bank, Posts, verification, device integrity, data retention, user controls, and review boundaries.", "tabs": ["Overview", "Memory", "Controls", "Review"] },
+      "hero": { "eyebrow": "Privacy", "title": "Privacy", "description": "Privacy documentation explains local-first architecture, memory, profiles, Thought Bank, Posts, voice, legacy continuity, assisted onboarding, verification, device integrity, data retention, user controls, and review boundaries.", "tabs": ["Overview", "Architecture", "Data rights", "Review"] },
       "sections": [
-        { "title": "Purpose", "body": "Privacy documentation explains public-safe privacy concepts in clear language." },
-        { "title": "Boundary", "body": "Private memory, Thought Bank entries, verification evidence, and internal review notes must remain protected." }
+        { "title": "Purpose", "body": "Privacy documentation explains public-safe privacy concepts in clear language, including local-first vault direction, iCloud-aware storage, encrypted cloud processing, memory, voice, model calibration, legacy continuity, and user controls." },
+        { "title": "Architecture", "body": "Neuroartan’s direction is that the user owns the raw mind archive while Neuroartan provides the governed intelligence, consent, indexing, and optional encrypted processing layer." },
+        { "title": "Data rights", "body": "Users should be able to understand, access, correct, export, restrict, and delete sensitive data where technically and legally possible." },
+        { "title": "Boundary", "body": "Private memory, Thought Bank entries, voice material, legacy settings, verification evidence, and internal review notes must remain protected. Public documentation describes direction and may include capabilities that require legal, security, and implementation review before production." }
       ]
     },
     {

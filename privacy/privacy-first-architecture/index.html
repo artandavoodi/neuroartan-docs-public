@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy-First Architecture · Neuroartan Documentation</title>
+  <meta name="description" content="Neuroartan privacy-first architecture for local-first vaults, iCloud, encrypted cloud processing, consent, memory, voice, and legacy continuity.">
+  <link rel="stylesheet" href="/assets/css/docs.css">
+</head>
+<body>
+  <main class="docs-page" data-docs-page="privacy-first-architecture">
+    <article class="docs-article">
+      <header class="docs-article__header">
+        <p class="docs-article__eyebrow">Privacy & Safety</p>
+        <h1>Privacy-First Architecture</h1>
+        <p class="docs-article__summary">
+          Neuroartan is designed around a simple principle: the user owns the raw mind archive, while Neuroartan provides the governed intelligence, consent, indexing, and continuity layer.
+        </p>
+      </header>
+
+      <section class="docs-article__section">
+        <h2>Local-first by direction</h2>
+        <p>
+          Neuroartan should not require every thought, memory, voice sample, or document to begin inside company cloud storage. The long-term architecture supports a local-first vault where raw files can remain under the user’s control.
+        </p>
+        <p>
+          The vault may live on a local device, in a user-selected folder, or in an Apple-native storage layer such as iCloud Drive or CloudKit where supported by future native applications.
+        </p>
+      </section>
+
+      <section class="docs-article__section">
+        <h2>Storage layers</h2>
+        <p>
+          Neuroartan distinguishes between local storage, iCloud or CloudKit storage, Neuroartan encrypted cloud storage, and model-processing workspaces. These layers are not the same and must not be presented as the same.
+        </p>
+        <p>
+          A local or iCloud file can be indexed by reference, parsed locally where supported, or copied into Neuroartan Cloud only after explicit user approval.
+        </p>
+      </section>
+
+      <section class="docs-article__section">
+        <h2>Copy is not index</h2>
+        <p>
+          Neuroartan must clearly distinguish between indexing a source and copying a source. Indexing may create metadata or local references. Copying means Neuroartan receives a stored copy or approved derivative.
+        </p>
+        <p>
+          This distinction is essential for sensitive material such as private thoughts, memory records, voice files, grief notes, family history, model calibration data, and legacy settings.
+        </p>
+      </section>
+
+      <section class="docs-article__section">
+        <h2>Consent before deeper processing</h2>
+        <p>
+          Deeper processing requires clearer consent. Parsing, chunking, embedding generation, memory graph construction, voice processing, model calibration, and legacy continuity must be governed separately.
+        </p>
+        <p>
+          Neuroartan must avoid bundled consent that silently authorizes every future use of intimate data.
+        </p>
+      </section>
+
+      <section class="docs-article__section">
+        <h2>Recipe Workshop</h2>
+        <p>
+          Recipe Workshop is the planned intake layer for files, folders, vaults, transcripts, thoughts, and other user-selected sources. It should preview sources, filter file types, classify sensitivity, show what will be processed, and ask for consent before any upload or model use.
+        </p>
+        <p>
+          It must never silently ingest an entire mind archive.
+        </p>
+      </section>
+
+      <section class="docs-article__section">
+        <h2>Memory, voice, and legacy</h2>
+        <p>
+          Memory, voice, and legacy continuity require higher safeguards than ordinary application data. They may contain identity, emotion, family history, health-like references, voice patterns, loved-one access rules, or posthumous release controls.
+        </p>
+        <p>
+          These systems require separate consent, stronger access controls, export and deletion paths, and legal review before production activation.
+        </p>
+      </section>
+
+      <section class="docs-article__section">
+        <h2>Clinical and assisted onboarding boundary</h2>
+        <p>
+          Neuroartan may later support expert-assisted onboarding, elder-care workflows, or branch-based setup. These contexts require additional privacy, staff-access, consent, and legal review controls.
+        </p>
+        <p>
+          Neuroartan is not positioned as a therapy, diagnosis, treatment, or healthcare provider replacement unless a future legally reviewed product specifically establishes that boundary.
+        </p>
+      </section>
+
+      <section class="docs-article__section">
+        <h2>Current status</h2>
+        <p>
+          This page describes the architectural direction. Some capabilities may be in development, unavailable, or subject to legal and security review before launch.
+        </p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

@@ -124,7 +124,11 @@
             "privacy",
             "privacy-policy",
             "device-integrity",
-            "data-retention"
+            "data-retention",
+            "privacy-first-architecture",
+            "data-ownership-portability",
+            "memory-voice-legacy-data",
+            "clinical-assisted-onboarding"
           ]
         },
         {
@@ -350,6 +354,26 @@
           "id": "terms-direction",
           "label": "Terms Direction",
           "href": "/legal/terms-direction/"
+        },
+        {
+          "id": "privacy-first-architecture",
+          "label": "Privacy-First Architecture",
+          "href": "/privacy/privacy-first-architecture/"
+        },
+        {
+          "id": "data-ownership-portability",
+          "label": "Data Ownership & Portability",
+          "href": "/privacy/data-ownership-portability/"
+        },
+        {
+          "id": "memory-voice-legacy-data",
+          "label": "Memory, Voice & Legacy Data",
+          "href": "/privacy/memory-voice-legacy-data/"
+        },
+        {
+          "id": "clinical-assisted-onboarding",
+          "label": "Clinical & Assisted Onboarding",
+          "href": "/privacy/clinical-assisted-onboarding/"
         }
       ]
     },
@@ -3012,6 +3036,402 @@
             "type": "next-step",
             "title": "Next step",
             "body": "Use the recommended articles and article list on this page to continue through the related documentation path."
+          }
+        ]
+      }
+    },
+    {
+      "id": "privacy-first-architecture",
+      "route": "/privacy/privacy-first-architecture/",
+      "category": "Privacy & Legal",
+      "type": "Architecture",
+      "title": "Privacy-First Architecture",
+      "eyebrow": "Privacy & Safety",
+      "description": "Understand Neuroartan’s privacy-first architecture for local-first vaults, iCloud, encrypted cloud processing, consent, memory, voice, and legacy continuity.",
+      "tabs": [
+        "Overview",
+        "Storage",
+        "Consent"
+      ],
+      "recommended": [
+        "data-ownership-portability",
+        "memory-voice-legacy-data",
+        "clinical-assisted-onboarding"
+      ],
+      "articles": [
+        "data-ownership-portability",
+        "memory-voice-legacy-data",
+        "clinical-assisted-onboarding",
+        "privacy-policy",
+        "data-retention"
+      ],
+      "sections": [
+        {
+          "title": "Local-first by direction",
+          "body": "Neuroartan should not require every thought, memory, voice sample, or document to begin inside company cloud storage. The long-term architecture supports a local-first vault where raw files can remain under the user’s control."
+        },
+        {
+          "title": "Copy is not index",
+          "body": "Neuroartan must clearly distinguish between indexing a source and copying a source. Indexing may create metadata or local references. Copying means Neuroartan receives a stored copy or approved derivative."
+        },
+        {
+          "title": "Consent before deeper processing",
+          "body": "Parsing, chunking, embedding generation, memory graph construction, voice processing, model calibration, and legacy continuity must be governed separately."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Privacy-First Architecture",
+        "searchDescription": "Neuroartan privacy-first architecture for local-first vaults, iCloud, encrypted cloud processing, consent, memory, voice, and legacy continuity.",
+        "searchKeywords": [
+          "Privacy-First Architecture",
+          "Privacy",
+          "local-first",
+          "iCloud",
+          "CloudKit",
+          "Recipe Workshop",
+          "memory",
+          "voice",
+          "legacy"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-PRIVACY_FIRST_ARCHITECTURE",
+          "route": "/privacy/privacy-first-architecture/",
+          "category": "Privacy & Legal",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Privacy-First Architecture",
+            "body": "Neuroartan is designed around a simple principle: the user owns the raw mind archive, while Neuroartan provides the governed intelligence, consent, indexing, and continuity layer."
+          },
+          {
+            "type": "section",
+            "title": "Local-first by direction",
+            "body": "Neuroartan should not require every thought, memory, voice sample, or document to begin inside company cloud storage. The long-term architecture supports a local-first vault where raw files can remain under the user’s control."
+          },
+          {
+            "type": "section",
+            "title": "Storage layers",
+            "body": "Neuroartan distinguishes between local storage, iCloud or CloudKit storage, Neuroartan encrypted cloud storage, and model-processing workspaces. These layers are not the same and must not be presented as the same."
+          },
+          {
+            "type": "section",
+            "title": "Copy is not index",
+            "body": "Neuroartan must clearly distinguish between indexing a source and copying a source. Indexing may create metadata or local references. Copying means Neuroartan receives a stored copy or approved derivative."
+          },
+          {
+            "type": "section",
+            "title": "Consent before deeper processing",
+            "body": "Deeper processing requires clearer consent. Parsing, chunking, embedding generation, memory graph construction, voice processing, model calibration, and legacy continuity must be governed separately."
+          },
+          {
+            "type": "section",
+            "title": "Recipe Workshop",
+            "body": "Recipe Workshop is the planned intake layer for files, folders, vaults, transcripts, thoughts, and other user-selected sources. It should preview sources, filter file types, classify sensitivity, show what will be processed, and ask for consent before any upload or model use."
+          },
+          {
+            "type": "section",
+            "title": "Current status",
+            "body": "This article describes architectural direction. Some capabilities may be in development, unavailable, or subject to legal and security review before launch."
+          }
+        ]
+      }
+    },
+    {
+      "id": "data-ownership-portability",
+      "route": "/privacy/data-ownership-portability/",
+      "category": "Privacy & Legal",
+      "type": "Rights",
+      "title": "Data Ownership & Portability",
+      "eyebrow": "Privacy & Safety",
+      "description": "Understand Neuroartan’s data ownership and portability direction for user-controlled vaults, export, deletion, correction, iCloud, and encrypted cloud processing.",
+      "tabs": [
+        "Overview",
+        "Export",
+        "Deletion"
+      ],
+      "recommended": [
+        "privacy-first-architecture",
+        "memory-voice-legacy-data",
+        "privacy-policy"
+      ],
+      "articles": [
+        "privacy-first-architecture",
+        "memory-voice-legacy-data",
+        "privacy-policy",
+        "data-retention"
+      ],
+      "sections": [
+        {
+          "title": "User-owned archive",
+          "body": "Neuroartan should not trap a person’s thoughts, memories, voice records, or continuity settings inside an opaque system. Raw source material should remain readable and exportable wherever possible."
+        },
+        {
+          "title": "Portable formats",
+          "body": "Neuroartan should support portable formats such as Markdown, TXT, JSON, CSV, audio files, transcripts, consent records, memory graph exports, and legacy configuration exports where feasible."
+        },
+        {
+          "title": "Deletion and revocation",
+          "body": "Deletion must address more than the original upload. It should also evaluate parsed text, chunks, embeddings, memory links, model calibration state, voice transcripts, voice-derived records, and legacy settings."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Data Ownership & Portability",
+        "searchDescription": "Neuroartan data ownership and portability direction for user-controlled vaults, export, deletion, correction, iCloud, and encrypted cloud processing.",
+        "searchKeywords": [
+          "Data Ownership & Portability",
+          "export",
+          "deletion",
+          "correction",
+          "data portability",
+          "local-first",
+          "iCloud",
+          "memory",
+          "voice",
+          "legacy"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-DATA_OWNERSHIP_PORTABILITY",
+          "route": "/privacy/data-ownership-portability/",
+          "category": "Privacy & Legal",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Data Ownership & Portability",
+            "body": "Neuroartan’s direction is that the user’s raw mind archive remains user-owned, portable, understandable, and removable wherever technically and legally possible."
+          },
+          {
+            "type": "section",
+            "title": "User-owned archive",
+            "body": "Neuroartan should not trap a person’s thoughts, memories, voice records, or continuity settings inside an opaque system. Raw source material should remain readable and exportable wherever possible."
+          },
+          {
+            "type": "section",
+            "title": "Portable formats",
+            "body": "Neuroartan should support portable formats such as Markdown, TXT, JSON, CSV, audio files, transcripts, consent records, memory graph exports, and legacy configuration exports where feasible."
+          },
+          {
+            "type": "section",
+            "title": "Access and correction",
+            "body": "Users should be able to understand what data exists, what it is used for, where it is stored, and whether it is local, iCloud-based, Neuroartan Cloud-based, or derived for model use."
+          },
+          {
+            "type": "section",
+            "title": "Deletion and revocation",
+            "body": "Deletion must address more than the original upload. It should also evaluate parsed text, chunks, embeddings, memory links, model calibration state, voice transcripts, voice-derived records, and legacy settings."
+          },
+          {
+            "type": "section",
+            "title": "No sale of mind-data",
+            "body": "Neuroartan’s direction is that thought records, memory records, voice data, model calibration data, and legacy settings must not be sold, rented, traded, or used for third-party behavioral advertising."
+          },
+          {
+            "type": "section",
+            "title": "Current status",
+            "body": "This article describes product and governance direction. Specific export, deletion, correction, and portability features may depend on implementation stage and legal review."
+          }
+        ]
+      }
+    },
+    {
+      "id": "memory-voice-legacy-data",
+      "route": "/privacy/memory-voice-legacy-data/",
+      "category": "Privacy & Legal",
+      "type": "Sensitive Data",
+      "title": "Memory, Voice & Legacy Data",
+      "eyebrow": "Privacy & Safety",
+      "description": "Understand Neuroartan’s public direction for memory, voice, legacy continuity, loved-one access, consent, storage, export, deletion, and privacy boundaries.",
+      "tabs": [
+        "Overview",
+        "Consent",
+        "Legacy"
+      ],
+      "recommended": [
+        "privacy-first-architecture",
+        "data-ownership-portability",
+        "clinical-assisted-onboarding"
+      ],
+      "articles": [
+        "privacy-first-architecture",
+        "data-ownership-portability",
+        "clinical-assisted-onboarding",
+        "voice-training",
+        "memory-continuity"
+      ],
+      "sections": [
+        {
+          "title": "Living-first continuity",
+          "body": "Neuroartan is designed for the living first. The primary path is self-reflection, personal model formation, memory continuity, voice continuity, and only later, governed legacy access."
+        },
+        {
+          "title": "Voice data",
+          "body": "Voice data may include recordings, transcripts, sample metadata, speech rhythm, prosody, and future voice-model preparation records. Neuroartan treats voice as highly sensitive because it can express identity and presence."
+        },
+        {
+          "title": "Legacy continuity",
+          "body": "Legacy continuity refers to governed posthumous access, loved-one permissions, release rules, continuity keys, and access controls. It is continuity, not resurrection."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Memory, Voice & Legacy Data",
+        "searchDescription": "Neuroartan public documentation for memory, voice, legacy continuity, loved-one access, consent, storage, export, deletion, and privacy boundaries.",
+        "searchKeywords": [
+          "Memory, Voice & Legacy Data",
+          "memory",
+          "voice",
+          "legacy",
+          "loved-one access",
+          "posthumous continuity",
+          "consent",
+          "privacy"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-MEMORY_VOICE_LEGACY_DATA",
+          "route": "/privacy/memory-voice-legacy-data/",
+          "category": "Privacy & Legal",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Memory, Voice & Legacy Data",
+            "body": "Memory, voice, and legacy continuity are among Neuroartan’s most sensitive systems. They require separate consent, clear storage boundaries, export and deletion paths, and careful release controls."
+          },
+          {
+            "type": "section",
+            "title": "Living-first continuity",
+            "body": "Neuroartan is designed for the living first. The primary path is self-reflection, personal model formation, memory continuity, voice continuity, and only later, governed legacy access."
+          },
+          {
+            "type": "section",
+            "title": "Memory data",
+            "body": "Memory data may include thoughts, documents, transcripts, posts, private reflections, emotional context, relationship references, model-readable summaries, and continuity links."
+          },
+          {
+            "type": "section",
+            "title": "Voice data",
+            "body": "Voice data may include recordings, transcripts, sample metadata, speech rhythm, prosody, and future voice-model preparation records. Neuroartan treats voice as highly sensitive because it can express identity and presence."
+          },
+          {
+            "type": "section",
+            "title": "Legacy continuity",
+            "body": "Legacy continuity refers to governed posthumous access, loved-one permissions, release rules, continuity keys, and access controls. It is continuity, not resurrection."
+          },
+          {
+            "type": "section",
+            "title": "Loved-one access",
+            "body": "Loved-one access must be separate from ordinary account access. It requires user designation, scope limitation, verification, audit records, revocation paths, and dispute planning where applicable."
+          },
+          {
+            "type": "section",
+            "title": "Current status",
+            "body": "This article describes product and governance direction. Memory, voice, and legacy capabilities may be unavailable, limited, or subject to legal and security review before release."
+          }
+        ]
+      }
+    },
+    {
+      "id": "clinical-assisted-onboarding",
+      "route": "/privacy/clinical-assisted-onboarding/",
+      "category": "Privacy & Legal",
+      "type": "Boundary",
+      "title": "Clinical & Assisted Onboarding",
+      "eyebrow": "Privacy & Safety",
+      "description": "Understand Neuroartan’s public direction for expert-assisted onboarding, elder-care workflows, clinic-adjacent boundaries, consent, staff access, and privacy safeguards.",
+      "tabs": [
+        "Overview",
+        "Staff access",
+        "Legal review"
+      ],
+      "recommended": [
+        "privacy-first-architecture",
+        "memory-voice-legacy-data",
+        "privacy-policy"
+      ],
+      "articles": [
+        "privacy-first-architecture",
+        "memory-voice-legacy-data",
+        "data-ownership-portability",
+        "privacy-policy"
+      ],
+      "sections": [
+        {
+          "title": "Assisted onboarding boundary",
+          "body": "Assisted onboarding means a person may receive help setting up their vault, memory sources, voice data, personal model, or continuity settings. This support must not silently transfer control of the user’s private data to staff or to Neuroartan Cloud."
+        },
+        {
+          "title": "Not healthcare by default",
+          "body": "Neuroartan is not positioned as therapy, diagnosis, treatment, clinical decision support, mental-health care, or a healthcare provider replacement by default."
+        },
+        {
+          "title": "Staff access limits",
+          "body": "Staff, experts, facilitators, contractors, or branch personnel must not have default access to raw thoughts, memory records, voice recordings, health-like references, or legacy keys."
+        }
+      ],
+      "article": {
+        "status": "public-source-draft",
+        "renderMode": "longform",
+        "source": "Neuroartan public documentation JSON",
+        "searchTitle": "Clinical & Assisted Onboarding",
+        "searchDescription": "Neuroartan public documentation for expert-assisted onboarding, elder-care workflows, clinic-adjacent boundaries, consent, staff access, and privacy safeguards.",
+        "searchKeywords": [
+          "Clinical & Assisted Onboarding",
+          "assisted onboarding",
+          "elder-care",
+          "HIPAA",
+          "clinic-adjacent",
+          "staff access",
+          "privacy",
+          "consent"
+        ],
+        "supportTrace": {
+          "publicArticleId": "DOC-CLINICAL_ASSISTED_ONBOARDING",
+          "route": "/privacy/clinical-assisted-onboarding/",
+          "category": "Privacy & Legal",
+          "issueSearchable": false
+        },
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Clinical & Assisted Onboarding",
+            "body": "Neuroartan may later support guided onboarding, expert-assisted setup, elder-care workflows, or branch-based memory and model configuration. These workflows require stronger consent, privacy, legal, and staff-access safeguards."
+          },
+          {
+            "type": "section",
+            "title": "Assisted onboarding boundary",
+            "body": "Assisted onboarding means a person may receive help setting up their vault, memory sources, voice data, personal model, or continuity settings. This support must not silently transfer control of the user’s private data to staff or to Neuroartan Cloud."
+          },
+          {
+            "type": "section",
+            "title": "Not healthcare by default",
+            "body": "Neuroartan is not positioned as therapy, diagnosis, treatment, clinical decision support, mental-health care, or a healthcare provider replacement by default."
+          },
+          {
+            "type": "section",
+            "title": "HIPAA and clinical review",
+            "body": "HIPAA may become relevant if Neuroartan works with covered healthcare entities, receives protected health information on behalf of a covered entity, or provides services in a regulated healthcare context."
+          },
+          {
+            "type": "section",
+            "title": "Staff access limits",
+            "body": "Staff, experts, facilitators, contractors, or branch personnel must not have default access to raw thoughts, memory records, voice recordings, health-like references, or legacy keys."
+          },
+          {
+            "type": "section",
+            "title": "Current status",
+            "body": "This article describes product and governance direction. Assisted onboarding, branch workflows, clinic-adjacent workflows, elder-care support, and staff-assisted memory or voice setup may be unavailable or subject to legal, security, and operational review before launch."
           }
         ]
       }
