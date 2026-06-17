@@ -1,6 +1,6 @@
 {
   "documentationSystem": {
-    "version": "0.2",
+    "version": "0.3",
     "sourceMode": "data-driven",
     "publicFacing": true,
     "rules": [
@@ -9,7 +9,11 @@
       "No article body, sidebar item, category label, route label, or search result content may be hardcoded in HTML.",
       "Each documentation category owns its own sidebar groups and subcategories.",
       "Sidebar groups must render as collapsible dropdown sections from JSON.",
-      "Developer-facing documentation must include traceable issue, error, CLI, integration, security, and troubleshooting article paths."
+      "Developer-facing documentation must include traceable issue, error, CLI, integration, security, and troubleshooting article paths.",
+      "Documentation architecture must remain modular: HTML route files are shells, JavaScript is layered by orchestrator, service, renderer, and page scope, CSS is layered by token, base, component, and page scope, and public content is data-driven.",
+      "Shared identity assets must come from the synced public registry mirror and must not be manually duplicated inside documentation media folders.",
+      "Tokens must govern color, spacing, radius, typography, surfaces, borders, and responsive rhythm; local visual exceptions require explicit architectural justification.",
+      "Documentation pages must remain reusable across category, index, and detail contexts through shared renderers instead of hardcoded page-specific bodies."
     ]
   },
   "categories": [
