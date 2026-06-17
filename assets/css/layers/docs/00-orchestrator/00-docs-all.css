@@ -1,3 +1,5 @@
+@import url("../base/docs-token-map.css");
+@import url("../base/docs-base.css");
 @import url("../components/docs-components.css");
 @import url("../pages/home/docs-home.css");
 @import url("../pages/index/docs-index.css");

@@ -233,6 +233,10 @@
   --nav-institutional-text-color:var(--text-secondary-color);
   --nav-institutional-text-hover-color:var(--text-primary-color);
   --nav-institutional-brand-color:var(--text-primary-color);
+  /* Canonical compatibility aliases for institutional menu (see website institutional-menu.css) */
+  --institutional-menu-text-color:var(--nav-institutional-text-color);
+  --institutional-menu-text-hover-color:var(--nav-institutional-text-hover-color);
+  --institutional-menu-motion-fast:var(--nav-institutional-motion-fast);
   --nav-institutional-icon-opacity:0.82;
   --nav-institutional-icon-hover-opacity:1;
   --nav-institutional-motion-fast:220ms;

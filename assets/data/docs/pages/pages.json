@@ -19,7 +19,7 @@
   "categories": [
     {
       "id": "start",
-      "label": "Start",
+      "label": "Get started",
       "route": "/get-started/",
       "groups": [
         {
@@ -43,7 +43,7 @@
     },
     {
       "id": "product",
-      "label": "Product",
+      "label": "Platform",
       "route": "/platform/",
       "groups": [
         {
@@ -52,15 +52,22 @@
           "items": [
             "platform",
             "product-capabilities",
-            "profile-system"
-          ]
-        },
-        {
-          "id": "product-continuity",
-          "label": "Continuity",
-          "items": [
             "voice-training",
-            "memory-continuity",
+            "memory-continuity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "model-profile",
+      "label": "Model & Profile",
+      "route": "/model-identity/",
+      "groups": [
+        {
+          "id": "model-profile-core",
+          "label": "Model & Profile",
+          "items": [
+            "profile-system",
             "model-identity",
             "one-profile-one-model"
           ]
@@ -93,7 +100,7 @@
     },
     {
       "id": "trust-safety",
-      "label": "Trust & Safety",
+      "label": "Trust, Safety & Privacy",
       "route": "/safety/",
       "groups": [
         {
@@ -113,14 +120,7 @@
             "abuse-prevention",
             "appeals"
           ]
-        }
-      ]
-    },
-    {
-      "id": "privacy-legal",
-      "label": "Privacy & Legal",
-      "route": "/privacy/",
-      "groups": [
+        },
         {
           "id": "privacy-core",
           "label": "Privacy",
@@ -137,7 +137,7 @@
         },
         {
           "id": "legal-direction",
-          "label": "Legal direction",
+          "label": "Terms direction",
           "items": [
             "terms-direction"
           ]
@@ -197,7 +197,7 @@
   ],
   "navigation": [
     {
-      "group": "Start",
+      "group": "Get started",
       "items": [
         {
           "id": "get-started",
@@ -227,7 +227,7 @@
       ]
     },
     {
-      "group": "Product",
+      "group": "Platform",
       "items": [
         {
           "id": "platform",
@@ -248,7 +248,12 @@
           "id": "memory-continuity",
           "label": "Memory & Continuity",
           "href": "/platform/memory-continuity/"
-        },
+        }
+      ]
+    },
+    {
+      "group": "Model & Profile",
+      "items": [
         {
           "id": "profile-system",
           "label": "Profile System",
@@ -297,7 +302,7 @@
       ]
     },
     {
-      "group": "Trust & Safety",
+      "group": "Trust, Safety & Privacy",
       "items": [
         {
           "id": "verification",
@@ -328,12 +333,7 @@
           "id": "appeals",
           "label": "Appeals & Restrictions",
           "href": "/appeals/"
-        }
-      ]
-    },
-    {
-      "group": "Privacy & Legal",
-      "items": [
+        },
         {
           "id": "privacy",
           "label": "Privacy",
@@ -456,7 +456,7 @@
     {
       "id": "get-started",
       "route": "/get-started/",
-      "category": "Start",
+      "category": "Get started",
       "type": "Overview",
       "title": "Get started with Neuroartan documentation",
       "eyebrow": "Start here",
@@ -514,7 +514,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-GET_STARTED",
           "route": "/get-started/",
-          "category": "Start",
+          "category": "Get started",
           "issueSearchable": false
         },
         "blocks": [
@@ -569,7 +569,7 @@
     {
       "id": "what-is-neuroartan",
       "route": "/get-started/what-is-neuroartan/",
-      "category": "Start",
+      "category": "Get started",
       "type": "Concept",
       "title": "What is Neuroartan",
       "eyebrow": "Company",
@@ -622,7 +622,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-WHAT_IS_NEUROARTAN",
           "route": "/get-started/what-is-neuroartan/",
-          "category": "Start",
+          "category": "Get started",
           "issueSearchable": false
         },
         "blocks": [
@@ -677,7 +677,7 @@
     {
       "id": "what-is-icos",
       "route": "/get-started/what-is-icos/",
-      "category": "Start",
+      "category": "Get started",
       "type": "Product Definition",
       "title": "What is ICOS",
       "eyebrow": "ICOS",
@@ -731,7 +731,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-WHAT_IS_ICOS",
           "route": "/get-started/what-is-icos/",
-          "category": "Start",
+          "category": "Get started",
           "issueSearchable": false
         },
         "blocks": [
@@ -786,7 +786,7 @@
     {
       "id": "platform",
       "route": "/platform/",
-      "category": "Product",
+      "category": "Platform",
       "type": "Platform",
       "title": "Platform",
       "eyebrow": "Product",
@@ -840,7 +840,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-PLATFORM",
           "route": "/platform/",
-          "category": "Product",
+          "category": "Platform",
           "issueSearchable": false
         },
         "blocks": [
@@ -895,7 +895,7 @@
     {
       "id": "product-capabilities",
       "route": "/platform/capabilities/",
-      "category": "Product",
+      "category": "Platform",
       "type": "Capabilities",
       "title": "Product Capabilities",
       "eyebrow": "Capabilities",
@@ -952,7 +952,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-PRODUCT_CAPABILITIES",
           "route": "/platform/capabilities/",
-          "category": "Product",
+          "category": "Platform",
           "issueSearchable": false
         },
         "blocks": [
@@ -1012,7 +1012,7 @@
     {
       "id": "voice-training",
       "route": "/platform/voice-training/",
-      "category": "Product",
+      "category": "Platform",
       "type": "Capability",
       "title": "Voice Training",
       "eyebrow": "Voice",
@@ -1063,7 +1063,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-VOICE_TRAINING",
           "route": "/platform/voice-training/",
-          "category": "Product",
+          "category": "Platform",
           "issueSearchable": false
         },
         "blocks": [
@@ -1118,7 +1118,7 @@
     {
       "id": "memory-continuity",
       "route": "/platform/memory-continuity/",
-      "category": "Product",
+      "category": "Platform",
       "type": "Capability",
       "title": "Memory & Continuity",
       "eyebrow": "Memory",
@@ -1169,7 +1169,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-MEMORY_CONTINUITY",
           "route": "/platform/memory-continuity/",
-          "category": "Product",
+          "category": "Platform",
           "issueSearchable": false
         },
         "blocks": [
@@ -1224,7 +1224,7 @@
     {
       "id": "profile-system",
       "route": "/platform/profile-system/",
-      "category": "Product",
+      "category": "Model & Profile",
       "type": "Capability",
       "title": "Profile System",
       "eyebrow": "Profile",
@@ -1275,7 +1275,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-PROFILE_SYSTEM",
           "route": "/platform/profile-system/",
-          "category": "Product",
+          "category": "Model & Profile",
           "issueSearchable": false
         },
         "blocks": [
@@ -1330,7 +1330,7 @@
     {
       "id": "posts-and-thought-bank",
       "route": "/get-started/posts-and-thought-bank/",
-      "category": "Start",
+      "category": "Get started",
       "type": "Guide",
       "title": "Posts and Thought Bank",
       "eyebrow": "Expression",
@@ -1381,7 +1381,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-POSTS_AND_THOUGHT_BANK",
           "route": "/get-started/posts-and-thought-bank/",
-          "category": "Start",
+          "category": "Get started",
           "issueSearchable": false
         },
         "blocks": [
@@ -1940,7 +1940,7 @@
     {
       "id": "model-identity",
       "route": "/model-identity/",
-      "category": "Product",
+      "category": "Model & Profile",
       "type": "Model Identity",
       "title": "Model Identity",
       "eyebrow": "Model identity",
@@ -1987,7 +1987,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-MODEL_IDENTITY",
           "route": "/model-identity/",
-          "category": "Product",
+          "category": "Model & Profile",
           "issueSearchable": false
         },
         "blocks": [
@@ -2037,7 +2037,7 @@
     {
       "id": "one-profile-one-model",
       "route": "/model-identity/one-profile-one-model/",
-      "category": "Product",
+      "category": "Model & Profile",
       "type": "Doctrine",
       "title": "One Profile One Canonical Model",
       "eyebrow": "Model identity",
@@ -2088,7 +2088,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-ONE_PROFILE_ONE_MODEL",
           "route": "/model-identity/one-profile-one-model/",
-          "category": "Product",
+          "category": "Model & Profile",
           "issueSearchable": false
         },
         "blocks": [
@@ -2143,7 +2143,7 @@
     {
       "id": "verification",
       "route": "/verification/",
-      "category": "Trust & Safety",
+      "category": "Trust, Safety & Privacy",
       "type": "Verification",
       "title": "Verification",
       "eyebrow": "Trust",
@@ -2195,7 +2195,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-VERIFICATION",
           "route": "/verification/",
-          "category": "Trust & Safety",
+          "category": "Trust, Safety & Privacy",
           "issueSearchable": false
         },
         "blocks": [
@@ -2250,7 +2250,7 @@
     {
       "id": "verification-badge",
       "route": "/verification/badge/",
-      "category": "Trust & Safety",
+      "category": "Trust, Safety & Privacy",
       "type": "Verification",
       "title": "Verification Badge",
       "eyebrow": "Verification",
@@ -2296,7 +2296,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-VERIFICATION_BADGE",
           "route": "/verification/badge/",
-          "category": "Trust & Safety",
+          "category": "Trust, Safety & Privacy",
           "issueSearchable": false
         },
         "blocks": [
@@ -2346,7 +2346,7 @@
     {
       "id": "safety",
       "route": "/safety/",
-      "category": "Trust & Safety",
+      "category": "Trust, Safety & Privacy",
       "type": "Safety",
       "title": "Safety & Trust",
       "eyebrow": "Safety",
@@ -2395,7 +2395,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-SAFETY",
           "route": "/safety/",
-          "category": "Trust & Safety",
+          "category": "Trust, Safety & Privacy",
           "issueSearchable": false
         },
         "blocks": [
@@ -2445,7 +2445,7 @@
     {
       "id": "anti-impersonation",
       "route": "/safety/anti-impersonation/",
-      "category": "Trust & Safety",
+      "category": "Trust, Safety & Privacy",
       "type": "Safety",
       "title": "Anti-Impersonation",
       "eyebrow": "Safety",
@@ -2492,7 +2492,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-ANTI_IMPERSONATION",
           "route": "/safety/anti-impersonation/",
-          "category": "Trust & Safety",
+          "category": "Trust, Safety & Privacy",
           "issueSearchable": false
         },
         "blocks": [
@@ -2542,7 +2542,7 @@
     {
       "id": "abuse-prevention",
       "route": "/safety/abuse-prevention/",
-      "category": "Trust & Safety",
+      "category": "Trust, Safety & Privacy",
       "type": "Safety",
       "title": "Abuse Prevention",
       "eyebrow": "Safety",
@@ -2589,7 +2589,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-ABUSE_PREVENTION",
           "route": "/safety/abuse-prevention/",
-          "category": "Trust & Safety",
+          "category": "Trust, Safety & Privacy",
           "issueSearchable": false
         },
         "blocks": [
@@ -2639,7 +2639,7 @@
     {
       "id": "privacy",
       "route": "/privacy/",
-      "category": "Privacy & Legal",
+      "category": "Trust, Safety & Privacy",
       "type": "Privacy",
       "title": "Privacy",
       "eyebrow": "Privacy",
@@ -2679,7 +2679,7 @@
         "searchDescription": "Review the public privacy boundary for documentation, verification, device integrity, memory, profile identity, and model continuity.",
         "searchKeywords": [
           "Privacy",
-          "Privacy & Legal",
+          "Trust, Safety & Privacy",
           "Privacy",
           "Privacy",
           "Neuroartan",
@@ -2688,7 +2688,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-PRIVACY",
           "route": "/privacy/",
-          "category": "Privacy & Legal",
+          "category": "Trust, Safety & Privacy",
           "issueSearchable": false
         },
         "blocks": [
@@ -2738,7 +2738,7 @@
     {
       "id": "privacy-policy",
       "route": "/privacy/policy/",
-      "category": "Privacy & Legal",
+      "category": "Trust, Safety & Privacy",
       "type": "Policy Direction",
       "title": "Privacy Policy Direction",
       "eyebrow": "Privacy",
@@ -2780,7 +2780,7 @@
         "searchDescription": "Understand the public policy direction for privacy, memory, verification, device integrity, and user controls before final legal approval.",
         "searchKeywords": [
           "Privacy Policy Direction",
-          "Privacy & Legal",
+          "Trust, Safety & Privacy",
           "Policy Direction",
           "Privacy",
           "Neuroartan",
@@ -2789,7 +2789,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-PRIVACY_POLICY",
           "route": "/privacy/policy/",
-          "category": "Privacy & Legal",
+          "category": "Trust, Safety & Privacy",
           "issueSearchable": false
         },
         "blocks": [
@@ -2844,7 +2844,7 @@
     {
       "id": "device-integrity",
       "route": "/privacy/device-integrity/",
-      "category": "Privacy & Legal",
+      "category": "Trust, Safety & Privacy",
       "type": "Privacy",
       "title": "Device Integrity",
       "eyebrow": "Privacy",
@@ -2886,7 +2886,7 @@
         "searchDescription": "Understand privacy-preserving device integrity signals for account integrity, anti-abuse, verification protection, and model identity protection.",
         "searchKeywords": [
           "Device Integrity",
-          "Privacy & Legal",
+          "Trust, Safety & Privacy",
           "Privacy",
           "Privacy",
           "Neuroartan",
@@ -2895,7 +2895,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-DEVICE_INTEGRITY",
           "route": "/privacy/device-integrity/",
-          "category": "Privacy & Legal",
+          "category": "Trust, Safety & Privacy",
           "issueSearchable": false
         },
         "blocks": [
@@ -2950,7 +2950,7 @@
     {
       "id": "data-retention",
       "route": "/privacy/data-retention/",
-      "category": "Privacy & Legal",
+      "category": "Trust, Safety & Privacy",
       "type": "Policy Direction",
       "title": "Data Retention",
       "eyebrow": "Privacy",
@@ -2988,7 +2988,7 @@
         "searchDescription": "Understand the public retention direction for verification evidence, memory, device integrity signals, and abuse-review records before final approval.",
         "searchKeywords": [
           "Data Retention",
-          "Privacy & Legal",
+          "Trust, Safety & Privacy",
           "Policy Direction",
           "Privacy",
           "Neuroartan",
@@ -2997,7 +2997,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-DATA_RETENTION",
           "route": "/privacy/data-retention/",
-          "category": "Privacy & Legal",
+          "category": "Trust, Safety & Privacy",
           "issueSearchable": false
         },
         "blocks": [
@@ -3047,7 +3047,7 @@
     {
       "id": "privacy-first-architecture",
       "route": "/privacy/privacy-first-architecture/",
-      "category": "Privacy & Legal",
+      "category": "Trust, Safety & Privacy",
       "type": "Architecture",
       "title": "Privacy-First Architecture",
       "eyebrow": "Privacy & Safety",
@@ -3103,7 +3103,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-PRIVACY_FIRST_ARCHITECTURE",
           "route": "/privacy/privacy-first-architecture/",
-          "category": "Privacy & Legal",
+          "category": "Trust, Safety & Privacy",
           "issueSearchable": false
         },
         "blocks": [
@@ -3148,7 +3148,7 @@
     {
       "id": "data-ownership-portability",
       "route": "/privacy/data-ownership-portability/",
-      "category": "Privacy & Legal",
+      "category": "Trust, Safety & Privacy",
       "type": "Rights",
       "title": "Data Ownership & Portability",
       "eyebrow": "Privacy & Safety",
@@ -3204,7 +3204,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-DATA_OWNERSHIP_PORTABILITY",
           "route": "/privacy/data-ownership-portability/",
-          "category": "Privacy & Legal",
+          "category": "Trust, Safety & Privacy",
           "issueSearchable": false
         },
         "blocks": [
@@ -3249,7 +3249,7 @@
     {
       "id": "memory-voice-legacy-data",
       "route": "/privacy/memory-voice-legacy-data/",
-      "category": "Privacy & Legal",
+      "category": "Trust, Safety & Privacy",
       "type": "Sensitive Data",
       "title": "Memory, Voice & Legacy Data",
       "eyebrow": "Privacy & Safety",
@@ -3304,7 +3304,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-MEMORY_VOICE_LEGACY_DATA",
           "route": "/privacy/memory-voice-legacy-data/",
-          "category": "Privacy & Legal",
+          "category": "Trust, Safety & Privacy",
           "issueSearchable": false
         },
         "blocks": [
@@ -3349,7 +3349,7 @@
     {
       "id": "clinical-assisted-onboarding",
       "route": "/privacy/clinical-assisted-onboarding/",
-      "category": "Privacy & Legal",
+      "category": "Trust, Safety & Privacy",
       "type": "Boundary",
       "title": "Clinical & Assisted Onboarding",
       "eyebrow": "Privacy & Safety",
@@ -3403,7 +3403,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-CLINICAL_ASSISTED_ONBOARDING",
           "route": "/privacy/clinical-assisted-onboarding/",
-          "category": "Privacy & Legal",
+          "category": "Trust, Safety & Privacy",
           "issueSearchable": false
         },
         "blocks": [
@@ -3443,7 +3443,7 @@
     {
       "id": "terms-direction",
       "route": "/legal/terms-direction/",
-      "category": "Privacy & Legal",
+      "category": "Trust, Safety & Privacy",
       "type": "Legal Direction",
       "title": "Terms Direction",
       "eyebrow": "Legal",
@@ -3481,7 +3481,7 @@
         "searchDescription": "Understand the terms-of-use direction for accounts, profiles, models, Posts, verification, safety, and subscription boundaries before final legal approval.",
         "searchKeywords": [
           "Terms Direction",
-          "Privacy & Legal",
+          "Trust, Safety & Privacy",
           "Legal Direction",
           "Legal",
           "Neuroartan",
@@ -3490,7 +3490,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-TERMS_DIRECTION",
           "route": "/legal/terms-direction/",
-          "category": "Privacy & Legal",
+          "category": "Trust, Safety & Privacy",
           "issueSearchable": false
         },
         "blocks": [
@@ -3540,7 +3540,7 @@
     {
       "id": "appeals",
       "route": "/appeals/",
-      "category": "Trust & Safety",
+      "category": "Trust, Safety & Privacy",
       "type": "Appeals",
       "title": "Appeals & Restrictions",
       "eyebrow": "Review",
@@ -3591,7 +3591,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-APPEALS",
           "route": "/appeals/",
-          "category": "Trust & Safety",
+          "category": "Trust, Safety & Privacy",
           "issueSearchable": false
         },
         "blocks": [
@@ -4463,7 +4463,7 @@
     {
       "id": "public-documentation",
       "route": "/get-started/public-documentation/",
-      "category": "Start",
+      "category": "Get started",
       "type": "Guide",
       "title": "Public Documentation Policy",
       "eyebrow": "Documentation",
@@ -4510,7 +4510,7 @@
         "supportTrace": {
           "publicArticleId": "DOC-PUBLIC_DOCUMENTATION",
           "route": "/get-started/public-documentation/",
-          "category": "Start",
+          "category": "Get started",
           "issueSearchable": false
         },
         "blocks": [

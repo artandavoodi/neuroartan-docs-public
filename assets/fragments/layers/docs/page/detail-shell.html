@@ -1,43 +1,12 @@
-<div class="docs-rail">
-  <section class="docs-page-head">
-    <a class="docs-page-head__brand" id="docs-page-brand" href="/">Neuroartan Docs</a>
-    <form class="docs-search docs-surface" id="docs-search-form" role="search">
-      <label class="docs-search__label" id="docs-search-label" for="docs-search-input">Search documentation</label>
-      <input class="docs-search__input" id="docs-search-input" type="search" placeholder="Search articles">
-    </form>
-  </section>
+<section class="docs-layout" data-docs-layout>
+  <aside class="docs-sidebar" aria-label="Documentation navigation" data-docs-sidebar></aside>
 
-  <section class="docs-detail-frame">
-    <aside class="docs-detail-sidebar docs-surface" id="docs-detail-sidebar" aria-label="Documentation navigation"></aside>
+  <article class="docs-article" data-docs-article>
+    <nav class="docs-breadcrumb" aria-label="Breadcrumb" data-docs-breadcrumb></nav>
+    <header class="docs-article__header" data-docs-article-header></header>
+    <section class="docs-article__recommended" aria-label="Recommended documentation" data-docs-recommended></section>
+    <section class="docs-article__body" data-docs-article-body></section>
+  </article>
 
-    <article class="docs-detail-content" id="docs-detail-content">
-      <nav class="docs-breadcrumb" aria-label="Breadcrumb">
-        <a class="docs-breadcrumb__link" id="docs-breadcrumb-home" href="/">Home</a>
-        <span class="docs-breadcrumb__separator">/</span>
-        <span class="docs-breadcrumb__current" id="docs-breadcrumb-current"></span>
-      </nav>
-
-      <header class="docs-detail-hero">
-        <p class="docs-detail-hero__eyebrow" id="docs-detail-eyebrow"></p>
-        <h1 class="docs-detail-hero__title" id="docs-detail-title"></h1>
-        <p class="docs-detail-hero__description" id="docs-detail-description"></p>
-        <div class="docs-tabs" id="docs-detail-tabs" aria-label="Page views"></div>
-      </header>
-
-      <section class="docs-detail-recommended" aria-labelledby="docs-detail-recommended-title">
-        <h2 class="docs-detail-section-title" id="docs-detail-recommended-title">Recommended</h2>
-        <div class="docs-detail-recommended__grid" id="docs-detail-recommended"></div>
-      </section>
-
-      <section class="docs-article-browser docs-surface" aria-labelledby="docs-articles-title">
-        <div class="docs-article-browser__header">
-          <h2 class="docs-detail-section-title" id="docs-articles-title">Articles</h2>
-          <div class="docs-filter" id="docs-category-filter" aria-label="Category filter"></div>
-        </div>
-        <div class="docs-article-list" id="docs-article-list"></div>
-      </section>
-
-      <div class="docs-detail-sections" id="docs-detail-sections"></div>
-    </article>
-  </section>
-</div>
+  <aside class="docs-toc" aria-label="In this article" data-docs-toc></aside>
+</section>
